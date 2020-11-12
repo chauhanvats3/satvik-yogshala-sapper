@@ -6,6 +6,6 @@
 
 </style>
 
-<div class="about">
-    ABOUT US
+<div class="faq">
+
 </div>
