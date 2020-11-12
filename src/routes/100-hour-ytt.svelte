@@ -137,7 +137,7 @@
 </style>
 <div class="ytt">
     <div class="hero">
-        <img src="images_old/courses/200-hours-ytt.jpg" alt="">
+        <img src="images/pritam_namaskar.jpg" alt="">
     </div>
     <div class="breadcrumb">Home > 100 Hour teacher Training</div>
     <div class="content">
