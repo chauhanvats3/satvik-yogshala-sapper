@@ -108,15 +108,6 @@
         flex-flow: column wrap;
     }
 
-    .highlights_content {
-        flex-flow: column wrap;
-        align-items: flex-start;
-    }
-
-    .dots {
-        height: 8px;
-        width: 8px;
-    }
 
     .column_e {
         margin: 10px;

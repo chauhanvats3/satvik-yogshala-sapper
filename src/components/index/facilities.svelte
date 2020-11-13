@@ -26,6 +26,8 @@
 <style>
     .facilities {
         flex-flow: column wrap;
+        background-color: var(--bg3);
+        width: 100%;
     }
 
     .card_horizontal {

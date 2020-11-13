@@ -4,9 +4,13 @@
     export let classGiven;
 </script>
 <style>
+    .description {
+        background-color: var(--bg1);
+    }
+
     div {
-        width: 70vw;
-        margin: 40px 20px;
+        width: 100%;
+        padding: 40px 20px;
         display: block;
     }
 
@@ -28,15 +32,22 @@
         display: block
     }
 
-    .description {}
+    .content {
+        width: 70vw;
+        margin: auto;
+    }
 </style>
 
 
-<div class="wrapper {classGiven}">
-    <h1>{heading}</h1>
-    <hr class="sexy_bottom_line" />
-    <img src="images/food.jpg" alt="">
-    <p>
-        {desc}
-    </p>
+<div class="description {classGiven}">
+    <div class="heading">
+        <h1>{heading}</h1>
+        <hr class="sexy_bottom_line" />
+    </div>
+    <div class="content">
+        <img src="images/food.jpg" alt="">
+        <p>
+            {desc}
+        </p>
+    </div>
 </div>

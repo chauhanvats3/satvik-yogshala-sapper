@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
 
+:root{
+    --bg1:#fefae0;
+    --bg2:#f0e6ef;
+    --bg3:#e5e5e5;
+    --color-1:#9c89b8;
+    --color-2:#f0a6ca;
+    --color-3:#efc3e6;
+    --color-4:#f0e6ef;
+    --color-5:#b8bedd;
+    --black:#5e6472;
+}
+
 html,
 body {
     position: relative;
@@ -15,7 +27,7 @@ body * {
 }
 
 body {
-    color: #333;
+    color: black;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Quicksand';
@@ -60,6 +72,7 @@ p{
 
 .heading {
     display: block;
+    width: max-content;
 }
 
 hr {
@@ -70,18 +83,16 @@ hr {
     background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black));
 }
 
-.wrapper{
-    margin: 30px 0;
-}
 
 
-.btn-grad {background-image: linear-gradient(to right, #606c88 0%, #3f4c6b  51%, #606c88  100%)}
+.btn-grad {background-image: linear-gradient(to right, #F72585 0%, #B5179E  51%, #7209B7  100%, #560BAD  100%, #480CA8  100%, #3A0CA3  100%, #3F37C9  100%, #4361EE  100%, #4895EF  100%, #6DAAF2  100%)}
 .btn-grad {
    text-align: center;
    text-transform: uppercase;
    transition: 0.5s;
    background-size: 200% auto;
-   color: white;            
+   color: white;   
+         
  }
 
  .btn-grad:hover {
@@ -95,5 +106,5 @@ hr {
 .btn{
     border: 1px solid black;
     cursor: pointer;
-    text-shadow: 0 0 2px #333;
+    text-shadow:  1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
 }

@@ -5,9 +5,11 @@
 
 <style>
     .programs {
-        width: 95vw;
+        width: 100%;
         justify-content: space-evenly;
         flex-flow: column wrap;
+        background-color: var(--bg2);
+        padding: 30px 0;
     }
 
     .heading {

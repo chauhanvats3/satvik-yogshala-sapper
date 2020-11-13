@@ -49,18 +49,8 @@
     .navbar {
         flex-basis: 100%;
         padding: 0 30px;
-        background-color: rgb(203, 247, 241);
+        background-color: var(--color-5);
         min-height: 70px;
-
-        background: hsla(263, 42%, 65%, 1);
-
-        background: linear-gradient(0deg, hsla(263, 42%, 65%, 1) 0%, hsla(319, 77%, 86%, 1) 100%);
-
-        background: -moz-linear-gradient(0deg, hsla(263, 42%, 65%, 1) 0%, hsla(319, 77%, 86%, 1) 100%);
-
-        background: -webkit-linear-gradient(0deg, hsla(263, 42%, 65%, 1) 0%, hsla(319, 77%, 86%, 1) 100%);
-
-        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#9D80CB", endColorstr="#F7C2E6", GradientType=1);
 
     }
 
@@ -131,17 +121,22 @@
 <div id="header" class="header">
     <div id="banner" class="banner">
         <div>
-            <p>
-                <ion-icon name="call-sharp" class="icon"></ion-icon>
-                +91-8126726747
-            </p>
-            <p>
-                <ion-icon name="mail-sharp" class="icon"></ion-icon> satvikyogshala@gmail.com
-            </p>
+            <a href="tel:+918126726747" target="_blank">
+                <p>
+                    <ion-icon name="call-sharp" class="icon"></ion-icon>
+                    +91-8126726747
+                </p>
+            </a>
+            <a href="mailto:satvikyogshala@gmail.com" target="_blank">
+                <p>
+                    <ion-icon name="mail-sharp" class="icon"></ion-icon> satvikyogshala@gmail.com
+                </p>
+            </a>
         </div>
         <div class="btn-wrapper">
-            <button class="btn btn-grad">Apply Now
-                <ion-icon name="create-outline" class="icon" style="--ionicon-stroke-width: 40px;"></ion-icon></button>
+            <button class="btn btn-grad"><a href="contact" style="text-decoration: none;">Apply Now</a>
+                <ion-icon name="create-outline" class="icon" style="--ionicon-stroke-width: 40px;"></ion-icon>
+            </button>
         </div>
 
     </div>
@@ -161,7 +156,8 @@
                                 YTT</a></div>
                         <div class="item"><a href="100-hour-ytt">100 Hours
                                 YTT</a></div>
-                        <div class="item"><a href="200-hour-multistyle-ytt">200 Hours Multistyle YTT</a></div>
+                        <div class="item"><a href="200-hour-multistyle-ytt">200 Hours Multistyle YTT</a>
+                        </div>
                     </div>
                 </div>
                 <div class="item" class:selected={segment==="yoga-retreat" }>

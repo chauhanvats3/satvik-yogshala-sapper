@@ -10,9 +10,9 @@
   },
   "dependencies": {
     "compression": "^1.7.1",
-    "intl-tel-input": "^17.0.8",
     "jquery": "^3.5.1",
     "polka": "next",
+    "sapper-page-loading-bar": "^1.0.0",
     "sirv": "^1.0.0"
   },
   "devDependencies": {
