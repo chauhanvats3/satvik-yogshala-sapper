@@ -37,9 +37,9 @@
 </svelte:head>
 <div class="index">
 	<div class="hero">
-		<img src="images/pritam_namaskar.jpg" alt="">
+		<img src="images/yoga2.jpg" alt="">
 	</div>
-	<Description classGiven="description" />
+	<Description />
 	<Programs />
 	<Facilities />
 	<Showcase />
