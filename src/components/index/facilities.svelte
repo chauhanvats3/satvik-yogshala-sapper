@@ -1,15 +1,15 @@
 <script>
     const facilities = {
         food: {
-            image: "images/food.jpg",
+            image: "images/food2.jpg",
             desc: "We Provide Food, Nobody Else Does that. Aren't we Awesome?"
         },
         spa: {
-            image: "images/food.jpg",
+            image: "images/spa.jpg",
             desc: "We don't provide Spa, sadly."
         },
         travel: {
-            image: "images/food.jpg",
+            image: "images/travel1.jpg",
             desc: "Morning and Evening Walks are included."
         }
     }
@@ -38,6 +38,7 @@
         height: 300px;
         margin: 20px;
         border-radius: 20px;
+        object-fit: cover;
     }
 
     .options {
@@ -49,7 +50,6 @@
         cursor: pointer;
     }
 
-    .card_horizontal>img {}
 
     .card_horizontal>p {
         width: 40%;

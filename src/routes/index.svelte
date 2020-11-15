@@ -12,11 +12,11 @@
 		overflow: hidden;
 
 
-		background: rgb(255, 255, 255);
-		background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(253, 254, 254, 0.5214460784313726) 69%, rgba(194, 248, 255, 0.5326505602240896) 78%, rgba(160, 240, 255, 0.6867121848739496) 92%, rgba(104, 222, 246, 0.6222864145658263) 100%);
-		background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(253, 254, 254, 0.5214460784313726) 69%, rgba(194, 248, 255, 0.5326505602240896) 78%, rgba(160, 240, 255, 0.6867121848739496) 92%, rgba(104, 222, 246, 0.6222864145658263) 100%);
-		background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(253, 254, 254, 0.5214460784313726) 69%, rgba(194, 248, 255, 0.5326505602240896) 78%, rgba(160, 240, 255, 0.6867121848739496) 92%, rgba(104, 222, 246, 0.6222864145658263) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#68def6", GradientType=1);
+		background: #606c8896;
+		/* fallback for old browsers */
+		background: -webkit-linear-gradient(to bottom, #3f4c6b96, #606c8896);
+		/* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to bottom, #3f4c6b96, #606c8896);
 
 
 	}

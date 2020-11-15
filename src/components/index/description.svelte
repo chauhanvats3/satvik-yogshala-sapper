@@ -24,6 +24,7 @@
 
     .content {
         display: block;
+
     }
 
     .image {
@@ -32,6 +33,12 @@
         clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
         shape-margin: 10px;
         width: 50%;
+        background: #606c8896;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #3f4c6b96, #606c8896);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #3f4c6b96, #606c8896);
+
     }
 
     img {

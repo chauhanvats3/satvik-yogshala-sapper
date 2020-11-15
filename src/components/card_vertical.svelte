@@ -1,8 +1,14 @@
 <script>
+    import { goto } from '@sapper/app';
+
     export let image;
     export let description;
     export let title;
-    export let type;
+    export let link;
+
+    const goToLink = () => {
+        goto(`/${link}`);
+    }
 </script>
 
 <style>
@@ -73,7 +79,7 @@
     }
 </style>
 
-<div class="card">
+<div class="card" on:click={goToLink}>
     <img src={image} alt={title}>
 
     <div class="overlay">
