@@ -1,6 +1,24 @@
 <script>
     import Card_vertical from "../card_vertical.svelte";
 
+
+    var cards = [
+        {
+            image: "images/yoga1.jpg",
+            title: "100 Hours YTT in Rishikesh",
+            description: "The main purpose of 100-hour yoga teacher training is to create awareness about yoga and help you in finding your path in the right direction."
+        },
+        {
+            image: "images/yoga5.jpg",
+            title: "200 Hours YTT in Rishikesh",
+            description: "The main purpose of 100-hour yoga teacher training is to create awareness about yoga and help you in finding your path in the right direction."
+        },
+        {
+            image: "images/yoga1.jpg",
+            title: "Yoga Retreat in Rishikesh",
+            description: "The main purpose of 100-hour yoga teacher training is to create awareness about yoga and help you in finding your path in the right direction."
+        }
+    ];
 </script>
 
 <style>
@@ -8,7 +26,6 @@
         width: 100%;
         justify-content: space-evenly;
         flex-flow: column wrap;
-        background-color: var(--bg2);
         padding: 30px 0;
     }
 
@@ -24,8 +41,8 @@
     </div>
 
     <div>
-        <Card_vertical image="images/food.jpg" title="Title No 1" desc="asdadq3wdasd q3eq dqawd2 q3dq" />
-        <Card_vertical image="images/food.jpg" title="Title No 2" desc="asdadq3wdasd q3eq dqawd2 q3dq" />
-        <Card_vertical image="images/food.jpg" title="Title No 3" desc="asdadq3wdasd q3eq dqawd2 q3dq" />
+        {#each cards as card}
+            <Card_vertical image={card.image} title={card.title} description={card.description} />
+        {/each}
     </div>
 </div>

@@ -6,7 +6,7 @@
         },
         spa: {
             image: "images/food.jpg",
-            desc: "We don't provide SPA, sadly."
+            desc: "We don't provide Spa, sadly."
         },
         travel: {
             image: "images/food.jpg",
@@ -26,7 +26,6 @@
 <style>
     .facilities {
         flex-flow: column wrap;
-        background-color: var(--bg3);
         width: 100%;
     }
 
@@ -69,7 +68,7 @@
     <hr class="sexy_bottom_line" style="width: 70%; margin: 0;" />
     <div class="options">
         <div on:click={()=>changeFacility("food")}>Food</div>
-        <div on:click={()=>changeFacility("spa")}>SPA</div>
+        <div on:click={()=>changeFacility("spa")}>Spa</div>
         <div on:click={()=>changeFacility("travel")}>Travel</div>
     </div>
 </div>
