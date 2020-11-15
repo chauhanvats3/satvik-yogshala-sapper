@@ -59,10 +59,12 @@
         position: relative;
         height: 100%;
         flex-direction: column;
-        justify-content: flex-end;
-        /*  bottom: -35%; */
-        transform: translateY(35%);
-        transition: all 0.5s;
+        justify-content: flex-start;
+        padding: 10px;
+        transform: translateY(300px);
+
+        transition: all 1s;
+
     }
 
 
