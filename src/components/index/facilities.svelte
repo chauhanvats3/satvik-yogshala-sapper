@@ -2,15 +2,19 @@
     const facilities = {
         food: {
             image: "images/food2.jpg",
-            desc: "We Provide Food, Nobody Else Does that. Aren't we Awesome?"
+            desc: "Satvik Yogshala provides light and healthy vegetarian foods. Fresh & delicious quality food."
         },
         spa: {
             image: "images/spa.jpg",
-            desc: "We don't provide Spa, sadly."
+            desc: "Satvik Yogshala offers you the best Spa for Ayurvedic treatments and massages."
         },
         travel: {
             image: "images/travel1.jpg",
-            desc: "Morning and Evening Walks are included."
+            desc: "We organize an excursion for leisure, education, or physical purposes twice in a month."
+        },
+        accomodation: {
+            image: "images/travel2.jpg",
+            desc: "Clean Accommodation at Peaceful Location, luxurious & comfortable rooms."
         }
     }
 
@@ -30,16 +34,41 @@
     }
 
     .card_horizontal {
-        width: 95vw;
+        width: 75vw;
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 20px;
     }
 
     img {
-        width: 300px;
-        height: 300px;
-        margin: 20px;
-        border-radius: 20px;
+        height: 100%;
+        width: 100%;
+
         object-fit: cover;
     }
+
+    .overlay {
+        width: 100%;
+        height: 100%;
+        color: aliceblue;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        color: #FFF;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        background: #606c8862;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #3f4c6b62, #606c8862);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #3f4c6b62, #606c8862);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
 
     .options {
         width: 100%;
@@ -51,24 +80,50 @@
     }
 
 
-    .card_horizontal>p {
-        width: 40%;
+    .description {
+        width: 100%;
+        flex: 1 1 80%;
+    }
+
+    .para_overlay {
+        width: 100%;
+        background: #606c8862;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #3f4c6b91, #606c8891);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #3f4c6b91, #606c8891);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        padding: 5px 10px;
+    }
+
+    .description p {
+        width: 100%;
     }
 </style>
 
-<div class="wrapper facilities">
+<div class="facilities">
     <div class="heading">
         <h1>Facilities</h1>
         <hr class="sexy_bottom_line" />
     </div>
     <div class="card_horizontal">
         <img src={curImage} alt="">
-        <p>{curDesc}</p>
+        <div class="overlay">
+            <div class="options">
+                <div on:click={()=>changeFacility("food")} >Food</div>
+                <div on:click={()=>changeFacility("accomodation")}>Accomodation</div>
+                <div on:click={()=>changeFacility("spa")}>Spa</div>
+                <div on:click={()=>changeFacility("travel")}>Travel</div>
+            </div>
+            <div class="description">
+                <div class="para_overlay">
+                    <p>{curDesc}</p>
+                </div>
+            </div>
+
+        </div>
     </div>
-    <hr class="sexy_bottom_line" style="width: 70%; margin: 0;" />
-    <div class="options">
-        <div on:click={()=>changeFacility("food")}>Food</div>
-        <div on:click={()=>changeFacility("spa")}>Spa</div>
-        <div on:click={()=>changeFacility("travel")}>Travel</div>
-    </div>
+    <!--     <hr class="sexy_bottom_line" style="width: 70%; margin: 0;" />
+ -->
+
 </div>

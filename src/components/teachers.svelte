@@ -35,21 +35,21 @@
     <div class="content">
         <div class="teacher_group">
             <div class="teacher">
-                <img src="images_old/team/pritam-singh-rawat.jpg" alt="">
+                <img src="images/team/pritam-singh-rawat.jpg" alt="">
                 <p>Pritam Pyare</p>
             </div>
             <div class="teacher">
-                <img src="images_old/team/swami-manasananda.jpg" alt="">
+                <img src="images/team/swami-manasananda.jpg" alt="">
                 <p>Swami Manasananda </p>
             </div>
         </div>
         <div class="teacher_group">
             <div class="teacher">
-                <img src="images_old/team/yogi-pankaj-paswan.jpg" alt="">
+                <img src="images/team/yogi-pankaj-paswan.jpg" alt="">
                 <p>Yogi Pankaj Paswan</p>
             </div>
             <div class="teacher">
-                <img src="images_old/team/yogi-vipulraj.jpg" alt="">
+                <img src="images/team/yogi-vipulraj.jpg" alt="">
                 <p>Yogi Vipulraj</p>
             </div>
         </div>
