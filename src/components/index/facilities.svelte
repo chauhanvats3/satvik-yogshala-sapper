@@ -20,10 +20,11 @@
 
     var curImage = facilities.food.image;
     var curDesc = facilities.food.desc;
-
+    var selected_option = 'food';
     const changeFacility = (changeTo) => {
         curImage = facilities[changeTo].image;
         curDesc = facilities[changeTo].desc;
+        selected_option = changeTo;
     }
 </script>
 
@@ -79,6 +80,10 @@
         cursor: pointer;
     }
 
+    .selected_option {
+        border-bottom: 2px solid rgb(223, 134, 134);
+    }
+
 
     .description {
         width: 100%;
@@ -110,10 +115,13 @@
         <img src={curImage} alt="">
         <div class="overlay">
             <div class="options">
-                <div on:click={()=>changeFacility("food")} >Food</div>
-                <div on:click={()=>changeFacility("accomodation")}>Accomodation</div>
-                <div on:click={()=>changeFacility("spa")}>Spa</div>
-                <div on:click={()=>changeFacility("travel")}>Travel</div>
+                <div on:click={()=>changeFacility("food")} class:selected_option={selected_option=='food'}>Food</div>
+                <div on:click={()=>changeFacility("accomodation")}
+                    class:selected_option={selected_option=='accomodation'}>Accomodation
+                </div>
+                <div on:click={()=>changeFacility("spa")} class:selected_option={selected_option=='spa'}>Spa</div>
+                <div on:click={()=>changeFacility("travel")} class:selected_option={selected_option=='travel'}>Travel
+                </div>
             </div>
             <div class="description">
                 <div class="para_overlay">
