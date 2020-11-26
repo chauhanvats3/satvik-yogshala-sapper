@@ -77,14 +77,14 @@
             <Contact_Form />
         </div>
         <div class="add_info">
-            <div class="social_icons">
+            <!--    <div class="social_icons">
 
                 <ion-icon name="logo-twitter">Twitter Profile</ion-icon>
                 <ion-icon name="logo-facebook">Facebook Page</ion-icon>
                 <ion-icon name="logo-instagram">Instagram Account</ion-icon>
                 <ion-icon name="logo-youtube">Youtube Channel</ion-icon>
                 <ion-icon name="logo-linkedin">Linkedin Profile</ion-icon>
-            </div>
+            </div> -->
             <div class="address">
                 <p><a href="https://g.page/satvikyogshala?share">Badrinath Road, NH-58, Tapovan, Rishikesh, India</a>
                 </p>

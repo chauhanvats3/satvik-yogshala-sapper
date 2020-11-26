@@ -1,5 +1,5 @@
 <script>
-    import Card_Horizontal from '../components/card_horizontal.svelte';
+    import Card_Horizontal from '../../components/card_horizontal.svelte';
     let teachers = [{
         image: "images/team/pritam-singh-rawat.jpg",
         title: "Pritam Rawat",

@@ -1,7 +1,7 @@
 <script>
-    import Collapsible from '../components/collapsible.svelte';
-    import Table from '../components/table.svelte';
-    import Contact_Form from '../components/contact_form.svelte';
+    import Collapsible from '../../components/collapsible.svelte';
+    import Table from '../../components/table.svelte';
+    import Contact_Form from '../../components/contact_form.svelte';
 
     let curriculum = [
         { name: "Asana", details: ["line 1 ", "line 2", "3rd line"] },

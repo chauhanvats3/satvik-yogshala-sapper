@@ -2,84 +2,52 @@
 
     var images = [
         {
-            src: "images/flower.jpg",
-            span_row: "3",
-            span_col: "3"
+            src: "images/flower.jpg"
         },
         {
-            src: "images/food1.jpg",
-            span_row: "2",
-            span_col: "2"
+            src: "images/food1.jpg"
         },
         {
-            src: "images/team/pritam-singh-rawat.jpg",
-            span_row: "2",
-            span_col: "2"
+            src: "images/team/pritam-singh-rawat.jpg"
         },
         {
-            src: "images/food2.jpg",
-            span_row: "2",
-            span_col: "2"
+            src: "images/food2.jpg"
         },
         {
-            src: "images/pritam_namaskar.jpg",
-            span_row: "3",
-            span_col: "3"
+            src: "images/pritam_namaskar.jpg"
         },
         {
-            src: "images/spa.jpg",
-            span_row: "4",
-            span_col: "4"
+            src: "images/spa.jpg"
         },
         {
-            src: "images/travel1.jpg",
-            span_row: "2",
-            span_col: "2"
+            src: "images/travel1.jpg"
         },
         {
-            src: "images/travel2.jpg",
-            span_row: "3",
-            span_col: "3"
+            src: "images/travel2.jpg"
         },
         {
-            src: "images/team/yogi-vipulraj.jpg",
-            span_row: "2",
-            span_col: "2"
+            src: "images/team/yogi-vipulraj.jpg"
         },
         {
-            src: "images/yoga1.jpg",
-            span_row: "4",
-            span_col: "4"
+            src: "images/yoga1.jpg"
         },
         {
-            src: "images/yoga2.jpg",
-            span_row: "3",
-            span_col: "3"
+            src: "images/yoga2.jpg"
         },
         {
-            src: "images/yoga3.jpg",
-            span_row: "2",
-            span_col: "2"
+            src: "images/yoga3.jpg"
         },
         {
-            src: "images/yoga4.jpg",
-            span_row: "2",
-            span_col: "2"
+            src: "images/yoga4.jpg"
         },
         {
-            src: "images/yoga5.jpg",
-            span_row: "2",
-            span_col: "2"
+            src: "images/yoga5.jpg"
         },
         {
-            src: "images/team/yogi-pankaj-paswan.jpg",
-            span_row: "1",
-            span_col: "1"
+            src: "images/team/yogi-pankaj-paswan.jpg"
         },
         {
-            src: "images/yoga6.jpg",
-            span_row: "2",
-            span_col: "3"
+            src: "images/yoga6.jpg"
         },
     ];
 

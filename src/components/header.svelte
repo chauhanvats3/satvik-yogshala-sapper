@@ -152,11 +152,13 @@
                     <div><a>Teacher Training</a>
                     </div>
                     <div class="list">
-                        <div class="item"><a href="200-hour-ytt">200 Hours
+                        <div class="item"><a href="teacher-training/100-hour-ytt">100 Hours
                                 YTT</a></div>
-                        <div class="item"><a href="100-hour-ytt">100 Hours
+                        <div class="item"><a href="teacher-training/200-hour-ytt">200 Hours
                                 YTT</a></div>
-                        <div class="item"><a href="200-hour-multistyle-ytt">200 Hours Multistyle YTT</a>
+
+                        <div class="item"><a href="teacher-training/200-hour-multistyle-ytt">200 Hours Multistyle
+                                YTT</a>
                         </div>
                     </div>
                 </div>
@@ -169,9 +171,9 @@
                     <div><a>About</a>
                     </div>
                     <div class="list">
-                        <div class="item"><a href="about">About Satvik Yogshala</a></div>
-                        <div class="item"><a href="yoga-gurus">Yoga Teachers</a></div>
-                        <div class="item"><a href="gallery">Gallery</a></div>
+                        <div class="item"><a href="about/about-us">About Satvik Yogshala</a></div>
+                        <div class="item"><a href="about/yoga-gurus">Yoga Teachers</a></div>
+                        <div class="item"><a href="about/gallery">Gallery</a></div>
 
                     </div>
                 </div>
