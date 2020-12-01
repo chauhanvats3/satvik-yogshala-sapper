@@ -37,7 +37,7 @@
 </svelte:head>
 <div class="index">
 	<div class="hero">
-		<img src="images/yoga2.jpg" alt="">
+		<img src="images/yoga2.jpg" alt="Someone doing yoga">
 	</div>
 	<Description />
 	<Programs />
