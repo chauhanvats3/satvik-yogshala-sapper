@@ -5,7 +5,7 @@
     import { cubicOut } from 'svelte/easing';
 
 
-    var imageDuration = 5000;
+    var imageDuration = 3000;
     var pBarDuration = imageDuration / 100;
     const pBarWidth = tweened(0, {
         duration: pBarDuration,
