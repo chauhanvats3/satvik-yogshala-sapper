@@ -2,13 +2,11 @@
     import { onMount } from 'svelte';
     export let segment;
 
-
 </script>
 
 
 <style>
     .header {
-        background-color: #333;
         position: fixed;
         top: 0;
         width: 100%;
@@ -16,7 +14,7 @@
     }
 
     .banner {
-        min-height: 45px;
+        height: 30px;
         flex-basis: 100%;
         justify-content: space-between;
         padding: 0 30px;
@@ -33,31 +31,45 @@
 
     }
 
-
+    .banner>div,
+    .banner>div>a {
+        height: 100%;
+    }
 
     p {
         margin: 5px;
     }
 
     .icon {
-        height: 18px;
-        width: 18px;
+        height: 16px;
+        width: 16px;
         margin: 3px;
+    }
+
+    .btn-wrapper {
+        align-items: stretch;
+        height: 100%;
+    }
+
+    .btn {
+        border: 2px solid black;
     }
 
     /* NAVBAR STYLES */
     .navbar {
         flex-basis: 100%;
         padding: 0 30px;
-        background-color: var(--color-5);
-        min-height: 70px;
+        min-height: 50px;
+        background: #3f4c6b8e;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #3f4c6b8e, #3f4c6b8e);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #3f4c6b8e, #3f4c6b8e);
 
     }
 
 
-    .selected {
-        border-bottom: 2px solid rgb(50, 51, 13);
-    }
+
 
     .logo {
         flex-basis: 30%;
@@ -79,17 +91,26 @@
     .dropdown {
         flex-flow: column;
         position: relative;
+        border-bottom: 2px solid transparent;
+    }
+
+    .selected {
+        border-bottom: 2px solid rgb(50, 51, 13);
     }
 
     .dropdown .list {
         flex-flow: column;
         position: absolute;
-        top: 100%;
+        top: 104%;
         width: max-content;
         visibility: hidden;
         opacity: 0;
         transition: visibility 0.1s, opacity 0.3s ease-out;
-        background-color: aliceblue;
+        background: #606c888e;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #3f4c6b8e, #606c888e);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #3f4c6b8e, #606c888e);
     }
 
     .dropdown:hover .list {
@@ -102,18 +123,16 @@
         justify-content: flex-start;
     }
 
-    .btn-wrapper {
-        align-items: stretch;
-    }
 
-    .item:hover {
+
+    .item:hover a {
         cursor: pointer;
-        text-decoration: underline;
     }
 
     .item a {
         width: 100%;
         justify-content: flex-start;
+        text-decoration: none;
     }
 </style>
 
@@ -147,8 +166,8 @@
         <div class="main_menu">
             <div class="list">
 
-                <div class="item dropdown" class:selected={segment==="200-hour-multistyle-ytt" ||
-                    segment==="200-hour-ytt" || segment==="100-hour-ytt" }>
+                <div class="item dropdown" class:selected={segment==="teacher-training" || segment==="teacher-training"
+                    || segment==="teacher-training" }>
                     <div><a>Teacher Training</a>
                     </div>
                     <div class="list">
@@ -166,9 +185,10 @@
                     <div> <a href="yoga-retreat"> Yoga Retreat</a></div>
                 </div>
 
-                <div class="item dropdown" class:selected={segment==="about" || segment==="yoga-gurus" ||
-                    segment==="gallery" }>
-                    <div><a>About</a>
+                <div class="item dropdown" class:selected={segment==="about" || segment==="about" || segment==="about"
+                    }>
+                    <div>
+                        <a>About</a>
                     </div>
                     <div class="list">
                         <div class="item"><a href="about/about-us">About Satvik Yogshala</a></div>
