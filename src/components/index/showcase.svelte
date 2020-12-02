@@ -1,15 +1,15 @@
 <script>
     import { onMount } from 'svelte';
-    import { fade } from 'svelte/transition';
+    import { fade, fly, slide } from 'svelte/transition';
+    import { quintInOut, cubicOut, quintOut, quintIn } from 'svelte/easing';
     import { tweened } from 'svelte/motion';
-    import { cubicOut } from 'svelte/easing';
 
 
-    var imageDuration = 3000;
+    var imageDuration = 4000;
     var pBarDuration = imageDuration / 100;
     const pBarWidth = tweened(0, {
         duration: pBarDuration,
-        easing: cubicOut
+        easing: quintInOut
     });
     /*     let pBarWidth = 0;
      */
@@ -17,14 +17,15 @@
 
     var images = [
         {
+            src: "images/yoga6.jpg"
+        },
+        {
             src: "images/flower.jpg"
         },
         {
             src: "images/food1.jpg"
         },
-        {
-            src: "images/team/pritam-singh-rawat.jpg"
-        },
+
         {
             src: "images/food2.jpg"
         }
@@ -89,7 +90,7 @@
         position: absolute;
         bottom: 0;
         left: 0;
-        background: rgb(31, 172, 182);
+        background: rgba(31, 172, 182, 0.671);
         z-index: 10;
         border-top: 1px solid black;
         border-right: 1px solid black;
@@ -109,7 +110,11 @@
         <div class="gallery">
             <div>
                 {#each [images[curIndex]] as photo (curIndex)}
-                         <a href="about/gallery"><img transition:fade|local src={photo.src} alt=""/></a>
+                         <a href="about/gallery">
+                            <img 
+                            transition:fade|local="{{ duration: 800,easing:quintInOut}}"
+                            src={photo.src} alt=""/>
+                        </a>
                     {/each}
                 </div>
                 <div class="progress_bar" style="--p-bar-width: {$pBarWidth}%"></div>

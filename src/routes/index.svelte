@@ -12,12 +12,6 @@
 		overflow: hidden;
 
 
-		background: #606c8896;
-		/* fallback for old browsers */
-		background: -webkit-linear-gradient(to bottom, #3f4c6b96, #606c8896);
-		/* Chrome 10-25, Safari 5.1-6 */
-		background: linear-gradient(to bottom, #3f4c6b96, #606c8896);
-
 
 	}
 
@@ -29,6 +23,7 @@
 	.hero>img {
 		z-index: -1;
 		min-width: 100%;
+		object-fit: cover;
 	}
 </style>
 
@@ -37,7 +32,7 @@
 </svelte:head>
 <div class="index">
 	<div class="hero">
-		<img src="images/yoga2.jpg" alt="Someone doing yoga">
+		<img src="images/yoga4.jpg" alt="Someone doing yoga">
 	</div>
 	<Description />
 	<Programs />

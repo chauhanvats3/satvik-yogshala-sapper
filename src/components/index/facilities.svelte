@@ -1,30 +1,40 @@
 <script>
-    const facilities = {
-        food: {
+    import { fade, fly, slide } from 'svelte/transition';
+    import { quintInOut } from 'svelte/easing';
+
+    const facilities = [
+        {
+            id: "food",
             image: "images/food2.jpg",
             desc: "Satvik Yogshala provides light and healthy vegetarian foods. Fresh & delicious quality food."
-        },
-        spa: {
+        }, {
+            id: "spa",
             image: "images/spa.jpg",
             desc: "Satvik Yogshala offers you the best Spa for Ayurvedic treatments and massages."
-        },
-        travel: {
+        }, {
+            id: "travel",
             image: "images/travel1.jpg",
             desc: "We organize an excursion for leisure, education, or physical purposes twice in a month."
-        },
-        accomodation: {
+        }, {
+            id: "accomodation",
             image: "images/travel2.jpg",
             desc: "Clean Accommodation at Peaceful Location, luxurious & comfortable rooms."
         }
-    }
+    ];
 
-    var curImage = facilities.food.image;
-    var curDesc = facilities.food.desc;
+    var curImage = facilities[0].image;
+    var curDesc = facilities[0].desc;
     var selected_option = 'food';
+    var selected_index = 0;
     const changeFacility = (changeTo) => {
-        curImage = facilities[changeTo].image;
-        curDesc = facilities[changeTo].desc;
-        selected_option = changeTo;
+        facilities.forEach((facility, index) => {
+            if (facility.id === changeTo) {
+                curImage = facilities[index].image;
+                curDesc = facilities[index].desc;
+                selected_option = changeTo;
+                selected_index = index;
+            }
+        });
     }
 </script>
 
@@ -82,6 +92,7 @@
 
     .selected_option {
         border-bottom: 2px solid rgb(223, 134, 134);
+
     }
 
 
@@ -99,10 +110,13 @@
         background: linear-gradient(to bottom, #3f4c6b91, #606c8891);
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         padding: 5px 10px;
+        position: relative;
+        height: 35px;
     }
 
     .description p {
         width: 100%;
+        position: absolute;
     }
 </style>
 
@@ -112,7 +126,10 @@
         <hr class="sexy_bottom_line" />
     </div>
     <div class="card_horizontal">
-        <img src={curImage} alt="">
+        {#each [facilities[selected_index]] as facility (selected_index)}
+
+            <img src={facility.image} alt="" transition:slide|local="{{duration: 1000, easing: quintInOut }}">
+        {/each}
         <div class="overlay">
             <div class="options">
                 <div on:click={()=>changeFacility("food")} class:selected_option={selected_option=='food'}>Food</div>
@@ -125,8 +142,16 @@
             </div>
             <div class="description">
                 <div class="para_overlay">
-                    <p>{curDesc}</p>
+
+                    {#each [facilities[selected_index]] as facility (selected_index)}
+                    <p 
+                    in:fly|local="{{delay: 250, x: -500, duration: 1000 }}" 
+                    out:fly|local="{{ x: 500, duration: 1000 }}"
+                    >{curDesc}</p>
+                    {/each}
                 </div>
+
+                
             </div>
 
         </div>
