@@ -73,7 +73,8 @@
 
         <div>Terms and Conditions</div>
         <div>Privacy Policy</div>
-        <div>Made with <ion-icon name="heart"></ion-icon> by <a class="link" href="https://github.com/chauhanvats3">
+        <div><a class="link" href="https://github.com/chauhanvats3" target="_blank">Made with <ion-icon name="heart">
+                </ion-icon> by
                 Vatsal</a></div>
     </div>
 </footer>

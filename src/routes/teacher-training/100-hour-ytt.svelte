@@ -32,28 +32,26 @@
         width: 100%;
     }
 
-    .hero>img {
-        z-index: -1;
+    .hero-wrapper {
+        height: 89vh;
         width: 100%;
-        height: 70vh;
+        position: relative;
+        overflow: hidden;
     }
 
     .hero {
-        width: 100% !important;
-        margin: 0 !important;
-
+        position: absolute;
+        top: -10;
+        overflow: hidden;
+        width: 100%;
     }
 
-    .ytt>div {
-        min-height: 50px;
-        width: 97vw;
-        margin: 10px 5px;
-    }
 
     .breadcrumb {
-        justify-content: flex-start;
+        justify-content: center;
         padding: 20px;
         font-size: 15px;
+        width: 100%;
     }
 
     .column_a {
@@ -136,8 +134,10 @@
     }
 </style>
 <div class="ytt">
-    <div class="hero">
-        <img src="images/pritam_namaskar.jpg" alt="">
+    <div class="hero-wrapper">
+        <div class="hero">
+            <img src="images/yoga11.jpg" alt="Someone doing yoga">
+        </div>
     </div>
     <div class="breadcrumb">Home > 100 Hour teacher Training</div>
     <div class="content">

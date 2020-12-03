@@ -3,7 +3,7 @@
 	import Programs from '../components/index/our_programs.svelte';
 	import Facilities from '../components/index/facilities.svelte';
 	import Showcase from '../components/index/showcase.svelte';
-	import Teachers from '../components/teachers.svelte';
+	import Teachers from '../components/index/teachers.svelte';
 </script>
 
 <style>

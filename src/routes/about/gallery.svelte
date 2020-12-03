@@ -1,6 +1,20 @@
 <script>
 
     var images = [
+        { src: "images/yoga8.jpg" },
+
+        { src: "images/yoga9.jpg" },
+        { src: "images/yoga10.jpg" },
+        { src: "images/yoga7.jpg" },
+
+        { src: "images/yoga11.jpg" },
+        { src: "images/yoga12.jpg" },
+        { src: "images/yoga13.jpg" },
+        { src: "images/yoga14.jpg" },
+        { src: "images/yoga15.jpg" },
+        { src: "images/yoga16.jpg" },
+        { src: "images/yoga17.jpg" },
+
         {
             src: "images/flower.jpg"
         },

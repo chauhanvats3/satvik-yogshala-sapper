@@ -33,22 +33,18 @@
         width: 100%;
     }
 
-    .hero>img {
-        z-index: -1;
+    .hero-wrapper {
+        height: 89vh;
         width: 100%;
-        height: 70vh;
+        position: relative;
+        overflow: hidden;
     }
 
     .hero {
-        width: 100% !important;
-        margin: 0 !important;
-
-    }
-
-    .ytt>div {
-        min-height: 50px;
-        width: 97vw;
-        margin: 10px 5px;
+        position: absolute;
+        top: -10;
+        overflow: hidden;
+        width: 100%;
     }
 
     .breadcrumb {
@@ -137,10 +133,12 @@
     }
 </style>
 <div class="ytt">
-    <div class="hero">
-        <img src="images_old/courses/200-hours-ytt.jpg" alt="">
+    <div class="hero-wrapper">
+        <div class="hero">
+            <img src="images/yoga14.jpg" alt="Someone doing yoga">
+        </div>
     </div>
-    <div class="breadcrumb">Home > 200 Hour teacher Training</div>
+    <div class="breadcrumb">Home > 200 Hour Teacher Training</div>
     <div class="content">
         <div class="group_1">
             <div class="column_a">

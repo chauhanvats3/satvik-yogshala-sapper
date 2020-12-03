@@ -1,7 +1,8 @@
 <script>
     export let image;
     export let desc;
-    export let title
+    export let title;
+    export let id;
 </script>
 
 <style>
@@ -27,7 +28,7 @@
     }
 </style>
 
-<div class="card_horizontal">
+<div class="card_horizontal" id={id}>
     <img src={image} alt="">
     <div class="content">
         <div class="heading">

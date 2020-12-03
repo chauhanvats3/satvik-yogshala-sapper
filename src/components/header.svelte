@@ -34,6 +34,7 @@
     .banner>div,
     .banner>div>a {
         height: 100%;
+        font-weight: 200;
     }
 
     p {
@@ -60,11 +61,11 @@
         flex-basis: 100%;
         padding: 0 30px;
         min-height: 50px;
-        background: #3f4c6b8e;
+        background: #3a797e8e;
         /* fallback for old browsers */
-        background: -webkit-linear-gradient(to bottom, #3f4c6b8e, #3f4c6b8e);
+        background: -webkit-linear-gradient(to bottom, #3a797e8e, #3a797e8e);
         /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to bottom, #3f4c6b8e, #3f4c6b8e);
+        background: linear-gradient(to bottom, #3a797e8e, #3a797e8e);
 
     }
 
@@ -84,7 +85,7 @@
     }
 
     .main_menu .item {
-        margin: 0px 5px;
+        padding: 0px 5px;
         align-self: stretch;
     }
 
@@ -94,11 +95,21 @@
         border-bottom: 2px solid transparent;
     }
 
+    .main_menu>.list>.item:hover {
+        background: #3a797e8e;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #3a797e8e, #3a797e8e);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #3a797e8e, #3a797e8e);
+
+    }
+
     .selected {
         border-bottom: 2px solid rgb(50, 51, 13);
     }
 
     .dropdown .list {
+
         flex-flow: column;
         position: absolute;
         top: 104%;
@@ -106,11 +117,13 @@
         visibility: hidden;
         opacity: 0;
         transition: visibility 0.1s, opacity 0.3s ease-out;
-        background: #606c888e;
+        background: #3a797e8e;
         /* fallback for old browsers */
-        background: -webkit-linear-gradient(to bottom, #3f4c6b8e, #606c888e);
+        background: -webkit-linear-gradient(to bottom, #3a797e8e, #3a797e8e);
         /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to bottom, #3f4c6b8e, #606c888e);
+        background: linear-gradient(to bottom, #3a797e8e, #3a797e8e);
+
+        padding: 10px;
     }
 
     .dropdown:hover .list {
@@ -121,18 +134,40 @@
     .dropdown .list .item {
         width: 100%;
         justify-content: flex-start;
+        margin: 2px;
     }
-
-
 
     .item:hover a {
         cursor: pointer;
+
     }
 
     .item a {
+        font-weight: 500;
         width: 100%;
         justify-content: flex-start;
         text-decoration: none;
+        transition: font-weight 0.1s;
+    }
+
+    .item>div>a:hover,
+    .item>a:hover {
+        background-size: 100% auto;
+        /* Fallback: Set a background color. */
+        background-color: rgb(255, 113, 113);
+
+        /* Create the gradient. */
+        background-image: linear-gradient(45deg, #f7ef5a, #f77ea2);
+
+        /* Set the background size and repeat properties. */
+        background-repeat: repeat;
+
+        /* Use the text as a mask for the background. */
+        /* This will show the gradient as a text color rather than element bg. */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
     }
 </style>
 
@@ -201,7 +236,7 @@
                     <div><a href="blog">Blog</a></div>
                 </div>
                 <div class="item" class:selected={segment==="contact" }>
-                    <a href="contact">Contact Us</a>
+                    <div><a href="contact">Contact Us</a></div>
                 </div>
             </div>
         </div>

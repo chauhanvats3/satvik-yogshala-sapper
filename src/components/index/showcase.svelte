@@ -1,15 +1,15 @@
 <script>
     import { onMount } from 'svelte';
     import { fade, fly, slide } from 'svelte/transition';
-    import { quintInOut, cubicOut, quintOut, quintIn } from 'svelte/easing';
+    import { quintInOut, quintOut, linear } from 'svelte/easing';
     import { tweened } from 'svelte/motion';
 
 
-    var imageDuration = 4000;
-    var pBarDuration = imageDuration / 100;
+    var imageDuration = 5000;
+    var pBarDuration = (imageDuration / 120) * 10;
     const pBarWidth = tweened(0, {
         duration: pBarDuration,
-        easing: quintInOut
+        easing: linear
     });
     /*     let pBarWidth = 0;
      */
@@ -38,12 +38,12 @@
 
             curIndex = curIndex + 1 < numImg ? curIndex + 1 : 0;
             curImg = images[curIndex];
-            pBarWidth.set(0);
+            pBarWidth.set(-10);
         }, imageDuration);
 
         const progressBar = setInterval(() => {
 
-            pBarWidth.update(n => n + 1);
+            pBarWidth.update(n => n + 10);
 
         }, pBarDuration);
 
@@ -86,15 +86,14 @@
 
     .progress_bar {
         width: var(--p-bar-width);
-        height: 5px;
+        max-width: 100%;
+        height: 4px;
         position: absolute;
         bottom: 0;
         left: 0;
         background: rgba(31, 172, 182, 0.671);
         z-index: 10;
         border-top: 1px solid black;
-        border-right: 1px solid black;
-        border-radius: 2px;
     }
 </style>
 

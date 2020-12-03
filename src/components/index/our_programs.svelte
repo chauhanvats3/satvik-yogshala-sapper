@@ -7,18 +7,18 @@
             image: "images/yoga1.jpg",
             title: "100 Hours YTT in Rishikesh",
             description: "The main purpose of 100-hour yoga teacher training is to create awareness about yoga and help you in finding your path in the right direction.",
-            link: "100-hour-ytt"
+            link: "teacher-training/100-hour-ytt"
         },
         {
             image: "images/yoga5.jpg",
             title: "200 Hours YTT in Rishikesh",
             description: "This comprehensive program will train you in almost every aspect of yoga and will prepare you to become an independent yoga teacher.",
-            link: "200-hour-ytt"
+            link: "teacher-training/200-hour-ytt"
         },
         {
             image: "images/yoga2.jpg",
             title: "Yoga Retreat in Rishikesh",
-            description: "Spend some quality time for self, from the daily busy and hectic schedule and relax, refresh and rejuvenate yourself with “Yoga Retreat”Spend some quality time for self, from the daily busy and hectic schedule and relax, refresh and rejuvenate yourself with “Yoga Retreat”",
+            description: "Spend some quality time for self, from the daily busy and hectic schedule and relax, refresh and rejuvenate yourself with “Yoga Retreat”",
             link: "yoga-retreat"
         }
     ];

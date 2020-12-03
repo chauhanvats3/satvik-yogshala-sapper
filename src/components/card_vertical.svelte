@@ -44,7 +44,6 @@
         color: #FFF;
         flex-flow: column wrap;
         justify-content: flex-end;
-        cursor: pointer;
 
         background: #606c8896;
         /* fallback for old browsers */
@@ -76,17 +75,70 @@
 
     p {
         margin: 10px;
+        font-weight: 200;
+    }
+
+    .non-btn {
+        height: 80%;
+    }
+
+    .btn {
+        position: absolute;
+        bottom: 0;
+        margin: 10px auto;
+        padding: 5px;
+        cursor: pointer;
+        border: none;
+        border-radius: 10px;
+    }
+
+    .btn:hover {}
+
+    .gradient-text {
+        font-weight: 900;
+        text-shadow: none;
+        transition: 0.5s;
+        background-size: 150% auto;
+        /* Fallback: Set a background color. */
+        background-color: red;
+
+        /* Create the gradient. */
+        background-image: linear-gradient(45deg, #f3ec78, #af4261);
+
+        /* Set the background size and repeat properties. */
+        background-repeat: repeat;
+
+        /* Use the text as a mask for the background. */
+        /* This will show the gradient as a text color rather than element bg. */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+    }
+
+    .gradient-text:hover {
+        background-position: right center;
+        /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+
     }
 </style>
 
-<div class="card" on:click={goToLink}>
+<div class="card">
     <img src={image} alt={title}>
 
     <div class="overlay">
         <div class="content">
             <h1>{title}</h1>
             <p>{description}</p>
+            <div class="btn">
+                <a href="{link}" class="gradient-text">
+                    Know More
+                </a>
+            </div>
         </div>
+
     </div>
 
 </div>
