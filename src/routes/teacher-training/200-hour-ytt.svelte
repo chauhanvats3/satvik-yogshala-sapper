@@ -1,5 +1,5 @@
 <script>
-    import Collapsible from '../../components/collapsible.svelte';
+    import CollapsibleGroup from '../../components/collapsibleGroup.svelte';
     import Table from '../../components/table.svelte';
     import Contact_Form from '../../components/contact_form.svelte';
 
@@ -253,34 +253,33 @@
                         <h1>Curriculum</h1>
                         <hr />
                     </div>
-                    {#each curriculum as single}
-                        <Collapsible heading={single.name} details={single.details} />
-                    {/each}
+                    <CollapsibleGroup dataSet={curriculum} />
+
                 </div>
             </div>
-            <div class="column_c">
+            <div class=" column_c">
                 <img src="images_old/pages/about-2.jpg" alt="">
             </div>
-       </div>
-       <div class="group_3">
-           <div class="time_table">
-               <div class="heading">
-                   <h1>Schedule</h1>
-                   <hr/>
-               </div>
-               
-                   <Table headers={time_table_headers} data_set = {time_table_data_set}/>
-              
-           </div>
-       </div>
-       <div class="group_1">
-        <div class="column_e">
-            <div class="heading">
-                <h1>Included</h1>
-                <hr/>
+        </div>
+        <div class="group_3">
+            <div class="time_table">
+                <div class="heading">
+                    <h1>Schedule</h1>
+                    <hr />
+                </div>
+
+                <Table headers={time_table_headers} data_set={time_table_data_set} />
+
             </div>
-            <div class="included">
-                {#each included as incl}
+        </div>
+        <div class="group_1">
+            <div class="column_e">
+                <div class="heading">
+                    <h1>Included</h1>
+                    <hr />
+                </div>
+                <div class="included">
+                    {#each included as incl}
                     <p>{incl}</p>
                 {/each}          
             </div>

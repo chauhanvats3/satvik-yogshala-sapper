@@ -1,5 +1,5 @@
 <script>
-    import Collapsible from '../../components/collapsible.svelte';
+    import CollapsibleGroup from '../../components/collapsibleGroup.svelte';
     import Table from '../../components/table.svelte';
     import Contact_Form from '../../components/contact_form.svelte';
     let curriculum = [
@@ -241,50 +241,67 @@
                         <h1>Curriculum</h1>
                         <hr />
                     </div>
-                    {#each curriculum as single}
-                        <Collapsible heading={single.name} details={single.details} />
-                    {/each}
+                    <CollapsibleGroup dataSet={curriculum} />
+
                 </div>
             </div>
             <div class="column_c">
                 <img src="images_old/pages/about-2.jpg" alt="">
             </div>
-       </div>
-       <div class="group_3">
-        <div class="highlights">
-            <div class="heading">
-                <h1>HIGHLIGHTS OF 200 HOURS YOGA TEACHER TRAINING COURSE</h1>
-                <hr/>
-            </div>
-            <div class="highlights_content">
-                <p><ion-icon name="radio-button-on" class="dots"></ion-icon>Learning & Understanding the basics of Yoga Asana</p>
-                <p><ion-icon name="radio-button-on" class="dots"></ion-icon>Studying Yoga Anatomy and Physiology for better alignment of Yogic postures</p>
-                <p><ion-icon name="radio-button-on" class="dots"></ion-icon>Enhancing class conducting techniques and confidence</p>
-                <p><ion-icon name="radio-button-on" class="dots"></ion-icon>Strengthening the path of becoming true Yogi</p>
-                <p><ion-icon name="radio-button-on" class="dots"></ion-icon>Knowledge of Yoga Anatomy and Physiology</p>
-                <p><ion-icon name="radio-button-on" class="dots"></ion-icon>Performing Meditation, Mantras, and Pranayama in the lap of nature</p>
-            </div>           
         </div>
-    </div>
-       <div class="group_3">
-           <div class="time_table">
-               <div class="heading">
-                   <h1>Schedule</h1>
-                   <hr/>
-               </div>
-               
-                   <Table headers={time_table_headers} data_set = {time_table_data_set}/>
-              
-           </div>
-       </div>
-       <div class="group_1">
-        <div class="column_e">
-            <div class="heading">
-                <h1>Included</h1>
-                <hr/>
+        <div class="group_3">
+            <div class="highlights">
+                <div class="heading">
+                    <h1>HIGHLIGHTS OF 200 HOURS YOGA TEACHER TRAINING COURSE</h1>
+                    <hr />
+                </div>
+                <div class="highlights_content">
+                    <p>
+                        <ion-icon name="radio-button-on" class="dots"></ion-icon>Learning & Understanding the basics of
+                        Yoga Asana
+                    </p>
+                    <p>
+                        <ion-icon name="radio-button-on" class="dots"></ion-icon>Studying Yoga Anatomy and Physiology
+                        for better alignment of Yogic postures
+                    </p>
+                    <p>
+                        <ion-icon name="radio-button-on" class="dots"></ion-icon>Enhancing class conducting techniques
+                        and confidence
+                    </p>
+                    <p>
+                        <ion-icon name="radio-button-on" class="dots"></ion-icon>Strengthening the path of becoming true
+                        Yogi
+                    </p>
+                    <p>
+                        <ion-icon name="radio-button-on" class="dots"></ion-icon>Knowledge of Yoga Anatomy and
+                        Physiology
+                    </p>
+                    <p>
+                        <ion-icon name="radio-button-on" class="dots"></ion-icon>Performing Meditation, Mantras, and
+                        Pranayama in the lap of nature
+                    </p>
+                </div>
             </div>
-            <div class="included">
-                {#each included as incl}
+        </div>
+        <div class="group_3">
+            <div class="time_table">
+                <div class="heading">
+                    <h1>Schedule</h1>
+                    <hr />
+                </div>
+
+                <Table headers={time_table_headers} data_set={time_table_data_set} />
+
+            </div>
+        </div>
+        <div class="group_1">
+            <div class="column_e">
+                <div class="heading">
+                    <h1>Included</h1>
+                    <hr />
+                </div>
+                <div class="included">
+                    {#each included as incl}
                     <p>{incl}</p>
                 {/each}          
             </div>

@@ -1,16 +1,16 @@
 <script>
-    import Collapsible from '../../components/collapsible.svelte';
     import Table from '../../components/table.svelte';
     import Contact_Form from '../../components/contact_form.svelte';
+    import CollapsibleGroup from '../../components/collapsibleGroup.svelte';
     let curriculum = [
-        { name: "Asana", details: ["line 1 ", "line 2", "3rd line"] },
-        { name: "Pranayama (Science of Breath)", details: ["1", "2"] },
-        { name: "Mudras and Bandhas", details: ["3", "4"] },
-        { name: "Yoga Philosophy", details: ["5", "6"] },
-        { name: "Alignment and Adjustment", details: ["7", "8"] },
-        { name: "Yoga Anatomy", details: ["9", "0"] },
-        { name: "Mantra Chanting", details: ["11", "22"] },
-        { name: "Meditation", details: ["33", "44"] },
+        { name: "Asana", details: ["line 1 ", "line 2", "3rd line"], show: false },
+        { name: "Pranayama (Science of Breath)", details: ["1", "2"], show: false },
+        { name: "Mudras and Bandhas", details: ["3", "4"], show: false },
+        { name: "Yoga Philosophy", details: ["5", "6"], show: false },
+        { name: "Alignment and Adjustment", details: ["7", "8"], show: false },
+        { name: "Yoga Anatomy", details: ["9", "0"], show: false },
+        { name: "Mantra Chanting", details: ["11", "22"], show: false },
+        { name: "Meditation", details: ["33", "44"], show: false },
     ];
 
     let time_table_headers = ["Time", "Week 1", "Week 2", "Week 3"];
@@ -23,6 +23,8 @@
 
     let included = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
     let excluded = ["11", "22", "33", "44"];
+
+
 </script>
 
 <style>
@@ -71,6 +73,7 @@
     .block {
         margin: 20px auto;
         width: 100%;
+        display: block;
     }
 
     p {
@@ -83,6 +86,7 @@
 
     .group_2 {
         align-items: stretch;
+        width: 100%;
     }
 
     .column_c {
@@ -95,6 +99,8 @@
         flex-basis: 40%;
         align-items: flex-start;
     }
+
+
 
     .group_3,
     .group_3>* {
@@ -216,34 +222,32 @@
                         <h1>Curriculum</h1>
                         <hr />
                     </div>
-                    {#each curriculum as single}
-                        <Collapsible heading={single.name} details={single.details} />
-                    {/each}
+                    <CollapsibleGroup dataSet={curriculum} />
                 </div>
             </div>
             <div class="column_c">
                 <img src="images/yoga4.jpg" alt="">
             </div>
-       </div>
-       <div class="group_3">
-           <div class="time_table">
-               <div class="heading">
-                   <h1>Schedule</h1>
-                   <hr/>
-               </div>
-               
-                   <Table headers={time_table_headers} data_set = {time_table_data_set}/>
-              
-           </div>
-       </div>
-       <div class="group_1">
-        <div class="column_e">
-            <div class="heading">
-                <h1>Included</h1>
-                <hr/>
+        </div>
+        <div class="group_3">
+            <div class="time_table">
+                <div class="heading">
+                    <h1>Schedule</h1>
+                    <hr />
+                </div>
+
+                <Table headers={time_table_headers} data_set={time_table_data_set} />
+
             </div>
-            <div class="included">
-                {#each included as incl}
+        </div>
+        <div class="group_1">
+            <div class="column_e">
+                <div class="heading">
+                    <h1>Included</h1>
+                    <hr />
+                </div>
+                <div class="included">
+                    {#each included as incl}
                     <p>{incl}</p>
                 {/each}          
             </div>

@@ -1,11 +1,11 @@
 <script>
     export let heading;
     export let details;
-    let isHeadingOpened = false;
+    export let show = false;
 
 
     function toggleHeading() {
-        isHeadingOpened = !isHeadingOpened;
+        show = !show;
     }
 
 </script>
@@ -45,11 +45,11 @@
     <div class="topic" on:click={toggleHeading}>
         <p>{heading}</p>
         <p>
-            {#if isHeadingOpened} <ion-icon name="add-sharp"></ion-icon>
+            {#if show} <ion-icon name="add-sharp"></ion-icon>
             {:else}<ion-icon name="remove-sharp"></ion-icon>{/if}
         </p>
     </div>
-    {#if isHeadingOpened}
+    {#if show}
     <div class="details" >
         {#each details as detail}
         <div class="each_detail">
@@ -58,7 +58,7 @@
                 <ion-icon name="radio-button-on" class="dots"></ion-icon>
             </div>
             <div>
-                {detail}
+                {detail} 
             </div>
          
         </div>

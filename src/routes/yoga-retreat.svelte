@@ -1,5 +1,5 @@
 <script>
-    import Collapsible from '../components/collapsible.svelte';
+    import CollapsibleGroup from '../components/collapsibleGroup.svelte';
     import Table from '../components/table.svelte';
     import Contact_Form from '../components/contact_form.svelte';
 
@@ -33,22 +33,19 @@
         width: 100%;
     }
 
-    .hero>img {
-        z-index: -1;
+
+    .hero-wrapper {
+        height: 89vh;
         width: 100%;
-        height: 70vh;
+        position: relative;
+        overflow: hidden;
     }
 
     .hero {
-        width: 100% !important;
-        margin: 0 !important;
-
-    }
-
-    .ytt>div {
-        min-height: 50px;
-        width: 97vw;
-        margin: 10px 5px;
+        position: absolute;
+        top: -10;
+        overflow: hidden;
+        width: 100%;
     }
 
     .breadcrumb {
@@ -74,6 +71,7 @@
     .block {
         margin: 20px auto;
         width: 100%;
+        flex-flow: column wrap;
     }
 
     p {
@@ -86,6 +84,7 @@
 
     .group_2 {
         align-items: stretch;
+        width: 100%;
     }
 
     .column_c {
@@ -138,8 +137,10 @@
     }
 </style>
 <div class="ytt">
-    <div class="hero">
-        <img src="images_old/courses/200-hours-ytt.jpg" alt="">
+    <div class="hero-wrapper">
+        <div class="hero">
+            <img src="images/yoga17.jpg" alt="Someone doing yoga">
+        </div>
     </div>
     <div class="breadcrumb">Home > 100 Hour teacher Training</div>
     <div class="content">
@@ -227,35 +228,33 @@
                         <h1>Curriculum</h1>
                         <hr />
                     </div>
-                    {#each curriculum as single}
-                        <Collapsible heading={single.name} details={single.details} />
-                    {/each}
+                    <CollapsibleGroup dataSet={curriculum} />
                 </div>
             </div>
             <div class="column_c">
                 <img src="images_old/pages/about-2.jpg" alt="">
             </div>
-       </div>
-   
-       <div class="group_3">
-           <div class="time_table">
-               <div class="heading">
-                   <h1>Schedule</h1>
-                   <hr/>
-               </div>
-               
-                   <Table headers={time_table_headers} data_set = {time_table_data_set}/>
-              
-           </div>
-       </div>
-       <div class="group_1">
-        <div class="column_e">
-            <div class="heading">
-                <h1>Included</h1>
-                <hr/>
+        </div>
+
+        <div class="group_3">
+            <div class="time_table">
+                <div class="heading">
+                    <h1>Schedule</h1>
+                    <hr />
+                </div>
+
+                <Table headers={time_table_headers} data_set={time_table_data_set} />
+
             </div>
-            <div class="included">
-                {#each included as incl}
+        </div>
+        <div class="group_1">
+            <div class="column_e">
+                <div class="heading">
+                    <h1>Included</h1>
+                    <hr />
+                </div>
+                <div class="included">
+                    {#each included as incl}
                     <p>{incl}</p>
                 {/each}          
             </div>
