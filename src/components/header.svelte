@@ -95,7 +95,9 @@
         border-bottom: 2px solid transparent;
     }
 
-    .main_menu>.list>.item:hover {
+    .main_menu>.list>.item:hover,
+    .main_menu>.list>.item:focus,
+    .main_menu>.list>.item:active {
         background: #3a797e8e;
         /* fallback for old browsers */
         background: -webkit-linear-gradient(to bottom, #3a797e8e, #3a797e8e);
@@ -126,7 +128,9 @@
         padding: 10px;
     }
 
-    .dropdown:hover .list {
+    .dropdown:hover .list,
+    .dropdown:active .list,
+    .dropdown:focus .list {
         visibility: visible;
         opacity: 1;
     }
@@ -137,7 +141,9 @@
         margin: 2px;
     }
 
-    .item:hover a {
+    .item:hover a,
+    .item:focus a,
+    .item:active a {
         cursor: pointer;
 
     }
@@ -151,7 +157,11 @@
     }
 
     .item>div>a:hover,
-    .item>a:hover {
+    .item>a:hover,
+    .item>div>a:focus,
+    .item>a:focus,
+    .item>div>a:active,
+    .item>a:active {
         background-size: 100% auto;
         /* Fallback: Set a background color. */
         background-color: rgb(255, 113, 113);

@@ -2,6 +2,12 @@
     import CollapsibleGroup from '../../components/collapsibleGroup.svelte';
     import Table from '../../components/table.svelte';
     import Contact_Form from '../../components/contact_form.svelte';
+    import Breadcrumb from '../../components/breadcrumb.svelte';
+
+    const breadcrumbPath = [
+        { name: 'Teacher Training', href: '.' },
+        { name: '200 Hours YTT', href: 'teacher-training/200-hour-ytt' }
+    ];
 
     let curriculum = [
         { name: "Asana", details: ["line 1 ", "line 2", "3rd line"] },
@@ -138,7 +144,7 @@
             <img src="images/yoga14.jpg" alt="Someone doing yoga">
         </div>
     </div>
-    <div class="breadcrumb">Home > 200 Hour Teacher Training</div>
+    <Breadcrumb path={breadcrumbPath} />
     <div class="content">
         <div class="group_1">
             <div class="column_a">

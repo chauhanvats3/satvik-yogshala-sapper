@@ -16,11 +16,15 @@
         display: block;
         width: 100%;
     }
+
+    .each-curriculum {
+        margin: 5px 0;
+    }
 </style>
 
 <div class="collapsible-group">
     {#each dataSet as single}
-           <div class="eachCurriculum" on:click={() => {closeOthers(`${single.name}`);}}>
+           <div class="each-curriculum" on:click={() => {closeOthers(`${single.name}`);}}>
                 <Collapsible heading={single.name} details={single.details} bind:show={single.show}/>
             </div>
         {/each}

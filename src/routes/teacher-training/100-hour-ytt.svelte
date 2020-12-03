@@ -2,6 +2,13 @@
     import Table from '../../components/table.svelte';
     import Contact_Form from '../../components/contact_form.svelte';
     import CollapsibleGroup from '../../components/collapsibleGroup.svelte';
+    import Breadcrumb from '../../components/breadcrumb.svelte';
+
+    let breadcrumbPath = [
+        { name: 'Teacher Training', href: '.' },
+        { name: '100 Hours YTT', href: 'teacher-training/100-hour-ytt' }
+    ];
+
     let curriculum = [
         { name: "Asana", details: ["line 1 ", "line 2", "3rd line"], show: false },
         { name: "Pranayama (Science of Breath)", details: ["1", "2"], show: false },
@@ -145,7 +152,7 @@
             <img src="images/yoga11.jpg" alt="Someone doing yoga">
         </div>
     </div>
-    <div class="breadcrumb">Home > 100 Hour teacher Training</div>
+    <Breadcrumb path={breadcrumbPath} />
     <div class="content">
         <div class="group_1">
             <div class="column_a">
@@ -155,15 +162,22 @@
                         <hr />
                     </div>
                     <div class="detail">
-                        <p>Yoga Teacher Training Course In Rishikesh, India. Satvik Yogshala is a Registered Yoga School
+                        <p>Yoga Teacher Training Course In Rishikesh, India. Satvik Yogshala is a Registered Yoga
+                            School
                             with Yoga Alliance USA offers 100 Hours Traditional Hatha, Ashtanga Yoga. This course is
-                            convenient for students who have the intention of gaining the knowledge of yoga but don’t
-                            have much time to do so. The primary purpose of 100-hour yoga teacher training is to create
-                            awareness about yoga and help you in finding your path in the right direction.This 100-hour
-                            Yoga program is structured for those looking for short-term courses as the course is of just
+                            convenient for students who have the intention of gaining the knowledge of yoga but
+                            don’t
+                            have much time to do so. The primary purpose of 100-hour yoga teacher training is to
+                            create
+                            awareness about yoga and help you in finding your path in the right direction.This
+                            100-hour
+                            Yoga program is structured for those looking for short-term courses as the course is of
+                            just
                             14 days. After completing 100 Hours Yoga TTC, students can enroll in a 200 Hours Yoga
-                            Teacher Training Course. This course is exemplary for people having limited time and mainly
-                            focused on deepening your knowledge in yoga philosophy and practice of asana, which includes
+                            Teacher Training Course. This course is exemplary for people having limited time and
+                            mainly
+                            focused on deepening your knowledge in yoga philosophy and practice of asana, which
+                            includes
                             the study and practice of Asanas, Hatha Yoga, Kriyas, Pranayama, Meditation, Mudras &
                             Bandhas, Yoga Anatomy & Philosophy, and Alignment and Adjustment Workshop.</p>
                     </div>
@@ -174,21 +188,28 @@
                         <hr />
                     </div>
                     <div class="detail">
-                        <p>100 Hour Yoga Teacher Training courses are open for all levels of people, including beginner
+                        <p>100 Hour Yoga Teacher Training courses are open for all levels of people, including
+                            beginner
                             to people having the necessary knowledge. Regardless of your level of practice, the
                             curriculum will teach you the fundamental principles of yoga and will help you develop a
                             strong foundation upon which your learning and practice depend.
                             After completing 100 Hours Yoga TTC, you will be certified with a certificate which will
-                            prove about your successful yogic journey of 100 hour yoga TTC but after the completion of
+                            prove about your successful yogic journey of 100 hour yoga TTC but after the completion
+                            of
                             this 100 Hour Yoga TTC course, you are not eligible to teach yoga, but if you already
-                            decided to become a great Yoga teacher to train worldwide then, certainly you have to enroll
+                            decided to become a great Yoga teacher to train worldwide then, certainly you have to
+                            enroll
                             in our 200 Hour Yoga Teacher Training Course that would be a second staging post towards
-                            your Yoga journey.100 Hour Yoga Teacher Training Course generally runs throughout the year.
-                            Most importantly, the applicant comes with an open mind and eagerness to learn and should
+                            your Yoga journey.100 Hour Yoga Teacher Training Course generally runs throughout the
+                            year.
+                            Most importantly, the applicant comes with an open mind and eagerness to learn and
+                            should
                             completely able to devote themselves to the course of at least 8 hours daily in which
                             attendance of 100 % is mandatory.
-                            During the course, all the accommodation is provided by the Satvik Yogshala and is included
-                            in your course fee. Keep in mind, Non- Vegetarian food and Alcohol are not allowed in Satvik
+                            During the course, all the accommodation is provided by the Satvik Yogshala and is
+                            included
+                            in your course fee. Keep in mind, Non- Vegetarian food and Alcohol are not allowed in
+                            Satvik
                             Yogshala, and we only provide pure Vegetarian food and also not allow anyone to bring
                             (non-vegetarian food) from outside.
                         </p>
@@ -200,8 +221,10 @@
                         <hr />
                     </div>
                     <div class="detail">
-                        <p>"Whether it’s a sweaty hot yoga session or a relaxing, restorative class, everyday people are
-                            donning their Lululemon and dropping in to see what all the fuss is about. So maybe yoga has
+                        <p>"Whether it’s a sweaty hot yoga session or a relaxing, restorative class, everyday people
+                            are
+                            donning their Lululemon and dropping in to see what all the fuss is about. So maybe yoga
+                            has
                             become a bit of a craze, but the ancient tradition of yoga is more than a fitness trend
                             alone."</p>
                     </div>

@@ -22,7 +22,7 @@
     }
 
     .details {
-        width: 100%;
+        width: 90%;
         flex-flow: column wrap;
     }
 
@@ -38,6 +38,7 @@
 
     ion-icon {
         z-index: -100;
+        margin: 0 5px;
     }
 </style>
 
@@ -54,9 +55,9 @@
         {#each details as detail}
         <div class="each_detail">
           
-            <div>
+           
                 <ion-icon name="radio-button-on" class="dots"></ion-icon>
-            </div>
+            
             <div>
                 {detail} 
             </div>

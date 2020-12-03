@@ -2,7 +2,12 @@
     import CollapsibleGroup from '../components/collapsibleGroup.svelte';
     import Table from '../components/table.svelte';
     import Contact_Form from '../components/contact_form.svelte';
+    import Breadcrumb from '../components/breadcrumb.svelte';
 
+    const breadcrumbPath = [
+        { name: 'Teacher Training', href: '.' },
+        { name: '200 Hours Multistyle YTT', href: 'teacher-training/200-hour-multistyle-ytt' }
+    ];
     let curriculum = [
         { name: "Asana", details: ["line 1 ", "line 2", "3rd line"] },
         { name: "Pranayama (Science of Breath)", details: ["1", "2"] },
@@ -48,11 +53,6 @@
         width: 100%;
     }
 
-    .breadcrumb {
-        justify-content: flex-start;
-        padding: 20px;
-        font-size: 15px;
-    }
 
     .column_a {
         margin: 10px;
@@ -142,7 +142,7 @@
             <img src="images/yoga17.jpg" alt="Someone doing yoga">
         </div>
     </div>
-    <div class="breadcrumb">Home > 100 Hour teacher Training</div>
+    <Breadcrumb path={breadcrumbPath} />
     <div class="content">
         <div class="group_1">
             <div class="column_a">
