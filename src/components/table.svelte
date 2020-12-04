@@ -12,10 +12,11 @@
     }
 
     .table {
+        width: 100%;
         flex-flow: column wrap;
         position: absolute;
         top: 0;
-        width: fit-content;
+        left: 0;
     }
 
     .table>div {
@@ -32,7 +33,6 @@
     .header {
         background-color: rgba(71, 68, 68, 0.747);
         padding: 5px;
-        border-radius: 5px;
         color: white;
         font-weight: bold;
     }

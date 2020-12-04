@@ -40,9 +40,9 @@
         cursor: pointer;
         border-radius: 20px;
         cursor: pointer;
-        border: 1px solid rgba(212, 166, 255, 0.918);
+        border: 1px solid rgba(154, 47, 255, 0.918);
         padding: 5px;
-        background-color: rgba(212, 166, 255, 0.568);
+        background-color: rgba(212, 166, 255, 0.411);
     }
 
     img {

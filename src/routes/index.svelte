@@ -7,23 +7,22 @@
 </script>
 
 <style>
-	.hero {
-		max-height: 84.3vh;
-		overflow: hidden;
-
-
-
-	}
-
-	.index,
-	.hero {
+	.index {
 		width: 100%;
 	}
 
-	.hero>img {
-		z-index: -1;
-		min-width: 100%;
-		object-fit: cover;
+	.hero-wrapper {
+		height: 89vh;
+		width: 100%;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.hero {
+		position: absolute;
+		top: -10;
+		overflow: hidden;
+		width: 100%;
 	}
 </style>
 
@@ -31,8 +30,10 @@
 	<title>Satvik Yogshala - Home</title>
 </svelte:head>
 <div class="index">
-	<div class="hero">
-		<img src="images/yoga4.jpg" alt="Someone doing yoga">
+	<div class="hero-wrapper">
+		<div class="hero">
+			<img src="images/yoga11.jpg" alt="Someone doing yoga">
+		</div>
 	</div>
 	<Description />
 	<Programs />

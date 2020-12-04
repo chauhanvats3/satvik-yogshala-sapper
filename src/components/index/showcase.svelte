@@ -87,13 +87,13 @@
     .progress_bar {
         width: var(--p-bar-width);
         max-width: 100%;
-        height: 4px;
+        height: 2px;
         position: absolute;
         bottom: 0;
         left: 0;
-        background: rgba(31, 172, 182, 0.671);
+        background: rgb(106, 209, 216);
         z-index: 10;
-        border-top: 1px solid black;
+        border-right: 3px solid black;
     }
 </style>
 

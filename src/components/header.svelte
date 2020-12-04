@@ -213,7 +213,7 @@
 
                 <div class="item dropdown" class:selected={segment==="teacher-training" || segment==="teacher-training"
                     || segment==="teacher-training" }>
-                    <div><a>Teacher Training</a>
+                    <div><a href=".">Teacher Training</a>
                     </div>
                     <div class="list">
                         <div class="item"><a href="teacher-training/100-hour-ytt">100 Hours
@@ -233,12 +233,13 @@
                 <div class="item dropdown" class:selected={segment==="about" || segment==="about" || segment==="about"
                     }>
                     <div>
-                        <a>About</a>
+                        <a href=".">About</a>
                     </div>
                     <div class="list">
                         <div class="item"><a href="about/about-us">About Satvik Yogshala</a></div>
                         <div class="item"><a href="about/yoga-gurus">Yoga Teachers</a></div>
                         <div class="item"><a href="about/gallery">Gallery</a></div>
+                        <div class="item"><a href="about/faq">FAQ</a></div>
 
                     </div>
                 </div>

@@ -3,6 +3,8 @@
     import Table from '../../components/table.svelte';
     import Contact_Form from '../../components/contact_form.svelte';
     import Breadcrumb from '../../components/breadcrumb.svelte';
+    import Included from '../../components/included.svelte';
+    import Excluded from '../../components/excluded.svelte';
 
     const breadcrumbPath = [
         { name: 'Teacher Training', href: '.' },
@@ -22,14 +24,16 @@
 
     let time_table_headers = ["Time", "Week 1", "Week 2", "Week 3"];
     let time_table_data_set = [
-        ["11", "12", "13", "14"],
-        ["21", "22", "23", "24"],
-        ["31", "32", "33", "34"],
-        ["41", "42", "43", "44"]
+        ["05:45 AM - 06:00 AM", "Detox Tea", "Detox Tea", "Detox Tea"],
+        ["06:00 AM - 07:30 AM", "Hatha Yoga", "Hatha Yoga", "Hatha Yoga"],
+        ["07:45 AM - 09:00 AM", "Pranayama", "Pranayama", "Pranayama"],
+        ["09:00 AM - 10:00 AM", "Breakfast", "Breakfast", "Breakfast"],
+        ["10:15 AM - 11:00 AM", "Mantra / Alignment & Adjustment", "Mantra / Alignment & Adjustment", "Mantra / Alignment & Adjustment"],
+        ["11:15 AM - 12:45 PM", "Ayurveda Cooking / Anatomy", "Ayurveda Cooking / Anatomy", "Ayurveda Cooking / Anatomy"]
     ];
 
-    let included = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
-    let excluded = ["11", "22", "33", "44"];
+    let included = ["Accommodation", "Trainer support", "Excursions ( Ganga Aarti, Temple/ Cave visit )", "Yoga material ( Yoga Mat, Notebook, pen, Neti pot)", "Satvik Food Facilities", "Wi-Fi Facilities", "Laundry Service", "Books Material ( Only for Reading )"];
+    let excluded = ["Life insurance", "Doctor Consultation", "Airport Pickup & Drop", "Personal Expenses"];
 </script>
 
 <style>
@@ -87,6 +91,7 @@
     .column_c {
         margin: 10px;
         flex-basis: 50%;
+        overflow: hidden;
     }
 
     .column_d {
@@ -111,25 +116,10 @@
     }
 
     .column_f {
-        border: 1px solid black;
         margin: 10px;
         flex-basis: 35%;
         flex-flow: column wrap;
 
-    }
-
-    .included,
-    .excluded {
-        width: 100%;
-
-    }
-
-    .included>p {
-        width: 40%;
-    }
-
-    .excluded>p {
-        width: 100%;
     }
 </style>
 <div class="ytt">
@@ -258,7 +248,7 @@
                 </div>
             </div>
             <div class=" column_c">
-                <img src="images_old/pages/about-2.jpg" alt="">
+                <img src="images/yoga16.jpg" alt="">
             </div>
         </div>
         <div class="group_3">
@@ -274,27 +264,11 @@
         </div>
         <div class="group_1">
             <div class="column_e">
-                <div class="heading">
-                    <h1>Included</h1>
-                    <hr />
-                </div>
-                <div class="included">
-                    {#each included as incl}
-                    <p>{incl}</p>
-                {/each}          
+                <Included dataSet={included} />
+            </div>
+            <div class="column_f">
+                <Excluded dataSet={excluded} />
             </div>
         </div>
-        <div class="column_f">
-            <div class="heading">
-                <h1>Excluded</h1>
-                <hr/>
-            </div>
-            <div class="excluded">
-                {#each excluded as excl}
-                <p>{excl}</p>
-            {/each}  
-            </div>
-        </div>
-    </div>
     </div>
 </div>

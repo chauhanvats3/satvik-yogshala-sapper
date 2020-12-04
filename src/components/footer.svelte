@@ -4,85 +4,13 @@
 
 </script>
 
-<footer>
-    <div class="categories">
-        <div class="category">
-            <div>About Satvik Yogshala</div>
-            <div class="content">
-                <p>1</p>
-                <p>2</p>
-                <p>3</p>
-                <p>4</p>
-                <p>5</p>
-                <p>6</p>
-            </div>
-        </div>
-        <div class="category">
-            <div>Yoga Teachers Training</div>
-            <div class="content">
-                <p>1</p>
-                <p>2</p>
-                <p>3</p>
-                <p>4</p>
-                <p>5</p>
-                <p>6</p>
-            </div>
-        </div>
-        <div class="category">
-            <div>Course & Activities</div>
-            <div class="content">
-                <p>1</p>
-                <p>2</p>
-                <p>3</p>
-                <p>4</p>
-                <p>5</p>
-                <p>6</p>
-            </div>
-        </div>
-        <div class="category faq">
-            <div>FAQ</div>
-            <div>GALLERY</div>
-            <div>BLOG</div>
-        </div>
-        <div class="category">
-            <div>Contact Us</div>
-            <div class="content">
-                <p>Phone Number</p>
-                <p>Email</p>
-                <p>Address</p>
-                <p>Add1</p>
-                <p>Add2</p>
-                <p>Add3</p>
-                <p>Add 4</p>
-                <p>Add 5</p>
-            </div>
-        </div>
-    </div>
-    <div class="social">
-
-        <ion-icon name="logo-twitter">Twitter Profile</ion-icon>
-        <ion-icon name="logo-facebook">Facebook Page</ion-icon>
-        <ion-icon name="logo-instagram">Instagram Account</ion-icon>
-        <ion-icon name="logo-youtube">Youtube Channel</ion-icon>
-        <ion-icon name="logo-linkedin">Linkedin Profile</ion-icon>
-    </div>
-    <div class="banner">
-        <div>Copyright © {year} <a href="." target="_blank" class="link"> Satvik Yogshala. </a>
-            All Rights
-            Reserved</div>
-
-        <div>Terms and Conditions</div>
-        <div>Privacy Policy</div>
-        <div><a class="link" href="https://github.com/chauhanvats3" target="_blank">Made with <ion-icon name="heart">
-                </ion-icon> by
-                Vatsal</a></div>
-    </div>
-</footer>
-
 <style>
     footer {
         flex-flow: column wrap;
         width: 100%;
+        background-color: #849fdb5b;
+        padding-top: 10vh;
+        clip-path: polygon(0 10vh, 100% 0%, 100% 100%, 0 100%);
     }
 
     footer>div {
@@ -94,6 +22,10 @@
         flex-flow: column wrap;
         flex: 1 1 auto;
         justify-content: flex-start;
+    }
+
+    .heading {
+        font-weight: bold;
     }
 
     .content {
@@ -160,3 +92,62 @@
 
     }
 </style>
+<footer>
+    <div class="categories">
+        <div class="category">
+            <div class="heading">Yoga Teachers Training</div>
+            <div class="content">
+                <p><a href="teacher-training/100-hour-ytt">100 Hours YTT</a></p>
+                <p><a href="teacher-training/200-hour-ytt">200 Hours YTT</a></p>
+                <p><a href="teacher-training/200-hour-multistyle-ytt">200 Hours Multistyle YTT</a></p>
+            </div>
+        </div>
+        <div class="category">
+            <div class="heading">Activities</div>
+            <div class="content">
+                <p><a href="yoga-retreat">Yoga Retreat</a></p>
+
+            </div>
+        </div>
+        <div class="category faq">
+            <div class="heading"><a href="about/faq">FAQ</a></div>
+            <div class="heading"><a href="about/gallery">GALLERY</a></div>
+            <div class="heading"><a href="about/blog">BLOG</a></div>
+        </div>
+        <div class="category">
+            <div class="heading">Contact Us</div>
+            <div class="content">
+                <div style="flex-flow: column wrap;">
+                    <p><a href="tel:+918126726747" target="_blank">+91-8126726747</a></p>
+                    <a href="mailto:satvikyogshala@gmail.com" target="_blank">
+                        <p>satvikyogshala@gmail.com</p>
+                    </a>
+                </div>
+                <div style="flex-flow: column;">
+                    <p style="font-weight: bold;">Address:</p>
+                    <p>Badrinath Road, NH-58, <br />Tapovan, Rishikesh, India</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="social">
+
+        <ion-icon name="logo-twitter">Twitter Profile</ion-icon>
+        <ion-icon name="logo-facebook">Facebook Page</ion-icon>
+        <ion-icon name="logo-instagram">Instagram Account</ion-icon>
+        <ion-icon name="logo-youtube">Youtube Channel</ion-icon>
+        <ion-icon name="logo-linkedin">Linkedin Profile</ion-icon>
+    </div>
+    <div class="banner">
+        <div>Copyright © {year} <a href="." target="_blank" class="link"> Satvik Yogshala. </a>
+            All Rights
+            Reserved</div>
+
+        <div>Terms and Conditions</div>
+        <div>Privacy Policy</div>
+        <div><a class="link" href="https://github.com/chauhanvats3" target="_blank">Made with <ion-icon name="heart">
+                </ion-icon> by
+                Vatsal</a></div>
+    </div>
+</footer>

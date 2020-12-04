@@ -3,6 +3,8 @@
     import Contact_Form from '../../components/contact_form.svelte';
     import CollapsibleGroup from '../../components/collapsibleGroup.svelte';
     import Breadcrumb from '../../components/breadcrumb.svelte';
+    import Included from '../../components/included.svelte';
+    import Excluded from '../../components/excluded.svelte';
 
     let breadcrumbPath = [
         { name: 'Teacher Training', href: '.' },
@@ -30,8 +32,8 @@
         ["11:15 AM - 12:45 PM", "Ayurveda Cooking / Anatomy", "Ayurveda Cooking / Anatomy", "Ayurveda Cooking / Anatomy"]
     ];
 
-    let included = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
-    let excluded = ["11", "22", "33", "44"];
+    let included = ["Accommodation", "Trainer support", "Excursions ( Ganga Aarti, Temple/ Cave visit )", "Yoga material ( Yoga Mat, Notebook, pen, Neti pot)", "Satvik Food Facilities", "Wi-Fi Facilities", "Laundry Service", "Books Material ( Only for Reading )"];
+    let excluded = ["Life insurance", "Doctor Consultation", "Airport Pickup & Drop", "Personal Expenses"];
 
 
 </script>
@@ -52,7 +54,7 @@
 
     .hero {
         position: absolute;
-        top: -10;
+        top: 00;
         overflow: hidden;
         width: 100%;
     }
@@ -119,31 +121,16 @@
     }
 
     .column_f {
-        border: 1px solid black;
         margin: 10px;
         flex-basis: 35%;
         flex-flow: column wrap;
 
     }
-
-    .included,
-    .excluded {
-        width: 100%;
-
-    }
-
-    .included>p {
-        width: 40%;
-    }
-
-    .excluded>p {
-        width: 100%;
-    }
 </style>
 <div class="ytt">
     <div class="hero-wrapper">
         <div class="hero">
-            <img src="images/yoga11.jpg" alt="Someone doing yoga">
+            <img src="images/yoga8.jpg" alt="Someone doing yoga">
         </div>
     </div>
     <Breadcrumb path={breadcrumbPath} />
@@ -259,27 +246,11 @@
         </div>
         <div class="group_1">
             <div class="column_e">
-                <div class="heading">
-                    <h1>Included</h1>
-                    <hr />
-                </div>
-                <div class="included">
-                    {#each included as incl}
-                    <p>{incl}</p>
-                {/each}          
+                <Included dataSet={included} />
+            </div>
+            <div class="column_f">
+                <Excluded dataSet={excluded} />
             </div>
         </div>
-        <div class="column_f">
-            <div class="heading">
-                <h1>Excluded</h1>
-                <hr/>
-            </div>
-            <div class="excluded">
-                {#each excluded as excl}
-                <p>{excl}</p>
-            {/each}  
-            </div>
-        </div>
-    </div>
     </div>
 </div>
