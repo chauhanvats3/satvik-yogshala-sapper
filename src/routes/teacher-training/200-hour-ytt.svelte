@@ -53,12 +53,6 @@
         width: 100%;
     }
 
-    .breadcrumb {
-        justify-content: flex-start;
-        padding: 20px;
-        font-size: 15px;
-    }
-
     .column_a {
         margin: 10px;
         flex-basis: 70%;

@@ -22,10 +22,12 @@
 
     let time_table_headers = ["Time", "Week 1", "Week 2", "Week 3"];
     let time_table_data_set = [
-        ["11", "12", "13", "14"],
-        ["21", "22", "23", "24"],
-        ["31", "32", "33", "34"],
-        ["41", "42", "43", "44"]
+        ["05:45 AM - 06:00 AM", "Detox Tea", "Detox Tea", "Detox Tea"],
+        ["06:00 AM - 07:30 AM", "Hatha Yoga", "Hatha Yoga", "Hatha Yoga"],
+        ["07:45 AM - 09:00 AM", "Pranayama", "Pranayama", "Pranayama"],
+        ["09:00 AM - 10:00 AM", "Breakfast", "Breakfast", "Breakfast"],
+        ["10:15 AM - 11:00 AM", "Mantra / Alignment & Adjustment", "Mantra / Alignment & Adjustment", "Mantra / Alignment & Adjustment"],
+        ["11:15 AM - 12:45 PM", "Ayurveda Cooking / Anatomy", "Ayurveda Cooking / Anatomy", "Ayurveda Cooking / Anatomy"]
     ];
 
     let included = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
@@ -52,14 +54,6 @@
         position: absolute;
         top: -10;
         overflow: hidden;
-        width: 100%;
-    }
-
-
-    .breadcrumb {
-        justify-content: center;
-        padding: 20px;
-        font-size: 15px;
         width: 100%;
     }
 

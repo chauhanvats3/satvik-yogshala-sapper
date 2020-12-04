@@ -39,36 +39,6 @@
         width: 100%;
         margin: 20px 0;
     }
-
-
-    ion-icon {
-        font-size: 40px;
-        margin: 0 10px;
-        cursor: pointer;
-    }
-
-
-
-    [name="logo-youtube"]:hover {
-        color: #FF0000;
-    }
-
-    [name="logo-twitter"]:hover {
-        color: #00ACEE;
-    }
-
-    [name="logo-facebook"]:hover {
-        color: #3b5998;
-    }
-
-    [name="logo-linkedin"]:hover {
-        color: #0e76a8;
-    }
-
-    [name="logo-instagram"]:hover {
-        color: #cc2366;
-
-    }
 </style>
 
 <div class="contact">

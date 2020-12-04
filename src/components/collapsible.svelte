@@ -46,8 +46,8 @@
     <div class="topic" on:click={toggleHeading}>
         <p>{heading}</p>
         <p>
-            {#if show} <ion-icon name="add-sharp"></ion-icon>
-            {:else}<ion-icon name="remove-sharp"></ion-icon>{/if}
+            {#if show} <ion-icon name="remove-sharp"></ion-icon>
+            {:else}<ion-icon name="add-sharp"></ion-icon>{/if}
         </p>
     </div>
     {#if show}

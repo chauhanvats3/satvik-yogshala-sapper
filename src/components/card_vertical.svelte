@@ -78,10 +78,6 @@
         font-weight: 200;
     }
 
-    .non-btn {
-        height: 80%;
-    }
-
     .btn {
         position: absolute;
         bottom: 0;
@@ -92,7 +88,6 @@
         border-radius: 10px;
     }
 
-    .btn:hover {}
 
     .gradient-text {
         font-weight: 900;
