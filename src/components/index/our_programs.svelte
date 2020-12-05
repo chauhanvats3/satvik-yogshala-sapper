@@ -35,6 +35,10 @@
     .heading {
         display: block;
     }
+
+    .programs>div:nth-child(2) {
+        width: 100%;
+    }
 </style>
 
 <div class="wrapper programs">

@@ -117,6 +117,21 @@
     .description p {
         width: 100%;
         position: absolute;
+        padding: 5px 10px;
+    }
+
+    @media (max-width:695px) {
+        .para_overlay {
+            height: 20%;
+        }
+
+        .card_horizontal {
+            width: 90vw;
+            height: 500px;
+            overflow: hidden;
+            position: relative;
+            border-radius: 20px;
+        }
     }
 </style>
 

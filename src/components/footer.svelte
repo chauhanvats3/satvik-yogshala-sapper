@@ -22,6 +22,7 @@
         flex-flow: column wrap;
         flex: 1 1 auto;
         justify-content: flex-start;
+        margin: 20px auto;
     }
 
     .heading {
@@ -52,8 +53,8 @@
     }
 
     .banner {
-        justify-content: space-between;
-        width: 90vw;
+        width: 98vw;
+        flex-grow: 1;
     }
 
     .banner>div {
@@ -91,6 +92,8 @@
         color: #cc2366;
 
     }
+
+    @media(max-width: 695px) {}
 </style>
 <footer>
     <div class="categories">

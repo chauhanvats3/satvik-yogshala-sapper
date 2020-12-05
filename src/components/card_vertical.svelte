@@ -19,6 +19,7 @@
         height: 400px;
         position: relative;
         overflow: hidden;
+        border-radius: 10px;
     }
 
     img {
@@ -117,6 +118,18 @@
         color: #fff;
         text-decoration: none;
 
+    }
+
+    @media (max-width:430px) {
+        .card {
+            width: 80%;
+            border-radius: 10px;
+            height: 500px;
+        }
+
+        .content {
+            transform: translateY(380px);
+        }
     }
 </style>
 

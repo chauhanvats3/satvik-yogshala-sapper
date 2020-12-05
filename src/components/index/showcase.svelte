@@ -63,7 +63,8 @@
         justify-content: center;
     }
 
-    .showcase>div {
+    .gallery,
+    .blog {
         width: 45vw;
         min-height: 350px;
         margin: 0 10px;
@@ -94,6 +95,12 @@
         background: rgb(106, 209, 216);
         z-index: 10;
         border-right: 3px solid black;
+    }
+
+    @media (max-width: 695px) {
+        .gallery {
+            width: 100%;
+        }
     }
 </style>
 
