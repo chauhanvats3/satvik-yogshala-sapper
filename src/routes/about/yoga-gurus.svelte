@@ -35,7 +35,9 @@ He teaches with a style of scientific approach to ensure a proper alignment in e
         margin-top: 90px
     }
 </style>
-
+<svelte:head>
+    <title>Our Yoga Gurus - Satvik Yogshala</title>
+</svelte:head>
 <div class="yoga-gurus">
     <div class="heading">
         <h1>Our Yoga Teachers</h1>

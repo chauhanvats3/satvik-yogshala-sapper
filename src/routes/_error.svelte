@@ -6,7 +6,8 @@
 </script>
 
 <style>
-	h1, p {
+	h1,
+	p {
 		margin: 0 auto;
 	}
 
@@ -28,7 +29,7 @@
 </style>
 
 <svelte:head>
-	<title>{status}</title>
+	<title>{status} - Satvik Yogshala</title>
 </svelte:head>
 
 <h1>{status}</h1>

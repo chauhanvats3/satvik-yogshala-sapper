@@ -122,6 +122,11 @@
 
     }
 </style>
+
+<svelte:head>
+    <title>200 Hours YTT - Satvik Yogshala</title>
+</svelte:head>
+
 <div class="ytt">
     <div class="hero-wrapper">
         <div class="hero">

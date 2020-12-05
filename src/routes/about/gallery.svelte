@@ -139,7 +139,9 @@
         }
     }
 </style>
-
+<svelte:head>
+    <title>Gallery - Satvik Yogshala</title>
+</svelte:head>
 <div class="gallery">
     <div class="row">
         <div class="column">

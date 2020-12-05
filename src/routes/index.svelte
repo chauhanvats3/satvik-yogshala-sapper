@@ -4,6 +4,19 @@
 	import Facilities from '../components/index/facilities.svelte';
 	import Showcase from '../components/index/showcase.svelte';
 	import Teachers from '../components/index/teachers.svelte';
+	import { onMount } from 'svelte';
+
+	let hero;
+	let heroWrapper;
+	let heroHeight = 0;
+	onMount(() => {
+		setTimeout(() => {
+			heroHeight = hero.offsetHeight;
+			console.log(heroHeight);
+			//heroWrapper.style.height = heroHeight + "px";
+			heroWrapper.style.height = `calc(${heroHeight}px - 20%)`;
+		}, 100);
+	});
 </script>
 
 <style>
@@ -12,7 +25,7 @@
 	}
 
 	.hero-wrapper {
-		height: 89vh;
+		max-height: 96.3vh;
 		width: 100%;
 		position: relative;
 		overflow: hidden;
@@ -20,18 +33,18 @@
 
 	.hero {
 		position: absolute;
-		top: -10;
+		top: -20%;
 		overflow: hidden;
 		width: 100%;
 	}
 </style>
 
 <svelte:head>
-	<title>Satvik Yogshala - Home</title>
+	<title>Home - Satvik Yogshala</title>
 </svelte:head>
 <div class="index">
-	<div class="hero-wrapper">
-		<div class="hero">
+	<div class="hero-wrapper" bind:this={heroWrapper} style="--hero-height:{heroHeight + 'px'};">
+		<div class="hero" bind:this={hero}>
 			<img src="images/yoga11.jpg" alt="Someone doing yoga">
 		</div>
 	</div>

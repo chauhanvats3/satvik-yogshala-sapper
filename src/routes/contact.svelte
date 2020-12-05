@@ -40,7 +40,9 @@
         margin: 20px 0;
     }
 </style>
-
+<svelte:head>
+    <title>Contact Us - Satvik Yogshala</title>
+</svelte:head>
 <div class="contact">
     <div>
         <div class="form_wrapper">
@@ -58,9 +60,9 @@
             <div class="address">
                 <p><a href="https://g.page/satvikyogshala?share">Badrinath Road, NH-58, Tapovan, Rishikesh, India</a>
                 </p>
-                <p>satvikyogshala@gmail.com</p>
-                <p>+91 8126726747,
-                    +91 8433404492</p>
+                <p><a href="mailto:satvikyogshala@gmail.com">satvikyogshala@gmail.com</a></p>
+                <p><a href="tel:+918126726747">+91 8126726747</a>,
+                    <a href="tel:+918433404492">+91 8433404492</a></p>
             </div>
         </div>
     </div>

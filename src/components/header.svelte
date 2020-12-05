@@ -61,16 +61,9 @@
         flex-basis: 100%;
         padding: 0 30px;
         min-height: 50px;
-        background: #3a797e8e;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to bottom, #3a797e8e, #3a797e8e);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to bottom, #3a797e8e, #3a797e8e);
+        background: #ffffffb7;
 
     }
-
-
-
 
     .logo {
         flex-basis: 30%;
@@ -98,11 +91,7 @@
     .main_menu>.list>.item:hover,
     .main_menu>.list>.item:focus,
     .main_menu>.list>.item:active {
-        background: #3a797e8e;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to bottom, #3a797e8e, #3a797e8e);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to bottom, #3a797e8e, #3a797e8e);
+        background: #464646b7;
 
     }
 
@@ -119,11 +108,7 @@
         visibility: hidden;
         opacity: 0;
         transition: visibility 0.1s, opacity 0.3s ease-out;
-        background: #3a797e8e;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to bottom, #3a797e8e, #3a797e8e);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to bottom, #3a797e8e, #3a797e8e);
+        background: #464646b7;
 
         padding: 10px;
     }

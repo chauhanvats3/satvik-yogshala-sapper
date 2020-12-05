@@ -125,6 +125,10 @@
 
     }
 </style>
+
+<svelte:head>
+    <title>Yoga Retreat - Satvik Yogshala</title>
+</svelte:head>
 <div class="ytt">
     <div class="hero-wrapper">
         <div class="hero">

@@ -112,7 +112,7 @@
         <div class="category faq">
             <div class="heading"><a href="about/faq">FAQ</a></div>
             <div class="heading"><a href="about/gallery">GALLERY</a></div>
-            <div class="heading"><a href="about/blog">BLOG</a></div>
+            <div class="heading"><a href="blog">BLOG</a></div>
         </div>
         <div class="category">
             <div class="heading">Contact Us</div>
@@ -125,7 +125,9 @@
                 </div>
                 <div style="flex-flow: column;">
                     <p style="font-weight: bold;">Address:</p>
-                    <p>Badrinath Road, NH-58, <br />Tapovan, Rishikesh, India</p>
+                    <a href="https://g.page/satvikyogshala?share">
+                        <p>Badrinath Road, NH-58, <br />Tapovan, Rishikesh, India</p>
+                    </a>
                 </div>
 
             </div>
