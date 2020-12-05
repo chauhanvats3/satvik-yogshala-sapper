@@ -13,8 +13,10 @@
 		setTimeout(() => {
 			heroHeight = hero.offsetHeight;
 			console.log(heroHeight);
-			//heroWrapper.style.height = heroHeight + "px";
-			heroWrapper.style.height = `calc(${heroHeight}px - 20%)`;
+			var subHeight = (20 / 100) * heroHeight;
+			var heroWrapperHeight = heroHeight - subHeight;
+			heroWrapper.style.height = heroWrapperHeight + "px";
+			heroWrapper.style.maxHeight = "100vh";
 		}, 100);
 	});
 </script>
@@ -25,10 +27,10 @@
 	}
 
 	.hero-wrapper {
-		max-height: 96.3vh;
 		width: 100%;
 		position: relative;
 		overflow: hidden;
+		/* 	height: calc(755px -20px); */
 	}
 
 	.hero {

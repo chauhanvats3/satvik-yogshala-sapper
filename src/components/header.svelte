@@ -6,6 +6,20 @@
 
 
 <style>
+    @media (max-width: 695px) {
+        .hamburger {
+            display: flex;
+        }
+
+        .main_menu {
+            visibility: hidden;
+        }
+
+        * {
+            color: #00B4DB;
+        }
+    }
+
     .header {
         position: fixed;
         top: 0;
@@ -68,6 +82,10 @@
     .logo {
         flex-basis: 30%;
         justify-content: flex-start;
+    }
+
+    .hamburger {
+        display: none;
     }
 
     .main_menu {
@@ -194,6 +212,8 @@
     <div id="navbar" class="navbar">
         <div class="logo"> <a href="."> Satvik Yogshala</a></div>
         <div class="main_menu">
+            <ion-icon name="menu-outline" class="hamburger"></ion-icon>
+
             <div class="list">
 
                 <div class="item dropdown" class:selected={segment==="teacher-training" || segment==="teacher-training"
