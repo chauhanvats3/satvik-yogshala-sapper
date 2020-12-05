@@ -1,25 +1,27 @@
 <script>
     import { onMount } from 'svelte';
     export let segment;
+    let mainMenu;
+    var showHamburger = true;
+    var showMenuClose = false;
+    let hamburgerClicked = () => {
+        var mainMenuStatus = window.getComputedStyle(mainMenu).display;
+        console.log(mainMenuStatus);
+        if (mainMenuStatus == "none") {
+            mainMenu.style.display = "flex";
+            showMenuClose = true;
+            showHamburger = false;
+        } else {
+            mainMenu.style.display = "none";
+            showMenuClose = false;
+            showHamburger = true;
+        }
+    }
 
 </script>
 
 
 <style>
-    @media (max-width: 695px) {
-        .hamburger {
-            display: flex;
-        }
-
-        .main_menu {
-            visibility: hidden;
-        }
-
-        * {
-            color: #00B4DB;
-        }
-    }
-
     .header {
         position: fixed;
         top: 0;
@@ -79,9 +81,11 @@
 
     }
 
-    .logo {
+    .logo_menu {
+        height: 100%;
         flex-basis: 30%;
         justify-content: flex-start;
+        align-items: stretch;
     }
 
     .hamburger {
@@ -182,6 +186,69 @@
         -moz-background-clip: text;
         -moz-text-fill-color: transparent;
     }
+
+    @media (max-width: 695px) {
+        .banner {
+            display: none;
+        }
+
+        .navbar {
+            justify-content: space-between;
+        }
+
+        .logo_menu {
+            width: 100%;
+            justify-content: space-between;
+            flex-basis: 100%;
+            margin-top: 16px;
+        }
+
+        .hamburger {
+            display: flex;
+            color: black;
+            visibility: visible;
+            cursor: pointer;
+            font-size: 32px;
+        }
+
+        .main_menu {
+            display: none;
+            flex-basis: 100%;
+            justify-content: flex-start;
+            margin: 10px auto;
+        }
+
+        .main_menu>.list {
+            flex-direction: column;
+            width: 100%;
+            justify-content: flex-start;
+        }
+
+        .main_menu>.list>.item {
+            justify-content: flex-start;
+            margin: 5px 0;
+        }
+
+        .item div {
+            width: 100%;
+        }
+
+        .dropdown>.list {
+            position: relative;
+            display: none;
+        }
+
+        .dropdown:hover>.list,
+        .dropdown:active>.list,
+        .dropdown:focus>.list {
+            display: flex;
+            left: 0%;
+            top: 0%;
+            align-self: flex-start;
+            width: 100%;
+            background: transparent;
+        }
+    }
 </style>
 
 
@@ -210,49 +277,58 @@
     <!-- NAVBAR -->
 
     <div id="navbar" class="navbar">
-        <div class="logo"> <a href="."> Satvik Yogshala</a></div>
-        <div class="main_menu">
-            <ion-icon name="menu-outline" class="hamburger"></ion-icon>
 
+        <div class="logo_menu">
+            <div class="logo"> <a href="."> Satvik Yogshala</a></div>
+            {#if showHamburger}
+            <ion-icon name="menu-outline" class="hamburger" on:click={hamburgerClicked}></ion-icon>
+            {:else if showMenuClose}
+            <ion-icon name="close-outline" class="hamburger" on:click={hamburgerClicked}></ion-icon>
+            {/if}
+        </div>
+
+        <div class="main_menu" bind:this={mainMenu}>
             <div class="list">
 
                 <div class="item dropdown" class:selected={segment==="teacher-training" || segment==="teacher-training"
                     || segment==="teacher-training" }>
-                    <div><a href=".">Teacher Training</a>
+                    <div><a>Teacher Training</a>
                     </div>
                     <div class="list">
-                        <div class="item"><a href="teacher-training/100-hour-ytt">100 Hours
+                        <div class="item"><a href="teacher-training/100-hour-ytt" on:click={hamburgerClicked}>100 Hours
                                 YTT</a></div>
-                        <div class="item"><a href="teacher-training/200-hour-ytt">200 Hours
+                        <div class="item"><a href="teacher-training/200-hour-ytt" on:click={hamburgerClicked}>200 Hours
                                 YTT</a></div>
 
-                        <div class="item"><a href="teacher-training/200-hour-multistyle-ytt">200 Hours Multistyle
+                        <div class="item"><a href="teacher-training/200-hour-multistyle-ytt"
+                                on:click={hamburgerClicked}>200 Hours Multistyle
                                 YTT</a>
                         </div>
                     </div>
                 </div>
                 <div class="item" class:selected={segment==="yoga-retreat" }>
-                    <div> <a href="yoga-retreat"> Yoga Retreat</a></div>
+                    <div> <a href="yoga-retreat" on:click={hamburgerClicked}> Yoga Retreat</a></div>
                 </div>
 
                 <div class="item dropdown" class:selected={segment==="about" || segment==="about" || segment==="about"
                     }>
                     <div>
-                        <a href=".">About</a>
+                        <a>About</a>
                     </div>
                     <div class="list">
-                        <div class="item"><a href="about/about-us">About Satvik Yogshala</a></div>
-                        <div class="item"><a href="about/yoga-gurus">Yoga Teachers</a></div>
-                        <div class="item"><a href="about/gallery">Gallery</a></div>
-                        <div class="item"><a href="about/faq">FAQ</a></div>
+                        <div class="item"><a href="about/about-us" on:click={hamburgerClicked}>About Satvik Yogshala</a>
+                        </div>
+                        <div class="item"><a href="about/yoga-gurus" on:click={hamburgerClicked}>Yoga Teachers</a></div>
+                        <div class="item"><a href="about/gallery" on:click={hamburgerClicked}>Gallery</a></div>
+                        <div class="item"><a href="about/faq" on:click={hamburgerClicked}>FAQ</a></div>
 
                     </div>
                 </div>
                 <div class="item" class:selected={segment==="blog" }>
-                    <div><a href="blog">Blog</a></div>
+                    <div><a href="blog" on:click={hamburgerClicked}>Blog</a></div>
                 </div>
                 <div class="item" class:selected={segment==="contact" }>
-                    <div><a href="contact">Contact Us</a></div>
+                    <div><a href="contact" on:click={hamburgerClicked}>Contact Us</a></div>
                 </div>
             </div>
         </div>
