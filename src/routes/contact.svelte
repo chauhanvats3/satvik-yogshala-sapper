@@ -39,6 +39,12 @@
         width: 100%;
         margin: 20px 0;
     }
+
+    @media (max-width: 850px) {
+        .contact {
+            margin-top: 50px;
+        }
+    }
 </style>
 <svelte:head>
     <title>Contact Us - Satvik Yogshala</title>

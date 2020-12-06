@@ -57,6 +57,10 @@
 
 </script>
 <style>
+    .wrapper {
+        margin: 50px 0 20px 0;
+    }
+
     .showcase {
         width: 95vw;
         min-height: 400px;
@@ -108,7 +112,7 @@
 
 <div class="wrapper">
     <div class="heading">
-        <h1>Showcase</h1>
+        <h1 class="indie-flower">Showcase</h1>
         <hr class="sexy_bottom_line" />
     </div>
     <div class="showcase">

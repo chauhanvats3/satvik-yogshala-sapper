@@ -11,6 +11,12 @@
         margin-top: 90px;
         flex-direction: column;
     }
+
+    @media(max-width: 850px) {
+        .faq {
+            margin-top: 50px;
+        }
+    }
 </style>
 <svelte:head>
     <title>Frequently Asked Questions - Satvik Yogshala</title>

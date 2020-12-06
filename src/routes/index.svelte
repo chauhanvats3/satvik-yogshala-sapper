@@ -30,7 +30,7 @@
 		width: 100%;
 		position: relative;
 		overflow: hidden;
-		/* 	height: calc(755px -20px); */
+		margin-bottom: 20px;
 	}
 
 	.hero {
@@ -38,6 +38,12 @@
 		top: -20%;
 		overflow: hidden;
 		width: 100%;
+	}
+
+	@media (max-width: 750px) {
+		.hero-wrapper {
+			margin-top: 50px;
+		}
 	}
 </style>
 

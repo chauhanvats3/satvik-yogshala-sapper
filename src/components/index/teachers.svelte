@@ -22,7 +22,8 @@
 <style>
     .teachers {
         flex-flow: column wrap;
-        width: 97vw;
+        width: 100%;
+        margin: 50px 0 20px 0;
     }
 
 
@@ -71,7 +72,7 @@
 </style>
 <div class="teachers">
     <div class="heading">
-        <h1>Yoga Teachers</h1>
+        <h1 class="indie-flower">Yoga Instructors</h1>
         <hr />
     </div>
     <div class="content">

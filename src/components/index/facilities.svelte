@@ -42,6 +42,7 @@
     .facilities {
         flex-flow: column wrap;
         width: 100%;
+        margin: 50px 0 20px 0;
     }
 
     .card_horizontal {
@@ -137,7 +138,7 @@
 
 <div class="facilities">
     <div class="heading">
-        <h1>Facilities</h1>
+        <h1 class="indie-flower">Facilities</h1>
         <hr class="sexy_bottom_line" />
     </div>
     <div class="card_horizontal">

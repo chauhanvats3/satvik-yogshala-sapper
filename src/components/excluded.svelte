@@ -53,7 +53,7 @@
 
 <div class="wrapper">
     <div class="heading">
-        <h1>Excluded</h1>
+        <h1 class="indie-flower">Excluded</h1>
         <hr />
     </div>
     <div class="content-wrapper">

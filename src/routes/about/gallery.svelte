@@ -154,6 +154,10 @@
         .blankspace {
             height: 50px;
         }
+
+        .wrapper {
+            margin-top: 50px;
+        }
     }
 </style>
 <svelte:head>
@@ -162,7 +166,7 @@
 <div class="wrapper">
     <div class="blankspace"></div>
     <div class="heading">
-        <h1>GALLERY</h1>
+        <h1 class="indie-flower">GALLERY</h1>
         <hr>
     </div>
     <Breadcrumb path={path} />

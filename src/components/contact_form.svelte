@@ -19,7 +19,7 @@
 <!-- abj -->
 <div class="contact_form">
     <div class="heading">
-        <h1>Contact Us</h1>
+        <h1 class="indie-flower">Contact Us</h1>
         <hr />
     </div>
     <div><input type="text" name="f_name" id="f_name" placeholder="First Name"></div>

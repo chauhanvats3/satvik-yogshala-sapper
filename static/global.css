@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
 
 :root{
     --bg1:#fefae0;
@@ -75,11 +74,16 @@ p{
 }
 
 hr {
-    margin: 0 0 25px 0;
-    height: 1px;
+    /* margin: 0 0 25px 0;
+    height: 1px; */
+    height: 0px;
+    margin: 5px;
     border: 0;
-    background: black;
-    background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black));
+    background: transparent;
+/*     background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black));
+ */
+     background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, transparent));
+
 }
 
 
@@ -109,4 +113,8 @@ hr {
 }
 .btn a{
     text-decoration: none;
+}
+
+.indie-flower{
+    font-family: 'Indie Flower', cursive;;
 }

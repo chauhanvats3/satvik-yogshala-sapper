@@ -73,12 +73,26 @@
         width: 100%;
     }
 
+    .content>div {
+        margin: 35px 0px;
+    }
+
+    .group_1 {
+        width: 100%;
+    }
+
+    .group_2 {
+        align-items: stretch;
+        width: 100%;
+    }
+
     .column_a {
         margin: 10px;
         flex-basis: 70%;
     }
 
     .column_b {
+        border-left: 1px solid black;
         margin: 10px;
         flex-basis: 25%;
         flex-flow: column;
@@ -96,14 +110,6 @@
         text-align: justify;
     }
 
-    .group_1 {
-        width: 100%;
-    }
-
-    .group_2 {
-        align-items: stretch;
-        width: 100%;
-    }
 
     .column_c {
         margin: 10px;
@@ -140,7 +146,7 @@
 
     }
 
-    @media (max-width: 700px) {
+    @media (max-width: 850px) {
 
         .column_b,
         .column_d,
@@ -153,6 +159,13 @@
         }
 
 
+        .column_b {
+            border-left: none;
+        }
+
+        .hero-wrapper {
+            margin-top: 50px;
+        }
     }
 </style>
 <svelte:head>
@@ -196,7 +209,7 @@
                 </div>
                 <div class="block">
                     <div class="heading">
-                        <h3>COURSE FOR ALL LEVELS OF YOGA PRACTITIONER'S!</h3>
+                        <h3 class="indie-flower">COURSE FOR ALL LEVELS OF YOGA PRACTITIONER'S!</h3>
                         <hr />
                     </div>
                     <div class="detail">
@@ -229,7 +242,7 @@
                 </div>
                 <div class="block">
                     <div class="heading">
-                        <h3>YOGA ISN’T JUST A FITNESS FAD.</h3>
+                        <h3 class="indie-flower">YOGA ISN’T JUST A FITNESS FAD.</h3>
                         <hr />
                     </div>
                     <div class="detail">
@@ -254,7 +267,7 @@
             <div class="column_d">
                 <div class="block">
                     <div class="heading">
-                        <h1>Curriculum</h1>
+                        <h1 class="indie-flower">Curriculum</h1>
                         <hr />
                     </div>
                     <CollapsibleGroup dataSet={curriculum} />
@@ -267,7 +280,7 @@
         <div class="group_3">
             <div class="time_table">
                 <div class="heading">
-                    <h1>Schedule</h1>
+                    <h1 class="indie-flower">Schedule</h1>
                     <hr />
                 </div>
 

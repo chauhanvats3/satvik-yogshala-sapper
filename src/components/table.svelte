@@ -7,7 +7,7 @@
     .table_wrapper {
         width: 100%;
         position: relative;
-        height: 500px;
+        height: 380px;
         overflow: auto;
     }
 
@@ -50,6 +50,10 @@
             width: 150px;
             font-size: small;
             height: 70px;
+        }
+
+        .table_wrapper {
+            height: 450px;
         }
     }
 </style>

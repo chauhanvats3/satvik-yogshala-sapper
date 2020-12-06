@@ -4,22 +4,10 @@
 </script>
 
 
-<div class="description">
-    <div class="heading">
-        <h1>{heading}</h1>
-        <hr />
-    </div>
-    <div class="content">
-        <div class="image"> <img src="images/yoga3.jpg" alt=""></div>
-        <p>{desc}</p>
-
-    </div>
-</div>
-
-
 <style>
     .description {
         flex-flow: column wrap;
+        margin: 50px 0px 20px 0px;
     }
 
     .content {
@@ -64,3 +52,15 @@
         }
     }
 </style>
+
+<div class="description">
+    <div class="heading">
+        <h1>{heading}</h1>
+        <hr />
+    </div>
+    <div class="content">
+        <div class="image"> <img src="images/yoga3.jpg" alt=""></div>
+        <p>{desc}</p>
+
+    </div>
+</div>

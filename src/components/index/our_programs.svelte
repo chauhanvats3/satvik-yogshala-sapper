@@ -29,7 +29,7 @@
         width: 100%;
         justify-content: space-evenly;
         flex-flow: column wrap;
-        padding: 30px 0;
+        margin: 50px 0px 20px 0px;
     }
 
     .heading {
@@ -43,7 +43,7 @@
 
 <div class="wrapper programs">
     <div class="heading">
-        <h1>Our Programs</h1>
+        <h1 class="indie-flower">Our Programs</h1>
         <hr class="sexy_bottom_line" />
     </div>
 

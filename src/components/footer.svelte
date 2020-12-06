@@ -145,7 +145,7 @@
         <ion-icon name="logo-linkedin">Linkedin Profile</ion-icon>
     </div>
     <div class="banner">
-        <div>Copyright © {year} <a href="." target="_blank" class="link"> Satvik Yogshala. </a>
+        <div>Copyright © {year} <a href="." class="link"> Satvik Yogshala. </a>
             All Rights
             Reserved</div>
 

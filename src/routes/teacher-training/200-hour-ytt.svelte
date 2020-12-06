@@ -72,13 +72,17 @@
         width: 100%;
     }
 
+    .content>div {
+        margin: 35px 0px;
+    }
+
     .column_a {
         margin: 10px;
         flex-basis: 70%;
     }
 
     .column_b {
-        border: 1px solid black;
+        border-left: 1px solid black;
         margin: 10px;
         flex-basis: 25%;
         flex-flow: column;
@@ -137,7 +141,7 @@
 
     }
 
-    @media (max-width: 700px) {
+    @media (max-width: 850px) {
 
         .column_b,
         .column_d,
@@ -149,7 +153,13 @@
             flex-basis: 85%;
         }
 
+        .column_b {
+            border-left: none;
+        }
 
+        .hero-wrapper {
+            margin-top: 50px;
+        }
     }
 </style>
 
@@ -224,7 +234,7 @@
                 </div>
                 <div class="block">
                     <div class="heading">
-                        <h3>THE PURPOSE OF 200 HOURS YOGA TEACHER TRAINING COURSE.</h3>
+                        <h3 class="indie-flower">THE PURPOSE OF 200 HOURS YOGA TEACHER TRAINING COURSE.</h3>
                         <hr />
                     </div>
                     <div class="detail">
@@ -244,7 +254,7 @@
                 </div>
                 <div class="block">
                     <div class="heading">
-                        <h3>LEARN 200 HOUR YOGA TTC IN 25 DAYS!</h3>
+                        <h3 class="indie-flower">LEARN 200 HOUR YOGA TTC IN 25 DAYS!</h3>
                         <hr />
                     </div>
                     <div class="detail">
@@ -275,7 +285,7 @@
             <div class="column_d">
                 <div class="block">
                     <div class="heading">
-                        <h1>Curriculum</h1>
+                        <h1 class="indie-flower">Curriculum</h1>
                         <hr />
                     </div>
                     <CollapsibleGroup dataSet={curriculum} />
@@ -289,7 +299,7 @@
         <div class="group_3">
             <div class="time_table">
                 <div class="heading">
-                    <h1>Schedule</h1>
+                    <h1 class="indie-flower">Schedule</h1>
                     <hr />
                 </div>
 

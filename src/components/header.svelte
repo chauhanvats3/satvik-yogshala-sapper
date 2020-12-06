@@ -5,8 +5,15 @@
     var showHamburger = true;
     var showMenuClose = false;
     let hamburgerClicked = () => {
+        var screenWidth = window.screen.width;
         var mainMenuStatus = window.getComputedStyle(mainMenu).display;
-        console.log(mainMenuStatus);
+
+        console.log(screenWidth)
+
+        if (screenWidth > 740) {
+            return;
+        }
+
         if (mainMenuStatus == "none") {
             mainMenu.style.display = "flex";
             showMenuClose = true;
@@ -101,6 +108,7 @@
 
     .main_menu .item {
         padding: 0px 5px;
+        padding: 0px 5px;
         align-self: stretch;
     }
 
@@ -161,6 +169,7 @@
         justify-content: flex-start;
         text-decoration: none;
         transition: font-weight 0.1s;
+        align-items: center;
     }
 
     .item>div>a:hover,
@@ -187,7 +196,7 @@
         -moz-text-fill-color: transparent;
     }
 
-    @media (max-width: 695px) {
+    @media (max-width: 740px) {
         .banner {
             display: none;
         }
@@ -292,7 +301,7 @@
 
                 <div class="item dropdown" class:selected={segment==="teacher-training" || segment==="teacher-training"
                     || segment==="teacher-training" }>
-                    <div><a>Teacher Training</a>
+                    <div><a>Teacher Training <ion-icon name="chevron-down-outline"></ion-icon></a>
                     </div>
                     <div class="list">
                         <div class="item"><a href="teacher-training/100-hour-ytt" on:click={hamburgerClicked}>100 Hours
@@ -313,7 +322,7 @@
                 <div class="item dropdown" class:selected={segment==="about" || segment==="about" || segment==="about"
                     }>
                     <div>
-                        <a>About</a>
+                        <a>About <ion-icon name="chevron-down-outline"></ion-icon></a>
                     </div>
                     <div class="list">
                         <div class="item"><a href="about/about-us" on:click={hamburgerClicked}>About Satvik Yogshala</a>

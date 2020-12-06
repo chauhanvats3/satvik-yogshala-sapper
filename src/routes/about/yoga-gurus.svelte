@@ -41,13 +41,19 @@ He teaches with a style of scientific approach to ensure a proper alignment in e
         margin-top: 90px;
         flex-direction: column;
     }
+
+    @media(max-width: 850px) {
+        .yoga-gurus {
+            margin-top: 50px;
+        }
+    }
 </style>
 <svelte:head>
     <title>Our Yoga Gurus - Satvik Yogshala</title>
 </svelte:head>
 <div class="yoga-gurus">
     <div class="heading">
-        <h1>Our Yoga Teachers</h1>
+        <h1 class="indie-flower">Yoga Instructors</h1>
         <hr />
     </div>
     <Breadcrumb path={path} />

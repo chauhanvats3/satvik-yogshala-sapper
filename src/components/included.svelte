@@ -44,7 +44,7 @@
 
 <div class="wrapper">
     <div class="heading">
-        <h1>Included</h1>
+        <h1 class="indie-flower">Included</h1>
         <hr />
     </div>
     <div class="content">
