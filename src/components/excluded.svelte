@@ -33,6 +33,22 @@
     ion-icon {
         color: red;
     }
+
+    @media (max-width: 700px) {
+        .blankspace {
+            width: 0px;
+            height: 0px;
+        }
+
+        .excluded>* {
+            margin: 1px;
+        }
+
+        .excluded {
+            width: 100%;
+            margin: 5px;
+        }
+    }
 </style>
 
 <div class="wrapper">

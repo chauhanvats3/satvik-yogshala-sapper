@@ -1,5 +1,9 @@
 <script>
-
+    import Breadcrumb from '../../components/breadcrumb.svelte';
+    var path = [
+        { name: "About", href: "." },
+        { name: "Gallery", href: "about/gallery" }
+    ]
     var images = [
         { src: "images/yoga8.jpg" },
 
@@ -85,6 +89,15 @@
 </script>
 
 <style>
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .blankspace {
+        width: 100%;
+        height: 80px;
+    }
+
     .row {
         display: -ms-flexbox;
         /* IE10 */
@@ -137,29 +150,41 @@
             flex: 100%;
             max-width: 100%;
         }
+
+        .blankspace {
+            height: 50px;
+        }
     }
 </style>
 <svelte:head>
     <title>Gallery - Satvik Yogshala</title>
 </svelte:head>
-<div class="gallery">
-    <div class="row">
-        <div class="column">
-            {#each col1 as img}
-            <div class="image_wrap"><img src="{img.src}" alt=""></div>            {/each}
+<div class="wrapper">
+    <div class="blankspace"></div>
+    <div class="heading">
+        <h1>GALLERY</h1>
+        <hr>
+    </div>
+    <Breadcrumb path={path} />
+    <div class="gallery">
+        <div class="row">
+            <div class="column">
+                {#each col1 as img}
+                <div class="image_wrap"><img src="{img.src}" alt=""></div>            {/each}
+            </div>
+            <div class="column"> 
+                {#each col2 as img}
+                <div class="image_wrap"><img src="{img.src}" alt=""></div>
+            {/each}
         </div>
-        <div class="column"> 
-            {#each col2 as img}
-            <div class="image_wrap"><img src="{img.src}" alt=""></div>
-        {/each}
-    </div>
-        <div class="column"> 
-            {#each col3 as img}
-            <div class="image_wrap"><img src="{img.src}" alt=""></div>        {/each}
-    </div>
-        <div class="column"> 
-            {#each col4 as img}
-            <div class="image_wrap"><img src="{img.src}" alt=""></div>        {/each}
-    </div>
+            <div class="column"> 
+                {#each col3 as img}
+                <div class="image_wrap"><img src="{img.src}" alt=""></div>        {/each}
+        </div>
+            <div class="column"> 
+                {#each col4 as img}
+                <div class="image_wrap"><img src="{img.src}" alt=""></div>        {/each}
+        </div>
+        </div>
     </div>
 </div>

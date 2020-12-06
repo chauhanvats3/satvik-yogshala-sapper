@@ -29,6 +29,17 @@
     ion-icon {
         color: green;
     }
+
+    @media (max-width: 700px) {
+        .included>* {
+            margin: 1px;
+        }
+
+        .included {
+            width: 100%;
+            margin: 5px;
+        }
+    }
 </style>
 
 <div class="wrapper">

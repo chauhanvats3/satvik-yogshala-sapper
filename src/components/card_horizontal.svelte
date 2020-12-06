@@ -26,6 +26,12 @@
         flex-direction: row;
         max-width: 75%;
     }
+
+    @media (max-width: 700px) {
+        .content {
+            max-width: 100%;
+        }
+    }
 </style>
 
 <div class="card_horizontal" id={id}>

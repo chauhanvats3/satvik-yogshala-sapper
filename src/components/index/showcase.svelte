@@ -77,12 +77,14 @@
         position: relative;
         overflow: hidden;
         cursor: pointer;
+        border-radius: 10px;
     }
 
     .gallery>div img {
         position: absolute;
         top: 0;
         width: 100%;
+        border-radius: 10px;
     }
 
     .progress_bar {

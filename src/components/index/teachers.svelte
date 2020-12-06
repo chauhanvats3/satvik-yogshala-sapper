@@ -40,9 +40,9 @@
         cursor: pointer;
         border-radius: 20px;
         cursor: pointer;
-        border: 1px solid rgba(154, 47, 255, 0.918);
+        border: 1px solid #84a0dbd5;
         padding: 5px;
-        background-color: rgba(212, 166, 255, 0.411);
+        background-color: #84a0db27;
     }
 
     img {
@@ -55,6 +55,18 @@
     p {
         position: absolute;
         bottom: 0;
+    }
+
+    @media (max-width:695px) {
+        .teacher {
+            width: 150px;
+            height: 180px;
+        }
+
+        p {
+            font-size: small;
+            margin-bottom: 2px;
+        }
     }
 </style>
 <div class="teachers">

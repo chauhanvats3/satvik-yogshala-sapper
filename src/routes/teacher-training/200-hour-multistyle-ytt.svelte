@@ -5,6 +5,21 @@
     import Breadcrumb from '../../components/breadcrumb.svelte';
     import Included from '../../components/included.svelte';
     import Excluded from '../../components/excluded.svelte';
+    import { onMount } from 'svelte';
+
+    let hero;
+    let heroWrapper;
+    let heroHeight = 0;
+    onMount(() => {
+        setTimeout(() => {
+            heroHeight = hero.offsetHeight;
+            console.log(heroHeight);
+            var subHeight = (20 / 100) * heroHeight;
+            var heroWrapperHeight = heroHeight - subHeight;
+            heroWrapper.style.height = heroWrapperHeight + "px";
+            heroWrapper.style.maxHeight = "100vh";
+        }, 100);
+    });
 
     const breadcrumbPath = [
         { name: 'Teacher Training', href: '.#teacher-training' },
@@ -107,6 +122,10 @@
         flex-flow: column wrap;
     }
 
+    .highlights {
+        flex-flow: column wrap;
+    }
+
     .highlights_content {
         flex-flow: column wrap;
         align-items: flex-start;
@@ -129,13 +148,28 @@
         flex-flow: column wrap;
 
     }
+
+    @media (max-width: 700px) {
+
+        .column_b,
+        .column_d,
+        .column_c,
+        .column_e,
+        .column_f,
+        .column_a,
+        .column_c {
+            flex-basis: 85%;
+        }
+
+
+    }
 </style>
 <svelte:head>
     <title>200 Hours Multistyle YTT - Satvik Yogshala</title>
 </svelte:head>
 <div class="ytt">
-    <div class="hero-wrapper">
-        <div class="hero">
+    <div class="hero-wrapper" bind:this={heroWrapper} style="--hero-height:{heroHeight + 'px'};">
+        <div class="hero" bind:this={hero}>
             <img src="images/yoga12.jpg" alt="Someone doing yoga">
         </div>
     </div>

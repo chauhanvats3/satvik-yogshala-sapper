@@ -44,6 +44,14 @@
     .row:last-child>.td {
         border-bottom: none;
     }
+
+    @media (max-width: 700px) {
+        .td {
+            width: 150px;
+            font-size: small;
+            height: 70px;
+        }
+    }
 </style>
 
 <div class="table_wrapper">

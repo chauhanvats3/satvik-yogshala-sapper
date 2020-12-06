@@ -1,5 +1,11 @@
 <script>
     import Card_Horizontal from '../../components/card_horizontal.svelte';
+    import Breadcrumb from '../../components/breadcrumb.svelte';
+
+    var path = [
+        { name: "About", href: "." },
+        { name: "Yoga Gurus", href: "about/yoga-gurus" }
+    ]
     let teachers = [{
         id: "pritam",
         image: "images/team/pritam-singh-rawat.jpg",
@@ -32,7 +38,8 @@ He teaches with a style of scientific approach to ensure a proper alignment in e
 
 <style>
     .yoga-gurus {
-        margin-top: 90px
+        margin-top: 90px;
+        flex-direction: column;
     }
 </style>
 <svelte:head>
@@ -43,7 +50,7 @@ He teaches with a style of scientific approach to ensure a proper alignment in e
         <h1>Our Yoga Teachers</h1>
         <hr />
     </div>
-
+    <Breadcrumb path={path} />
     {#each teachers as teacher} 
         <Card_Horizontal image={teacher.image} desc={teacher.desc} title={teacher.title} id={teacher.id}/>
         {/each}
