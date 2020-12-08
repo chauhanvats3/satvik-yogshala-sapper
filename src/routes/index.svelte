@@ -17,7 +17,7 @@
 			var heroWrapperHeight = heroHeight - subHeight;
 			heroWrapper.style.height = heroWrapperHeight + "px";
 			heroWrapper.style.maxHeight = "100vh";
-		}, 100);
+		}, 500);
 	});
 </script>
 

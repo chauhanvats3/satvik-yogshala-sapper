@@ -14,7 +14,21 @@
 </script>
 
 <script>
+	import { onMount } from 'svelte';
 	export let post;
+	let hero;
+	let heroWrapper;
+	let heroHeight = 0;
+	onMount(() => {
+		setTimeout(() => {
+			heroHeight = hero.offsetHeight;
+			console.log(heroHeight);
+			var subHeight = (20 / 100) * heroHeight;
+			var heroWrapperHeight = heroHeight - subHeight;
+			heroWrapper.style.height = heroWrapperHeight + "px";
+			heroWrapper.style.maxHeight = "80vh";
+		}, 500);
+	});
 </script>
 
 <style>
@@ -26,6 +40,34 @@
 		so we have to use the :global(...) modifier to target
 		all elements inside .content
 	*/
+
+	.wrapper {
+		flex-flow: column wrap;
+	}
+
+	.hero-wrapper {
+		width: 100%;
+		position: relative;
+		overflow: hidden;
+		margin-bottom: 20px;
+	}
+
+	.hero {
+		position: absolute;
+		top: -20%;
+		overflow: hidden;
+		width: 100%;
+	}
+
+
+	.hero>img {
+		width: 100%;
+	}
+
+	.blog-banner {
+		width: 100%;
+	}
+
 	.content :global(h2) {
 		font-size: 1.4em;
 		font-weight: 500;
@@ -54,11 +96,26 @@
 </style>
 
 <svelte:head>
-	<title>{post.title}</title>
+	<title>{post.title} - Satvik Yogshala</title>
 </svelte:head>
+<div class="wrapper">
+	<div class="hero-wrapper" bind:this={heroWrapper} style="--hero-height:{heroHeight + 'px'};">
+		<div class="hero" bind:this={hero}>
+			<img src="{post.image}" alt="Someone doing yoga">
+		</div>
+	</div>
 
-<h1>{post.title}</h1>
+	<div class="blog-banner">
+		<div class="info">
+			{post.date}
+		</div>
+		<div class="share">
+			<div class="sharethis-inline-share-buttons"></div>
+		</div>
+	</div>
+	<h1>{post.title}</h1>
 
-<div class="content">
-	{@html post.html}
+	<div class="content">
+		{@html post.html}
+	</div>
 </div>
