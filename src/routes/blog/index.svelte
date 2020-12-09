@@ -8,7 +8,11 @@
 
 <script>
 	import BlogCard from '../../components/blog_card.svelte';
+	import Breadcrumb from '../../components/breadcrumb.svelte';
 	export let posts;
+	const path = [
+		{ name: "Blog", href: "blog" }
+	]
 </script>
 
 <style>
@@ -23,7 +27,7 @@
 	<title>Blog - Satvik Yogshala</title>
 </svelte:head>
 <div class="wrapper">
-
+	<Breadcrumb {path} />
 	<h1 class="indie-flower">Blog by Preetam</h1>
 
 	{#each posts as post}

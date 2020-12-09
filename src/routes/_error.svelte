@@ -6,6 +6,11 @@
 </script>
 
 <style>
+	.wrapper {
+		margin-top: 50px;
+		flex-flow: column wrap;
+	}
+
 	h1,
 	p {
 		margin: 0 auto;
@@ -15,6 +20,7 @@
 		font-size: 2.8em;
 		font-weight: 700;
 		margin: 0 0 0.5em 0;
+		color: rgb(255, 73, 73);
 	}
 
 	p {
@@ -22,6 +28,10 @@
 	}
 
 	@media (min-width: 480px) {
+		.wrapper {
+			margin-top: 150px;
+		}
+
 		h1 {
 			font-size: 4em;
 		}
@@ -31,11 +41,13 @@
 <svelte:head>
 	<title>{status} - Satvik Yogshala</title>
 </svelte:head>
+<div class="wrapper">
 
-<h1>{status}</h1>
+	<h1>{status}</h1>
 
-<p>{error.message}</p>
+	<p>{error.message}</p>
 
-{#if dev && error.stack}
-	<pre>{error.stack}</pre>
-{/if}
+	{#if dev && error.stack}
+		<pre>{error.stack}</pre>
+	{/if}
+</div>

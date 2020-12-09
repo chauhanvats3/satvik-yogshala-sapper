@@ -7,7 +7,6 @@
 <style>
     footer {
         flex-flow: column wrap;
-        width: 100%;
         background-color: #849fdb5b;
         padding-top: 10vh;
         clip-path: polygon(0 10vh, 100% 0%, 100% 100%, 0 100%);

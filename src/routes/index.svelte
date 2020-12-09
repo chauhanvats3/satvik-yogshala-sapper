@@ -1,9 +1,9 @@
 <script>
-	import Description from '../components/index/description.svelte';
-	import Programs from '../components/index/our_programs.svelte';
-	import Facilities from '../components/index/facilities.svelte';
-	import Showcase from '../components/index/showcase.svelte';
-	import Teachers from '../components/index/teachers.svelte';
+	import Description from '../components/home/description.svelte';
+	import Programs from '../components/home/our_programs.svelte';
+	import Facilities from '../components/home/facilities.svelte';
+	import Showcase from '../components/home/showcase.svelte';
+	import Teachers from '../components/home/teachers.svelte';
 	import { onMount } from 'svelte';
 
 	let hero;

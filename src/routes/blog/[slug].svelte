@@ -16,6 +16,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import { Email, Vk, WhatsApp, Xing, Facebook, Twitter } from 'svelte-share-buttons-component';
+	import Breadcrumb from '../../components/breadcrumb.svelte';
 
 	export let post;
 	const url = 'https://satvik-yogshala.netlify.app/blog/' + post.slug;
@@ -34,6 +35,11 @@
 			heroWrapper.style.maxHeight = "80vh";
 		}, 500);
 	});
+
+	const path = [
+		{ name: "Blog", href: "blog" },
+		{ name: `${post.title}`, href: "blog/${post.slug}" }
+	]
 </script>
 
 <style>
@@ -117,6 +123,7 @@
 		<div class="info">
 			Posted On : {post.date}
 		</div>
+		<Breadcrumb {path} />
 		<div class="share">
 			<Facebook class="share-button" {url} />
 			<Twitter class="share-button" text="{title}" {url} />

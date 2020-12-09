@@ -203,6 +203,7 @@
 
         .navbar {
             justify-content: space-between;
+            background: #ffffffe8;
         }
 
         .logo_menu {
@@ -256,6 +257,26 @@
             align-self: flex-start;
             width: 100%;
             background: transparent;
+        }
+
+        .main_menu>.list>.item:hover,
+        .main_menu>.list>.item:focus,
+        .main_menu>.list>.item:active {
+            background: #46464615;
+
+        }
+
+        .main_menu>.list>.item:hover>div:first-child,
+        .main_menu>.list>.item:focus>div:first-child,
+        .main_menu>.list>.item:active>div:first-child {
+            background: #464646b7;
+
+        }
+
+        .main_menu>.list>.item:hover div:hover,
+        .main_menu>.list>.item:focus div:focus,
+        .main_menu>.list>.item:active div:active {
+            background: #464646b7;
         }
     }
 </style>
