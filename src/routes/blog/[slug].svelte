@@ -15,7 +15,12 @@
 
 <script>
 	import { onMount } from 'svelte';
+	import { Email, Vk, WhatsApp, Xing, Facebook, Twitter } from 'svelte-share-buttons-component';
+
 	export let post;
+	const url = 'https://satvik-yogshala.netlify.app/blog/' + post.slug;
+	const title = post.title;
+	const desc = post.desc;
 	let hero;
 	let heroWrapper;
 	let heroHeight = 0;
@@ -54,7 +59,7 @@
 
 	.hero {
 		position: absolute;
-		top: -20%;
+		top: -50%;
 		overflow: hidden;
 		width: 100%;
 	}
@@ -66,37 +71,40 @@
 
 	.blog-banner {
 		width: 100%;
+		justify-content: space-around;
+		margin: 10px 0;
 	}
 
-	.content :global(h2) {
-		font-size: 1.4em;
-		font-weight: 500;
+	.blog-banner>div {
+		margin: 5px 10px;
 	}
 
-	.content :global(pre) {
-		background-color: #f9f9f9;
-		box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.05);
-		padding: 0.5em;
-		border-radius: 2px;
-		overflow-x: auto;
+	.share>:global(a) {
+		margin: 5px 5px;
 	}
 
-	.content :global(pre) :global(code) {
-		background-color: transparent;
-		padding: 0;
+	.info {
+		background-color: rgb(131, 145, 140);
+		padding: 0 20px 0 10px;
+		border-top-right-radius: 20px;
+		border-bottom-right-radius: 20px;
+		color: #f9f9f9;
 	}
 
-	.content :global(ul) {
-		line-height: 1.5;
+	.heading {
+		margin: 10px 0;
+		width: 100%;
 	}
 
-	.content :global(li) {
-		margin: 0 0 0.5em 0;
+
+	.content {
+		width: 75%;
 	}
 </style>
 
 <svelte:head>
 	<title>{post.title} - Satvik Yogshala</title>
+
 </svelte:head>
 <div class="wrapper">
 	<div class="hero-wrapper" bind:this={heroWrapper} style="--hero-height:{heroHeight + 'px'};">
@@ -107,13 +115,19 @@
 
 	<div class="blog-banner">
 		<div class="info">
-			{post.date}
+			Posted On : {post.date}
 		</div>
 		<div class="share">
-			<div class="sharethis-inline-share-buttons"></div>
+			<Facebook class="share-button" {url} />
+			<Twitter class="share-button" text="{title}" {url} />
+			<WhatsApp class="share-button" text="{title} {url}" />
+			<Xing class="share-button" {title} {url} />
+			<Vk class="share-button" {title} {url} />
+			<Email subject="{title}" body="{desc} {url}" />
+
 		</div>
 	</div>
-	<h1>{post.title}</h1>
+	<h1 class="heading">{post.title}</h1>
 
 	<div class="content">
 		{@html post.html}
