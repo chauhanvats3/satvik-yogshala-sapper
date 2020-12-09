@@ -59,7 +59,7 @@
 
 	.hero {
 		position: absolute;
-		top: -50%;
+		top: -20%;
 		overflow: hidden;
 		width: 100%;
 	}

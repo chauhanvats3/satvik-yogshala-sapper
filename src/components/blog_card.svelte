@@ -34,7 +34,7 @@
         width: 100%;
         border-radius: 10px;
         position: absolute;
-        top: -50%;
+        top: -20%;
     }
 
     .content {
