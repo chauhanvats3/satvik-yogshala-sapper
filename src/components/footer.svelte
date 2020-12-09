@@ -61,33 +61,35 @@
         margin: 0 15px;
     }
 
-    ion-icon {
-        cursor: pointer;
-    }
-
     [name="heart"] {
         color: rgb(255, 98, 98);
         font-size: 16px;
         margin: 0 4px;
     }
 
-    [name="logo-youtube"]:hover {
+    .fab {
+        cursor: pointer;
+        font-size: 32px;
+        margin: 5px 10px;
+    }
+
+    .fa-youtube:hover {
         color: #FF0000;
     }
 
-    [name="logo-twitter"]:hover {
+    .fa-twitter:hover {
         color: #00ACEE;
     }
 
-    [name="logo-facebook"]:hover {
+    .fa-facebook-f:hover {
         color: #3b5998;
     }
 
-    [name="logo-linkedin"]:hover {
+    .fa-linkedin-in:hover {
         color: #0e76a8;
     }
 
-    [name="logo-instagram"]:hover {
+    .fa-instagram:hover {
         color: #cc2366;
 
     }
@@ -137,11 +139,11 @@
     </div>
     <div class="social">
 
-        <ion-icon name="logo-twitter">Twitter Profile</ion-icon>
-        <ion-icon name="logo-facebook">Facebook Page</ion-icon>
-        <ion-icon name="logo-instagram">Instagram Account</ion-icon>
-        <ion-icon name="logo-youtube">Youtube Channel</ion-icon>
-        <ion-icon name="logo-linkedin">Linkedin Profile</ion-icon>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-linkedin-in"></i>
     </div>
     <div class="banner">
         <div>Copyright © {year} <a href="." class="link"> Satvik Yogshala. </a>

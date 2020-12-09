@@ -11,7 +11,9 @@
 
 
     onMount(() => {
-        wrapper.style.height = height;
+        setTimeout(() => {
+            wrapper.style.height = height;
+        }, 1000)
     });
 
 </script>
@@ -24,7 +26,7 @@
 
     .wrapper {
         flex-direction: row;
-        width: 90%;
+        width: 80%;
         margin: 30px 0;
         border-radius: 20px;
         border: 2px solid rgb(0, 174, 255);
@@ -34,7 +36,7 @@
 
     .wrapper:hover {
         height: 415px;
-        width: 95%;
+        width: 90%;
         box-shadow: 0px 0px 20px rgba(104, 186, 211, 0.815);
     }
 
@@ -85,7 +87,7 @@
     @media (max-width: 740px) {
         .wrapper {
             height: 500px;
-            width: 85%;
+            width: 95%;
         }
 
         .wrapper:hover {
@@ -101,6 +103,14 @@
         .content {
             width: 100%;
             height: 40%;
+        }
+
+        h1 {
+            font-size: small;
+        }
+
+        .info {
+            font-size: small;
         }
     }
 </style>

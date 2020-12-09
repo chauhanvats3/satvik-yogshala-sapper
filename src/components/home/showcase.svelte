@@ -92,7 +92,7 @@
 
     .gallery,
     .blog {
-        width: 45vw;
+        width: 40vw;
         min-height: 350px;
         margin: 0 10px;
     }
@@ -134,7 +134,18 @@
 
     @media (max-width: 695px) {
         .gallery {
-            width: 100%;
+            width: 90%;
+            min-height: 35vh;
+
+        }
+
+        .blog {
+            width: 90%;
+        }
+
+        .gallery:hover {
+            width: 96%;
+            box-shadow: 0px 0px 20px rgb(70, 69, 69);
         }
     }
 </style>

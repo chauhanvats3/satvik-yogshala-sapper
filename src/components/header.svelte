@@ -64,10 +64,10 @@
         margin: 5px;
     }
 
-    .icon {
+    i {
         height: 16px;
         width: 16px;
-        margin: 3px;
+        margin: 1px 5px;
     }
 
     .btn-wrapper {
@@ -287,21 +287,19 @@
         <div>
             <a href="tel:+918126726747" target="_blank">
                 <p>
-                    <ion-icon name="call-sharp" class="icon"></ion-icon>
+                    <i class="fas fa-phone-alt"></i>
                     +91-8126726747
                 </p>
             </a>
             <a href="mailto:satvikyogshala@gmail.com" target="_blank">
                 <p>
-                    <ion-icon name="mail-sharp" class="icon"></ion-icon> satvikyogshala@gmail.com
+                    <i class="fas fa-envelope"></i> satvikyogshala@gmail.com
                 </p>
             </a>
         </div>
         <div class="btn-wrapper">
             <button class="btn btn-grad"><a href="contact" style="text-decoration: none;">Apply Now</a>
-                <ion-icon name="create-outline" class="icon" style="--ionicon-stroke-width: 40px;"></ion-icon>
-            </button>
-        </div>
+                <i class="far fa-edit"></i> </div>
 
     </div>
     <!-- NAVBAR -->
