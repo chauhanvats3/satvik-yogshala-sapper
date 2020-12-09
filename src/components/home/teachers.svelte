@@ -34,7 +34,7 @@
     .teacher {
         position: relative;
         width: 200px;
-        height: 230px;
+        height: 240px;
         margin: 5px 10px;
         flex-flow: column wrap;
         font-weight: 900;
@@ -44,6 +44,12 @@
         border: 1px solid #84a0dbd5;
         padding: 5px;
         background-color: #84a0db27;
+        transition: all 0.2s;
+    }
+
+    .teacher:hover {
+        width: 210px;
+        box-shadow: 0px 0px 20px #84a0dbd5;
     }
 
     img {

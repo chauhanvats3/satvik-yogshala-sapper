@@ -40,6 +40,8 @@
 		width: 100%;
 	}
 
+
+
 	@media (max-width: 750px) {
 		.hero-wrapper {
 			margin-top: 50px;

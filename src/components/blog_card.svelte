@@ -4,6 +4,16 @@
     export let img;
     export let link;
     export let date;
+    export let height = "400px";
+
+    import { onMount } from 'svelte'
+    let wrapper;
+
+
+    onMount(() => {
+        wrapper.style.height = height;
+    });
+
 </script>
 
 <style>
@@ -15,7 +25,6 @@
     .wrapper {
         flex-direction: row;
         width: 90%;
-        height: 400px;
         margin: 30px 0;
         border-radius: 20px;
         border: 2px solid rgb(0, 174, 255);
@@ -98,7 +107,7 @@
 
 <a rel="prefetch" href={link}>
 
-    <div class="wrapper">
+    <div class="wrapper" bind:this={wrapper}>
 
         <div class="image">
             <img src="{img}" alt="{title}">

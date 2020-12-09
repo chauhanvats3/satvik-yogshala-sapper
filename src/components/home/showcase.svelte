@@ -3,6 +3,30 @@
     import { fade, fly, slide } from 'svelte/transition';
     import { quintInOut, quintOut, linear } from 'svelte/easing';
     import { tweened } from 'svelte/motion';
+    import BlogCard from '../blog_card.svelte';
+
+
+    var blogPost = {
+        date: "11-11-11 at 11:17 AM",
+        title: 'What is Sapper?',
+        slug: 'what-is-sapper',
+        image: 'images/yoga1.jpg',
+        desc: "Some random GibberishSome random GibberishSome random GibberishSome random GibberishSome random GibberishSome random GibberishSome random GibberishSome random GibberishSome random GibberishSome random GibberishSome random GibberishSome random GibberishSome random GibberishSome random GibberishSome random GibberishSome",
+        html: `
+			<p>First, you have to know what <a href='https://svelte.dev'>Svelte</a> is. Svelte is a UI framework with a bold new idea: rather than providing a library that you write code with (like React or Vue, for example), it's a compiler that turns your components into highly optimized vanilla JavaScript. If you haven't already read the <a href='https://svelte.dev/blog/frameworks-without-the-framework'>introductory blog post</a>, you should!</p>
+
+			<p>Sapper is a Next.js-style framework (<a href='blog/how-is-sapper-different-from-next'>more on that here</a>) built around Svelte. It makes it embarrassingly easy to create extremely high performance web apps. Out of the box, you get:</p>
+
+			<ul>
+				<li>Code-splitting, dynamic imports and hot module replacement, powered by webpack</li>
+				<li>Server-side rendering (SSR) with client-side hydration</li>
+				<li>Service worker for offline support, and all the PWA bells and whistles</li>
+				<li>The nicest development experience you've ever had, or your money back</li>
+			</ul>
+
+			<p>It's implemented as Express middleware. Everything is set up and waiting for you to get started, but you keep complete control over the server, service worker, webpack config and everything else, so it's as flexible as you need it to be.</p>
+		`
+    };
 
 
     var imageDuration = 5000;
@@ -11,8 +35,7 @@
         duration: pBarDuration,
         easing: linear
     });
-    /*     let pBarWidth = 0;
-     */
+
     let curIndex = 0;
 
     var images = [
@@ -82,6 +105,12 @@
         overflow: hidden;
         cursor: pointer;
         border-radius: 10px;
+        transition: all 0.2s;
+    }
+
+    .gallery:hover {
+        width: 46.5vw;
+        box-shadow: 0px 0px 20px rgb(70, 69, 69);
     }
 
     .gallery>div img {
@@ -117,7 +146,8 @@
     </div>
     <div class="showcase">
         <div class="blog">
-            BLOG
+            <BlogCard title={blogPost.title} desc={blogPost.desc} img={blogPost.image} link="blog" date={blogPost.date}
+                height="47vh" />
         </div>
         <div class="gallery">
             <div>

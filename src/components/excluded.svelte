@@ -48,6 +48,14 @@
             width: 100%;
             margin: 5px;
         }
+
+        .content-wrapper {
+            justify-content: flex-start;
+        }
+
+        .content {
+            width: 100%;
+        }
     }
 </style>
 

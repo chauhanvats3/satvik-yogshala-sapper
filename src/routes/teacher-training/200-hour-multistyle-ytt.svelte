@@ -133,11 +133,13 @@
     .highlights_content {
         flex-flow: column wrap;
         align-items: flex-start;
+        line-height: 1.8em;
     }
 
     .dots {
         height: 8px;
         width: 8px;
+        margin: 1px 5px;
     }
 
     .column_e {
@@ -193,7 +195,7 @@
                         <h1>200 HOURS MULTI-STYLE YOGA TEACHER TRAINING IN RISHIKESH, INDIA</h1>
                         <hr />
                     </div>
-                    <div class="heading">
+                    <div class="heading indie-flower">
                         <h3>ACCELERATION OF YOGIC CAREER IN A SERENE AND NATURAL ENVIRONMENT</h3>
                         <hr />
                     </div>

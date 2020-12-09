@@ -4,6 +4,9 @@
     export let show = false;
 
 
+    import { fade, fly, slide } from 'svelte/transition';
+    import { quintInOut, quintOut, linear } from 'svelte/easing';
+
     function toggleHeading() {
         show = !show;
     }
@@ -13,13 +16,24 @@
 <style>
     .collapsible {
         width: 100%;
+        border-radius: 5px;
+    }
+
+    .collapsible:hover,
+    .collapsible:active,
+    .collapsible:focus,
+    .show {
+        background: rgba(123, 204, 193, 0.274);
     }
 
     .topic {
         justify-content: space-between;
         cursor: pointer;
         width: 100%;
+        margin: 5px 10px;
     }
+
+
 
     .details {
         width: 90%;
@@ -39,10 +53,11 @@
     ion-icon {
         z-index: -100;
         margin: 0 5px;
+        color: rgb(66, 66, 66);
     }
 </style>
 
-<div class="collapsible">
+<div class="collapsible" class:show>
     <div class="topic" on:click={toggleHeading}>
         <p>{heading}</p>
         <p>
@@ -51,7 +66,7 @@
         </p>
     </div>
     {#if show}
-    <div class="details" >
+    <div class="details" transition:slide|local="{{ duration: 150,easing:linear}}">
         {#each details as detail}
         <div class="each_detail">
           

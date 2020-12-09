@@ -14,6 +14,7 @@
     .contact {
         flex-direction: column;
         width: 98vw;
+        margin-top: 150px;
     }
 
     .contact>div {
