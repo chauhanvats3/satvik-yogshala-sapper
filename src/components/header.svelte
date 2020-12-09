@@ -65,8 +65,6 @@
     }
 
     i {
-        height: 16px;
-        width: 16px;
         margin: 1px 5px;
     }
 
@@ -97,6 +95,7 @@
 
     .hamburger {
         display: none;
+        font-size: 16px;
     }
 
     .main_menu {
@@ -218,7 +217,7 @@
             color: black;
             visibility: visible;
             cursor: pointer;
-            font-size: 32px;
+            font-size: 24px;
         }
 
         .main_menu {
@@ -309,9 +308,9 @@
         <div class="logo_menu">
             <div class="logo"> <a href="."> Satvik Yogshala</a></div>
             {#if showHamburger}
-            <ion-icon name="menu-outline" class="hamburger" on:click={hamburgerClicked}></ion-icon>
+            <i class="fas fa-bars hamburger"  on:click={hamburgerClicked}></i>
             {:else if showMenuClose}
-            <ion-icon name="close-outline" class="hamburger" on:click={hamburgerClicked}></ion-icon>
+            <i class="fas fa-times hamburger"  on:click={hamburgerClicked}></i>
             {/if}
         </div>
 
@@ -320,7 +319,7 @@
 
                 <div class="item dropdown" class:selected={segment==="teacher-training" || segment==="teacher-training"
                     || segment==="teacher-training" }>
-                    <div><a>Teacher Training <ion-icon name="chevron-down-outline"></ion-icon></a>
+                    <div><a>Teacher Training <i class="fas fa-chevron-down"></i></a>
                     </div>
                     <div class="list">
                         <div class="item"><a href="teacher-training/100-hour-ytt" on:click={hamburgerClicked}>100 Hours
@@ -341,7 +340,7 @@
                 <div class="item dropdown" class:selected={segment==="about" || segment==="about" || segment==="about"
                     }>
                     <div>
-                        <a>About <ion-icon name="chevron-down-outline"></ion-icon></a>
+                        <a>About <i class="fas fa-chevron-down"></i></a>
                     </div>
                     <div class="list">
                         <div class="item"><a href="about/about-us" on:click={hamburgerClicked}>About Satvik Yogshala</a>

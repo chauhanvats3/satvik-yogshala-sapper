@@ -61,10 +61,11 @@
         margin: 0 15px;
     }
 
-    [name="heart"] {
+    .fa-heart {
         color: rgb(255, 98, 98);
         font-size: 16px;
         margin: 0 4px;
+        text-decoration: none;
     }
 
     .fab {
@@ -152,8 +153,8 @@
 
         <div>Terms and Conditions</div>
         <div>Privacy Policy</div>
-        <div><a class="link" href="https://github.com/chauhanvats3" target="_blank">Made with <ion-icon name="heart">
-                </ion-icon> by
+        <div><a class="link" href="https://github.com/chauhanvats3" target="_blank">Made with <i
+                    class="far fa-heart"></i> by
                 Vatsal</a></div>
     </div>
 </footer>

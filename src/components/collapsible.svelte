@@ -33,7 +33,10 @@
         margin: 5px 10px;
     }
 
-
+    .dots {
+        font-size: 8px;
+        margin: 1px 5px;
+    }
 
     .details {
         width: 90%;
@@ -44,35 +47,22 @@
         width: 100%;
         justify-content: flex-start;
     }
-
-    .dots {
-        height: 8px;
-        width: 8px;
-    }
-
-    ion-icon {
-        z-index: -100;
-        margin: 0 5px;
-        color: rgb(66, 66, 66);
-    }
 </style>
 
 <div class="collapsible" class:show>
     <div class="topic" on:click={toggleHeading}>
         <p>{heading}</p>
         <p>
-            {#if show} <ion-icon name="remove-sharp"></ion-icon>
-            {:else}<ion-icon name="add-sharp"></ion-icon>{/if}
+            {#if show} <i class="far fa-minus-square"></i>
+            {:else}            <i class="far fa-plus-square" ></i>
+            {/if}
         </p>
     </div>
     {#if show}
     <div class="details" transition:slide|local="{{ duration: 150,easing:linear}}">
         {#each details as detail}
         <div class="each_detail">
-          
-           
-                <ion-icon name="radio-button-on" class="dots"></ion-icon>
-            
+            <i class="fas fa-circle-notch dots"></i>            
             <div>
                 {detail} 
             </div>
