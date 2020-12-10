@@ -36,6 +36,15 @@
         { name: "Meditation", details: ["33", "44"] },
     ];
 
+    let highlights = [
+        "Learning & Understanding the basics of Yoga Asana",
+        "Studying Yoga Anatomy and Physiology for better alignment of Yogic postures",
+        "Enhancing class conducting techniques and confidence",
+        "Strengthening the path of becoming true Yogi",
+        "Knowledge of Yoga Anatomy and Physiology",
+        "Performing Meditation, Mantras, and Pranayama in the lap of nature"
+    ];
+
     let time_table_headers = ["Time", "Week 1", "Week 2", "Week 3"];
     let time_table_data_set = [
         ["05:45 AM - 06:00 AM", "Detox Tea", "Detox Tea", "Detox Tea"],
@@ -137,9 +146,9 @@
     }
 
     .dots {
-        height: 8px;
-        width: 8px;
+        font-size: small;
         margin: 1px 5px;
+        color: teal;
     }
 
     .column_e {
@@ -296,30 +305,15 @@
                     <hr />
                 </div>
                 <div class="highlights_content">
-                    <p>
-                        <ion-icon name="radio-button-on" class="dots"></ion-icon>Learning & Understanding the basics of
-                        Yoga Asana
-                    </p>
-                    <p>
-                        <ion-icon name="radio-button-on" class="dots"></ion-icon>Studying Yoga Anatomy and Physiology
-                        for better alignment of Yogic postures
-                    </p>
-                    <p>
-                        <ion-icon name="radio-button-on" class="dots"></ion-icon>Enhancing class conducting techniques
-                        and confidence
-                    </p>
-                    <p>
-                        <ion-icon name="radio-button-on" class="dots"></ion-icon>Strengthening the path of becoming true
-                        Yogi
-                    </p>
-                    <p>
-                        <ion-icon name="radio-button-on" class="dots"></ion-icon>Knowledge of Yoga Anatomy and
-                        Physiology
-                    </p>
-                    <p>
-                        <ion-icon name="radio-button-on" class="dots"></ion-icon>Performing Meditation, Mantras, and
-                        Pranayama in the lap of nature
-                    </p>
+
+                    {#each highlights as highlight}
+                        <p>
+                            <i class="fas fa-circle-notch dots"></i>            
+                            {highlight}
+                        </p>
+                {/each}
+                   
+                   
                 </div>
             </div>
         </div>

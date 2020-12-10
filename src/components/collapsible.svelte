@@ -36,6 +36,7 @@
     .dots {
         font-size: 8px;
         margin: 1px 5px;
+        color: teal;
     }
 
     .details {

@@ -92,7 +92,7 @@
 
         .wrapper:hover {
             height: 510px;
-            width: 92%;
+            width: 98%;
         }
 
         .image {

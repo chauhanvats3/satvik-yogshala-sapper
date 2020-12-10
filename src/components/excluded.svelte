@@ -30,7 +30,7 @@
         justify-content: flex-start;
     }
 
-    ion-icon {
+    i {
         color: red;
     }
 
@@ -69,8 +69,7 @@
         <div class="content">
             {#each dataSet as excl}
             <div class="excluded">
-                <ion-icon name="close-outline"></ion-icon>
-                <p>{excl}</p>
+                <i class="far fa-times-circle"></i>                <p>{excl}</p>
            </div>
            {/each} 
        </div>

@@ -10,28 +10,19 @@
 const posts = [
 	{
 		date: "11-11-11 at 11:17 AM",
-		title: 'What is Sapper?',
-		slug: 'what-is-sapper',
-		image: 'images/yoga1.jpg',
-		desc: "Some random GibberishSome random GibberishSome random GibberishSome random GibberishSome random GibberishSome random GibberishSome random GibberishSome random GibberishSome random GibberishSome random GibberishSome random GibberishSome random GibberishSome random GibberishSome random GibberishSome random GibberishSome",
-		html: `
-			<p>First, you have to know what <a href='https://svelte.dev'>Svelte</a> is. Svelte is a UI framework with a bold new idea: rather than providing a library that you write code with (like React or Vue, for example), it's a compiler that turns your components into highly optimized vanilla JavaScript. If you haven't already read the <a href='https://svelte.dev/blog/frameworks-without-the-framework'>introductory blog post</a>, you should!</p>
+		title: 'YOGA TEACHER TRAINING COURSE (YTTC) IN RISHIKESH, INDIA: A LIFE-CHANGING EXPERIENCE',
+		slug: 'yttc-in-rishikesh-a-life-changing-experience',
+		image: 'images/yoga3.jpg',
+		desc: "I got acquainted with yoga five years ago. I used to practice asana regularly on my own, and I also attended some classes once a week at a local studio. I loved its benefits of staying energized, positive, and calm. However, I sensed that after a while, my practice (on physical, mental, spiritual level) was stagnating as if I had come to a dead-end in a maze.",
+		html: `<p>
+		I got acquainted with yoga five years ago. I used to practice asana regularly on my own, and I also attended some classes once a week at a local studio. I loved its benefits of staying energized, positive, and calm. However, I sensed that after a while, my practice (on physical, mental, spiritual level) was stagnating as if I had come to a dead-end in a maze. I lost the target. I needed guidance. One of my friends, who already finished his Yoga Teacher Training Course in Rishikesh, India, becoming a certified yoga teacher accredited by Yoga Alliance, recommended me the school where she studied. I did not hesitate: I booked the same course, I freed myself from work and school, booked my flight ticket, and arranged my visa. I was ready and excited to take distance from everything and dedicate one whole month to self-growth in my new home, Satvik Yogshala school. It was the 18th of April 2019. I arrived at Rishikesh solely with my backpack, my curious heart, and pure enthusiasm to dive into the depths of Yoga. Everybody at the school welcomed us with open arms and wide smiles, and I instantly felt I was where I was meant to be: we were six students, six different lives, ready for three weeks of transformation. Learning from real practitioners in the cradle of Yoga was an absolute honor, and for which I am infinitely grateful.</p>
 
-			<p>Sapper is a Next.js-style framework (<a href='blog/how-is-sapper-different-from-next'>more on that here</a>) built around Svelte. It makes it embarrassingly easy to create extremely high performance web apps. Out of the box, you get:</p>
-
-			<ul>
-				<li>Code-splitting, dynamic imports and hot module replacement, powered by webpack</li>
-				<li>Server-side rendering (SSR) with client-side hydration</li>
-				<li>Service worker for offline support, and all the PWA bells and whistles</li>
-				<li>The nicest development experience you've ever had, or your money back</li>
-			</ul>
-
-			<p>It's implemented as Express middleware. Everything is set up and waiting for you to get started, but you keep complete control over the server, service worker, webpack config and everything else, so it's as flexible as you need it to be.</p>
-		`
+		<p>Our schedule was perfectly designed that included not only asana, but also Shatkarma (purification techniques), Pranayama (breathing techniques), Meditation, Mantra chanting, Ayurveda, Body massage, Anatomy, Philosophy, Healthy Home-Made Meals, and many more. In our free time, we could discover the wonderful town with my new friends, bathe in waterfalls in the mountains and practice yoga at the bank of the Ganga which will always remain unique memories. All this opened new doors towards personal growth, a journey that never ends, supported from now on by my Indian family and masters. As a teacher myself now, I feel the responsibility to practice and share everything I have learned with anyone to nourish the real knowledge and path of yoga. To sum it up, completing my yoga teacher training in Rishikesh was one of the best decisions of my life. It was mentally, socially, physically and spiritually enriching; a time full of unforgettable experiences that have brought true changes and clear goals into my life for which I will be thankful forever.
+		</p>`
 	},
 
 	{
-		title: 'How to use Sapper',
+		title: 'YOGA TEACHER TRAINING COURSE (YTTC) IN RISHIKESH, INDIA: A LIFE-CHANGING EXPERIENCE',
 		slug: 'how-to-use-sapper',
 		html: `
 			<h2>Step one</h2>

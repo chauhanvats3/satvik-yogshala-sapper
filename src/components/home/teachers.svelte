@@ -62,12 +62,17 @@
     p {
         position: absolute;
         bottom: 0;
+        width: 100%;
     }
 
     @media (max-width:695px) {
         .teacher {
             width: 150px;
             height: 180px;
+        }
+
+        .teacher:hover {
+            width: 160px;
         }
 
         p {

@@ -38,7 +38,7 @@
 
 	const path = [
 		{ name: "Blog", href: "blog" },
-		{ name: `${post.title}`, href: "blog/${post.slug}" }
+		{ name: `${post.title}`, href: `blog/${post.slug}` }
 	]
 </script>
 
@@ -105,6 +105,12 @@
 
 	.content {
 		width: 75%;
+	}
+
+	.content :global(p) {
+		margin: 10px 10px;
+		line-height: 2em;
+		font-size: large;
 	}
 </style>
 

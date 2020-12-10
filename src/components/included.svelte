@@ -26,7 +26,7 @@
         justify-content: flex-start;
     }
 
-    ion-icon {
+    i {
         color: green;
     }
 
@@ -50,8 +50,7 @@
     <div class="content">
         {#each dataSet as incl}
         <div class="included">
-            <ion-icon name="checkmark-outline"></ion-icon> 
-            <p>{incl}</p>
+            <i class="far fa-check-circle"></i>            <p>{incl}</p>
         </div>
         {/each}
    </div>          
