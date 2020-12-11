@@ -9,6 +9,10 @@
         margin: 10px;
     }
 
+    p {
+        align-items: baseline;
+    }
+
     a {
         margin: 0 5px;
     }

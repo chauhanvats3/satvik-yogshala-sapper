@@ -319,7 +319,7 @@
 
                 <div class="item dropdown" class:selected={segment==="teacher-training" || segment==="teacher-training"
                     || segment==="teacher-training" }>
-                    <div><a class="noselect" href={segment}>Teacher Training <i class="fas fa-chevron-down"></i></a>
+                    <div><a class="noselect">Teacher Training <i class="fas fa-chevron-down"></i></a>
                     </div>
                     <div class="list">
                         <div class="item"><a href="teacher-training/100-hour-ytt" on:click={hamburgerClicked} class="noselect">100 Hours
@@ -340,7 +340,7 @@
                 <div class="item dropdown" class:selected={segment==="about" || segment==="about" || segment==="about"
                     }>
                     <div>
-                        <a href={segment}>About <i class="fas fa-chevron-down"></i></a>
+                        <a>About <i class="fas fa-chevron-down"></i></a>
                     </div>
                     <div class="list">
                         <div class="item"><a href="about/about-us" on:click={hamburgerClicked} class="noselect">About Satvik Yogshala</a>
