@@ -123,14 +123,14 @@
             <div class="heading">Contact Us</div>
             <div class="content">
                 <div style="flex-flow: column wrap;">
-                    <p><a href="tel:+918126726747" target="_blank">+91-8126726747</a></p>
-                    <a href="mailto:satvikyogshala@gmail.com" target="_blank">
+                    <p><a href="tel:+918126726747" target="_blank" rel="noopener">+91-8126726747</a></p>
+                    <a href="mailto:satvikyogshala@gmail.com" target="_blank" rel="noopener">
                         <p>satvikyogshala@gmail.com</p>
                     </a>
                 </div>
                 <div style="flex-flow: column;">
                     <p style="font-weight: bold;">Address:</p>
-                    <a href="https://g.page/satvikyogshala?share">
+                    <a href="https://g.page/satvikyogshala?share" target="_blank" rel="noopener">
                         <p>Badrinath Road, NH-58, <br />Tapovan, Rishikesh, India</p>
                     </a>
                 </div>
@@ -153,7 +153,7 @@
 
         <div>Terms and Conditions</div>
         <div>Privacy Policy</div>
-        <div><a class="link" href="https://github.com/chauhanvats3" target="_blank">Made with <i
+        <div><a class="link" href="https://github.com/chauhanvats3" target="_blank" rel="noopener">Made with <i
                     class="far fa-heart"></i> by
                 Vatsal</a></div>
     </div>

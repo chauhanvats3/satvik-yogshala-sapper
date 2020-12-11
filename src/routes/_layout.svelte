@@ -14,6 +14,10 @@
 	}
 </style>
 
+<svelte:head>
+	<script src="https://kit.fontawesome.com/578eab09d0.js" crossorigin="anonymous" async></script>
+	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+</svelte:head>
 
 
 <Header {segment} />

@@ -284,20 +284,20 @@
 <div id="header" class="header">
     <div id="banner" class="banner">
         <div>
-            <a href="tel:+918126726747" target="_blank">
-                <p>
+            <a href="tel:+918126726747" target="_blank" rel="noopener">
+                <p class="noselect">
                     <i class="fas fa-phone-alt"></i>
                     +91-8126726747
                 </p>
             </a>
-            <a href="mailto:satvikyogshala@gmail.com" target="_blank">
-                <p>
+            <a href="mailto:satvikyogshala@gmail.com" target="_blank" rel="noopener">
+                <p class="noselect">
                     <i class="fas fa-envelope"></i> satvikyogshala@gmail.com
                 </p>
             </a>
         </div>
         <div class="btn-wrapper">
-            <button class="btn btn-grad"><a href="contact" style="text-decoration: none;">Apply Now</a>
+            <button class="btn btn-grad"><a href="contact" style="text-decoration: none;" class="noselect">Apply Now</a>
                 <i class="far fa-edit"></i> </div>
 
     </div>
@@ -319,43 +319,43 @@
 
                 <div class="item dropdown" class:selected={segment==="teacher-training" || segment==="teacher-training"
                     || segment==="teacher-training" }>
-                    <div><a>Teacher Training <i class="fas fa-chevron-down"></i></a>
+                    <div><a class="noselect" href={segment}>Teacher Training <i class="fas fa-chevron-down"></i></a>
                     </div>
                     <div class="list">
-                        <div class="item"><a href="teacher-training/100-hour-ytt" on:click={hamburgerClicked}>100 Hours
+                        <div class="item"><a href="teacher-training/100-hour-ytt" on:click={hamburgerClicked} class="noselect">100 Hours
                                 YTT</a></div>
-                        <div class="item"><a href="teacher-training/200-hour-ytt" on:click={hamburgerClicked}>200 Hours
+                        <div class="item"><a href="teacher-training/200-hour-ytt" on:click={hamburgerClicked} class="noselect">200 Hours
                                 YTT</a></div>
 
                         <div class="item"><a href="teacher-training/200-hour-multistyle-ytt"
-                                on:click={hamburgerClicked}>200 Hours Multistyle
+                                on:click={hamburgerClicked} class="noselect">200 Hours Multistyle
                                 YTT</a>
                         </div>
                     </div>
                 </div>
                 <div class="item" class:selected={segment==="yoga-retreat" }>
-                    <div> <a href="yoga-retreat" on:click={hamburgerClicked}> Yoga Retreat</a></div>
+                    <div> <a href="yoga-retreat" on:click={hamburgerClicked} class="noselect"> Yoga Retreat</a></div>
                 </div>
 
                 <div class="item dropdown" class:selected={segment==="about" || segment==="about" || segment==="about"
                     }>
                     <div>
-                        <a>About <i class="fas fa-chevron-down"></i></a>
+                        <a href={segment}>About <i class="fas fa-chevron-down"></i></a>
                     </div>
                     <div class="list">
-                        <div class="item"><a href="about/about-us" on:click={hamburgerClicked}>About Satvik Yogshala</a>
+                        <div class="item"><a href="about/about-us" on:click={hamburgerClicked} class="noselect">About Satvik Yogshala</a>
                         </div>
-                        <div class="item"><a href="about/yoga-gurus" on:click={hamburgerClicked}>Yoga Teachers</a></div>
-                        <div class="item"><a href="about/gallery" on:click={hamburgerClicked}>Gallery</a></div>
-                        <div class="item"><a href="about/faq" on:click={hamburgerClicked}>FAQ</a></div>
+                        <div class="item"><a href="about/yoga-gurus" on:click={hamburgerClicked} class="noselect">Yoga Teachers</a></div>
+                        <div class="item"><a href="about/gallery" on:click={hamburgerClicked} class="noselect">Gallery</a></div>
+                        <div class="item"><a href="about/faq" on:click={hamburgerClicked} class="noselect">FAQ</a></div>
 
                     </div>
                 </div>
                 <div class="item" class:selected={segment==="blog" }>
-                    <div><a href="blog" on:click={hamburgerClicked}>Blog</a></div>
+                    <div><a href="blog" on:click={hamburgerClicked} class="noselect">Blog</a></div>
                 </div>
                 <div class="item" class:selected={segment==="contact" }>
-                    <div><a href="contact" on:click={hamburgerClicked}>Contact Us</a></div>
+                    <div><a href="contact" on:click={hamburgerClicked} class="noselect">Contact Us</a></div>
                 </div>
             </div>
         </div>

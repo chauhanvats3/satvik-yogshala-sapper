@@ -5,12 +5,18 @@
     export let link;
     export let date;
     export let height = "400px";
+    export let wrapperClass = "";
 
     import { onMount } from 'svelte'
     let wrapper;
 
 
     onMount(() => {
+
+        if (wrapperClass !== "") {
+            wrapper.classList.add(wrapperClass);
+        }
+
         setTimeout(() => {
             wrapper.style.height = height;
         }, 1000)
@@ -40,6 +46,24 @@
         box-shadow: 0px 0px 20px rgba(104, 186, 211, 0.815);
     }
 
+    :global(.smallCard) {
+        flex-direction: column;
+        width: 90%;
+        margin: 10px 0;
+        border-radius: 20px;
+        border: 2px solid rgb(0, 174, 255);
+        padding: 10px;
+        transition: all 0.2s;
+        overflow: hidden;
+    }
+
+    :global(.smallCard:hover) {
+        width: 95%;
+        box-shadow: 0px 0px 20px rgba(104, 186, 211, 0.815);
+    }
+
+
+
     .image {
         width: 60%;
         height: 100%;
@@ -48,11 +72,16 @@
         position: relative;
     }
 
+    :global(.smallCard) .image {
+        width: 90%;
+        height: 30%;
+    }
+
     img {
         width: 100%;
         border-radius: 10px;
         position: absolute;
-        top: -20%;
+        top: 0%;
     }
 
     .content {
@@ -62,6 +91,11 @@
         justify-content: flex-start;
         overflow: hidden;
         padding: 10px;
+    }
+
+    :global(.smallCard) .content {
+        width: 90%;
+        height: 65%;
     }
 
     .heading {

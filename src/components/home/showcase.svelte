@@ -146,7 +146,7 @@
     <div class="showcase">
         <div class="blog">
             <BlogCard title={blogPost.title} desc={blogPost.desc} img={blogPost.image} link="blog" date={blogPost.date}
-                height="47vh" />
+                height="47vh" wrapperClass="smallCard" />
         </div>
         <div class="gallery">
             <div>
