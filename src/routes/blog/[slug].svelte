@@ -90,7 +90,7 @@
 	}
 
 	.info {
-		background-color: rgb(131, 145, 140);
+		background-color: rgb(84, 95, 91);
 		padding: 0 20px 0 10px;
 		border-top-right-radius: 20px;
 		border-bottom-right-radius: 20px;

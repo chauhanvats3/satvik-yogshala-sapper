@@ -105,7 +105,7 @@
     }
 
     .info {
-        background-color: rgb(108, 175, 172);
+        background-color: rgb(29, 109, 105);
         padding: 3px 20px;
         clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
         color: white;

@@ -82,7 +82,7 @@
         flex-basis: 100%;
         padding: 0 30px;
         min-height: 50px;
-        background: #ffffffb7;
+        background: #ffffffd7;
 
     }
 
@@ -137,8 +137,8 @@
         visibility: hidden;
         opacity: 0;
         transition: visibility 0.1s, opacity 0.3s ease-out;
-        background: #464646b7;
-
+        background: #464646c0;
+        color: aliceblue;
         padding: 10px;
     }
 
@@ -173,10 +173,13 @@
 
     .item>div>a:hover,
     .item>a:hover,
+    .noselect:hover,
     .item>div>a:focus,
     .item>a:focus,
+    .noselect:focus,
     .item>div>a:active,
-    .item>a:active {
+    .item>a:active,
+    .noselect:active {
         background-size: 100% auto;
         /* Fallback: Set a background color. */
         background-color: rgb(255, 113, 113);
@@ -285,19 +288,19 @@
     <div id="banner" class="banner">
         <div>
             <a href="tel:+918126726747" target="_blank" rel="noopener">
-                <p class="noselect">
+                <p>
                     <i class="fas fa-phone-alt"></i>
                     +91-8126726747
                 </p>
             </a>
             <a href="mailto:satvikyogshala@gmail.com" target="_blank" rel="noopener">
-                <p class="noselect">
+                <p>
                     <i class="fas fa-envelope"></i> satvikyogshala@gmail.com
                 </p>
             </a>
         </div>
         <div class="btn-wrapper">
-            <button class="btn btn-grad"><a href="contact" style="text-decoration: none;" class="noselect">Apply Now</a>
+            <button class="btn btn-grad"><a href="contact" style="text-decoration: none;">Apply Now</a>
                 <i class="far fa-edit"></i> </div>
 
     </div>
@@ -319,7 +322,7 @@
 
                 <div class="item dropdown" class:selected={segment==="teacher-training" || segment==="teacher-training"
                     || segment==="teacher-training" }>
-                    <div><a class="noselect">Teacher Training <i class="fas fa-chevron-down"></i></a>
+                    <div><p style="cursor: pointer;"  class="noselect">Teacher Training </p><i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="list">
                         <div class="item"><a href="teacher-training/100-hour-ytt" on:click={hamburgerClicked} class="noselect">100 Hours
@@ -340,7 +343,7 @@
                 <div class="item dropdown" class:selected={segment==="about" || segment==="about" || segment==="about"
                     }>
                     <div>
-                        <a>About <i class="fas fa-chevron-down"></i></a>
+                        <p style="cursor: pointer;"  class="noselect" >About</p> <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="list">
                         <div class="item"><a href="about/about-us" on:click={hamburgerClicked} class="noselect">About Satvik Yogshala</a>

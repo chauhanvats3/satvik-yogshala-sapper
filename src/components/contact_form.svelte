@@ -24,6 +24,8 @@
     });
     function handleSubmit() {
 
+        message.value = message.value.replace(/\n/g, '%0A');
+
         phoneNumber.value = phoneNumber.value.replace(/\s/g, '');
 
         let errorItems = [];
@@ -75,8 +77,14 @@
         width: 100%;
     }
 
+    input,
+    textarea,
+    button {
+        border-radius: 10px;
+    }
+
     :global(.errorField) {
-        background-color: rgba(255, 0, 0, 0.801);
+        background-color: rgba(255, 0, 0, 0.596);
         color: aliceblue;
     }
 
