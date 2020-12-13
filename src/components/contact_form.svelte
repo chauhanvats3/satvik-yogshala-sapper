@@ -118,5 +118,5 @@
     <div><input type="text" name="subject" id="subject" placeholder="Subject" bind:this={subject}></div>
     <div><textarea id="message" name="message" rows="5" placeholder="Enter Your Message" bind:this={message}></textarea>
     </div>
-    <div><button class="btn btn-grad" on:click={handleSubmit}>Submit</button></div>
+    <div><button class="btn btn-grad-2" on:click={handleSubmit}>Submit</button></div>
 </div>
