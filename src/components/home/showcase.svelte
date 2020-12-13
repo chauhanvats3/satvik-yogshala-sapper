@@ -10,7 +10,7 @@
         date: "11-11-11 at 11:17 AM",
         title: 'YOGA TEACHER TRAINING COURSE (YTTC) IN RISHIKESH, INDIA: A LIFE-CHANGING EXPERIENCE',
         slug: 'yttc-in-rishikesh-a-life-changing-experience',
-        image: 'images/yoga3.jpg',
+        image: 'images/yoga15.jpg',
         desc: "I got acquainted with yoga five years ago. I used to practice asana regularly on my own, and I also attended some classes once a week at a local studio. I loved its benefits of staying energized, positive, and calm. However, I sensed that after a while, my practice (on physical, mental, spiritual level) was stagnating as if I had come to a dead-end in a maze.",
     };
 

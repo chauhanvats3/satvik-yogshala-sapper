@@ -60,9 +60,14 @@
         font-weight: 200;
     }
 
-    p {
+    p,
+    .item div a {
         margin: 5px;
     }
+
+
+
+
 
     i {
         margin: 1px 5px;
@@ -243,11 +248,13 @@
 
         .item div {
             width: 100%;
+            justify-content: flex-start;
         }
 
         .dropdown>.list {
             position: relative;
             display: none;
+            color: black;
         }
 
         .dropdown:hover>.list,

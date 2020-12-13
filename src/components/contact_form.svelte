@@ -14,7 +14,7 @@
     let required;
 
     onMount(() => {
-        required = [firstName, custEmail, subject, message];
+        required = [firstName, subject, message];
         requiredPlaceholders = {};
         required.forEach((item, index) => {
             requiredPlaceholders[item.id] = item.placeholder;
@@ -24,7 +24,6 @@
     });
     function handleSubmit() {
 
-        message.value = message.value.replace(/\n/g, '%0A');
 
         phoneNumber.value = phoneNumber.value.replace(/\s/g, '');
 
@@ -45,7 +44,7 @@
 
         if (errorItems.length > 0) showError(errorItems);
         else {
-            body = ` ${message.value} %0A Name : ${firstName.value} ${lastName.value} %0A Email : ${custEmail.value} %0A Phone Number : ${phoneNumber.value}`;
+            body = `${message.value.replace(/\n/g, '%0A')} %0A Name : ${firstName.value} ${lastName.value} %0A Phone Number : ${phoneNumber.value}`;
             mailURL = `mailto:${satvikEmail}?subject=${subject.value}&body=${body}`;
             window.open(mailURL, "_blank");
         }
@@ -113,7 +112,8 @@
     </div>
     <div><input type="text" name="f_name" id="f_name" placeholder="First Name" bind:this={firstName}></div>
     <div><input type="text" name="l_name" id="l_name" placeholder="Last Name" bind:this={lastName}></div>
-    <div><input type="email" name="email" id="email" placeholder="Email ID" bind:this={custEmail}></div>
+    <!--     <div><input type="email" name="email" id="email" placeholder="Email ID" bind:this={custEmail}></div>
+ -->
     <div><input type="tel" name="phone" id="phone" placeholder="Phone Number" bind:this={phoneNumber}></div>
     <div><input type="text" name="subject" id="subject" placeholder="Subject" bind:this={subject}></div>
     <div><textarea id="message" name="message" rows="5" placeholder="Enter Your Message" bind:this={message}></textarea>

@@ -93,7 +93,7 @@ hr {
    text-align: center;
    text-transform: uppercase;
    transition: 0.5s;
-   background-size: 200% auto;
+   background-size: 150% auto;
    color: white;   
          
  }
@@ -109,8 +109,8 @@ hr {
 .btn{
     border: 1px solid black;
     cursor: pointer;
-    text-shadow:  1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
-}
+/*     text-shadow:  1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+ */}
 .btn a{
     text-decoration: none;
 }

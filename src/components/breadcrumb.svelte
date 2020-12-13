@@ -24,6 +24,12 @@
         text-align: left;
         text-overflow: ellipsis;
     }
+
+    @media (max-width: 500px) {
+        * {
+            font-size: small;
+        }
+    }
 </style>
 
 <div class="breadcrumb">

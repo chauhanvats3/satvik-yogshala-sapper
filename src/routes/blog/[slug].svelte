@@ -112,6 +112,19 @@
 		line-height: 2em;
 		font-size: large;
 	}
+
+	@media (max-width: 400px) {
+
+		.heading {
+			font-size: medium;
+		}
+
+		.content :global(p) {
+			margin: 5px 5px;
+			line-height: 1.8em;
+			font-size: medium;
+		}
+	}
 </style>
 
 <svelte:head>

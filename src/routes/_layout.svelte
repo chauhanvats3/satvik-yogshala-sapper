@@ -23,7 +23,7 @@
 
 
 <Header {segment} />
-<PageLoadingBar {preloading} />
+<PageLoadingBar {preloading} color1="#121212" color2="#f1f1f1" />
 {#if !$preloading}
 <main transition:fade>
 	<slot></slot>
