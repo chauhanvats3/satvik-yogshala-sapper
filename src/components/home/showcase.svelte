@@ -113,9 +113,9 @@
         max-width: 100%;
         height: 2px;
         position: absolute;
-        bottom: 0;
+        top: 0;
         left: 0;
-        background: rgb(106, 209, 216);
+        background: rgb(214, 84, 8);
         z-index: 10;
         border-right: 3px solid black;
     }
@@ -139,26 +139,25 @@
 </style>
 
 <div class="wrapper">
-    <div class="heading">
-        <h1 class="indie-flower">Showcase</h1>
-        <hr class="sexy_bottom_line" />
-    </div>
+
     <div class="showcase">
         <div class="blog">
+
             <BlogCard title={blogPost.title} desc={blogPost.desc} img={blogPost.image} link="blog" date={blogPost.date}
                 height="47vh" wrapperClass="smallCard" />
+
         </div>
         <div class="gallery">
+
             <div>
                 {#each [images[curIndex]] as photo (curIndex)}
-                         <a href="about/gallery">
-                            <img 
-                            transition:fade|local="{{ duration: 800,easing:quintInOut}}"
-                            src={photo.src} alt=""/>
-                        </a>
-                    {/each}
-                </div>
+                <a href="about/gallery">
+                    <img transition:fade|local="{{ duration: 800,easing:quintInOut}}" src={photo.src} alt="" />
+                </a>
+                {/each}
                 <div class="progress_bar" style="--p-bar-width: {$pBarWidth}%"></div>
+            </div>
+
         </div>
     </div>
 </div>
