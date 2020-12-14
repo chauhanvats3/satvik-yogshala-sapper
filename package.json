@@ -1,7 +1,7 @@
 {
-  "name": "TODO",
-  "description": "TODO",
-  "version": "0.0.1",
+  "name": "Satvik Yogshala",
+  "description": "Best Yoga Teacher Training School in Rishikesh",
+  "version": "1.0.1",
   "scripts": {
     "dev": "sapper dev",
     "build": "sapper build --legacy",

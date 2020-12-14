@@ -1,14 +1,14 @@
 <script>
     import { onMount } from 'svelte';
+
     export let segment;
+
     let mainMenu;
     var showHamburger = true;
     var showMenuClose = false;
     let hamburgerClicked = () => {
         var screenWidth = window.screen.width;
         var mainMenuStatus = window.getComputedStyle(mainMenu).display;
-
-        console.log(screenWidth)
 
         if (screenWidth > 850) {
             return;
@@ -65,10 +65,6 @@
         margin: 5px;
     }
 
-
-
-
-
     i {
         margin: 1px 5px;
     }
@@ -110,6 +106,7 @@
         justify-content: flex-end;
         align-self: stretch;
         align-items: stretch;
+        transition: all 1s;
     }
 
     .main_menu .item {
@@ -342,7 +339,7 @@
         </div>
 
         <div class="main_menu" bind:this={mainMenu}>
-            <div class="list">
+            <div class=" list">
 
                 <div class="item dropdown" class:selected={segment==="teacher-training" || segment==="teacher-training"
                     || segment==="teacher-training" }>
@@ -380,7 +377,8 @@
                         <div class="item"><a href="about/yoga-gurus" on:click={hamburgerClicked} class="noselect">Yoga
                                 Teachers</a></div>
                         <div class="item"><a href="about/gallery" on:click={hamburgerClicked}
-                                class="noselect">Gallery</a></div>
+                                class="noselect">Gallery</a>
+                        </div>
                         <div class="item"><a href="about/faq" on:click={hamburgerClicked} class="noselect">FAQ</a></div>
 
                     </div>

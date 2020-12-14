@@ -55,19 +55,19 @@
         <p>{heading}</p>
         <p>
             {#if show} <i class="far fa-minus-square"></i>
-            {:else}            <i class="far fa-plus-square" ></i>
+            {:else} <i class="far fa-plus-square"></i>
             {/if}
         </p>
     </div>
     {#if show}
-    <div class="details" transition:slide|local="{{ duration: 150,easing:linear}}">
+    <div class="details" transition:slide|local="{{ duration: 200,easing:linear}}">
         {#each details as detail}
         <div class="each_detail">
-            <i class="fas fa-circle-notch dots"></i>            
+            <i class="fas fa-circle-notch dots"></i>
             <div>
-                {detail} 
+                {detail}
             </div>
-         
+
         </div>
         {/each}
     </div>

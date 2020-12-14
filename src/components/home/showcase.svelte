@@ -96,8 +96,10 @@
         transition: all 0.2s;
     }
 
-    .gallery:hover {
-        width: 46.5vw;
+    .gallery:hover,
+    .gallery:active,
+    .gallery:focus {
+        width: 41.5vw;
         box-shadow: 0px 0px 20px rgb(70, 69, 69);
     }
 
@@ -131,9 +133,11 @@
             width: 90%;
         }
 
-        .gallery:hover {
+        .gallery:hover,
+        .gallery:active,
+        .gallery:focus {
             width: 96%;
-            box-shadow: 0px 0px 20px rgb(70, 69, 69);
+            box-shadow: 0px 0px 0px transparent;
         }
     }
 
