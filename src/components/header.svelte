@@ -10,7 +10,7 @@
 
         console.log(screenWidth)
 
-        if (screenWidth > 740) {
+        if (screenWidth > 850) {
             return;
         }
 
@@ -87,8 +87,10 @@
         flex-basis: 100%;
         padding: 0 30px;
         min-height: 50px;
-        background: #ffffffd7;
 
+        background: rgba(255, 255, 255, 0.87);
+        backdrop-filter: blur(4.5px);
+        -webkit-backdrop-filter: blur(4.5px);
     }
 
     .logo_menu {
@@ -206,7 +208,7 @@
         -moz-text-fill-color: transparent;
     }
 
-    @media (max-width: 740px) {
+    @media (max-width: 850px) {
         .banner {
             display: none;
         }
@@ -274,22 +276,33 @@
         .main_menu>.list>.item:hover,
         .main_menu>.list>.item:focus,
         .main_menu>.list>.item:active {
-            background: #46464615;
+            background: transparent;
 
         }
 
-        .main_menu>.list>.item:hover>div:first-child,
+        /* .main_menu>.list>.item:hover>div:first-child,
         .main_menu>.list>.item:focus>div:first-child,
         .main_menu>.list>.item:active>div:first-child {
             background: #464646b7;
 
-        }
+        } */
 
         .main_menu>.list>.item:hover div:hover,
         .main_menu>.list>.item:focus div:focus,
         .main_menu>.list>.item:active div:active {
             background: #464646b7;
         }
+    }
+
+    @supports (backdrop-filter: blur()) or (-webkit-backdrop-filter: blur()) {
+
+        .navbar {
+            background: rgba(255, 255, 255, 0.13);
+            backdrop-filter: blur(2.5px);
+            -webkit-backdrop-filter: blur(2.5px);
+        }
+
+
     }
 </style>
 

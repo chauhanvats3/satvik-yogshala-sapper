@@ -134,6 +134,17 @@
             border-radius: 20px;
         }
     }
+
+    @supports (backdrop-filter: blur()) or (-webkit-backdrop-filter: blur()) {
+
+        .para_overlay {
+            background: rgba(255, 255, 255, 0.13);
+            backdrop-filter: blur(2.5px);
+            -webkit-backdrop-filter: blur(2.5px);
+        }
+
+
+    }
 </style>
 
 <div class="facilities">
@@ -144,7 +155,7 @@
     <div class="card_horizontal">
         {#each [facilities[selected_index]] as facility (selected_index)}
 
-            <img src={facility.image} alt="" transition:slide|local="{{duration: 1000, easing: quintInOut }}">
+        <img src={facility.image} alt="" transition:slide|local="{{duration: 1000, easing: quintInOut }}">
         {/each}
         <div class="overlay">
             <div class="options">
@@ -160,14 +171,12 @@
                 <div class="para_overlay">
 
                     {#each [facilities[selected_index]] as facility (selected_index)}
-                    <p 
-                    in:fly|local="{{delay: 250, x: -500, duration: 1000 }}" 
-                    out:fly|local="{{ x: 500, duration: 1000 }}"
-                    >{curDesc}</p>
+                    <p in:fly|local="{{delay: 250, x: -500, duration: 1000 }}"
+                        out:fly|local="{{ x: 500, duration: 1000 }}">{curDesc}</p>
                     {/each}
                 </div>
 
-                
+
             </div>
 
         </div>

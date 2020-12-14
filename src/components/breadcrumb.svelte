@@ -35,7 +35,5 @@
 <div class="breadcrumb">
     <p>
         {#each pathWhole as node,i}
-            <a href="{node.href}">{node.name}</a>{#if i<totalNodes} / {/if}
-        {/each}
-    </p>
+        <a href="{node.href}">{node.name.toUpperCase()}</a>{#if i<totalNodes} / {/if} {/each} </p>
 </div>

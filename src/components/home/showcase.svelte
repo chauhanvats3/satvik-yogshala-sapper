@@ -3,7 +3,7 @@
     import { fade, fly, slide } from 'svelte/transition';
     import { quintInOut, quintOut, linear } from 'svelte/easing';
     import { tweened } from 'svelte/motion';
-    import BlogCard from '../blog_card.svelte';
+    import BlogCard from '../blog_card_new.svelte';
 
 
     var blogPost = {
@@ -135,6 +135,16 @@
             width: 96%;
             box-shadow: 0px 0px 20px rgb(70, 69, 69);
         }
+    }
+
+    .blog>:global(.blog_card) {
+        width: 95%;
+        margin: 5px 5px;
+    }
+
+    .blog>:global(.blog_card:hover) {
+        width: 100%;
+        margin: 0;
     }
 </style>
 
