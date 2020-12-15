@@ -23,7 +23,7 @@
 
     .blog_card:hover {
         width: 90%;
-        box-shadow: 0 0 30px rgba(68, 68, 68, 0.514);
+
     }
 
     .content {
@@ -52,6 +52,7 @@
 
     .desc {
         font-size: 1.2em;
+        text-align: justify;
     }
 
 

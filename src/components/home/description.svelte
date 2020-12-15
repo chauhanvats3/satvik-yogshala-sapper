@@ -18,6 +18,7 @@
     .image {
         float: right;
         shape-outside: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
+        -webkit-clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
         clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
         shape-margin: 10px;
         width: 50%;
@@ -26,6 +27,7 @@
 
     img {
         shape-outside: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
+        -webkit-clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
         clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
         object-fit: cover;
     }
@@ -42,12 +44,14 @@
         .image {
             width: 100%;
             shape-outside: none;
+            -webkit-clip-path: none;
             clip-path: none;
         }
 
         img {
             margin-bottom: 20px;
             shape-outside: none;
+            -webkit-clip-path: none;
             clip-path: none;
         }
     }

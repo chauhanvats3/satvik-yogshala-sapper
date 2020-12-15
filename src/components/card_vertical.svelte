@@ -131,6 +131,20 @@
             transform: translateY(380px);
         }
     }
+
+
+    @supports (backdrop-filter: blur()) or (-webkit-backdrop-filter: blur()) {
+
+        .overlay .content {
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.13);
+            backdrop-filter: blur(2.5px);
+            -webkit-backdrop-filter: blur(2.5px);
+
+        }
+
+
+    }
 </style>
 
 <div class="card">

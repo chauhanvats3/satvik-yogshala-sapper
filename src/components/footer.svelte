@@ -9,6 +9,7 @@
         flex-flow: column wrap;
         background-color: #849fdb5b;
         padding-top: 10vh;
+        -webkit-clip-path: polygon(0 10vh, 100% 0%, 100% 100%, 0 100%);
         clip-path: polygon(0 10vh, 100% 0%, 100% 100%, 0 100%);
     }
 
@@ -42,10 +43,6 @@
         margin: 0 5px;
     }
 
-    ion-icon {
-        font-size: 32px;
-        margin: 0 10px;
-    }
 
     footer>div {
         margin: 10px;

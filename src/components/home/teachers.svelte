@@ -34,32 +34,33 @@
     .teacher {
         position: relative;
         width: 200px;
-        height: 240px;
+        height: 200px;
         margin: 5px 10px;
         flex-flow: column wrap;
         font-weight: 900;
         cursor: pointer;
-        border-radius: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
         cursor: pointer;
-        border: 1px solid #84a0dbd5;
         padding: 5px;
-        background-color: #84a0db27;
         transition: all 0.2s;
     }
 
     .teacher:hover {
         width: 210px;
-        box-shadow: 0px 0px 20px #84a0dbd5;
     }
 
     img {
         width: 100%;
-        border-radius: 20px;
+
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
         position: absolute;
         top: 0;
     }
 
     p {
+        background: rgba(255, 255, 255, 0.329);
         position: absolute;
         bottom: 0;
         width: 100%;
@@ -79,6 +80,16 @@
             font-size: small;
             margin-bottom: 2px;
         }
+    }
+
+    @supports (backdrop-filter: blur()) or (-webkit-backdrop-filter: blur()) {
+        p {
+
+            background: rgba(255, 255, 255, 0.288);
+            backdrop-filter: blur(2.5px);
+            -webkit-backdrop-filter: blur(2.5px);
+        }
+
     }
 </style>
 <div class="teachers">

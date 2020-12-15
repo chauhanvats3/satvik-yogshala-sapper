@@ -100,7 +100,6 @@
     .gallery:active,
     .gallery:focus {
         width: 41.5vw;
-        box-shadow: 0px 0px 20px rgb(70, 69, 69);
     }
 
     .gallery>div img {
@@ -137,7 +136,6 @@
         .gallery:active,
         .gallery:focus {
             width: 96%;
-            box-shadow: 0px 0px 0px transparent;
         }
     }
 

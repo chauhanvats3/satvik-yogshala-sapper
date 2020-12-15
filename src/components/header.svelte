@@ -39,7 +39,7 @@
     .banner {
         height: 30px;
         flex-basis: 100%;
-        justify-content: space-between;
+        justify-content: flex-end;
         padding: 0 30px;
 
         align-items: stretch;
@@ -67,15 +67,6 @@
 
     i {
         margin: 1px 5px;
-    }
-
-    .btn-wrapper {
-        align-items: stretch;
-        height: 100%;
-    }
-
-    .btn {
-        border: 2px solid black;
     }
 
     /* NAVBAR STYLES */
@@ -319,11 +310,6 @@
                 </p>
             </a>
         </div>
-        <div class="btn-wrapper">
-            <button class="btn btn-grad-2"><a href="contact" style="text-decoration: none;">Apply Now</a>
-                <i class="far fa-edit"></i>
-        </div>
-
     </div>
     <!-- NAVBAR -->
 
