@@ -56,23 +56,40 @@
             height: 450px;
         }
     }
+
+    @media (max-width: 400px) {
+
+        .header {
+            padding: 0;
+        }
+
+        .td {
+            width: 120px;
+            font-size: 13px;
+            height: 70px;
+        }
+
+        .table_wrapper {
+            height: 450px;
+        }
+    }
 </style>
 
 <div class="table_wrapper">
     <div class="table">
         <div class="header">
             {#each headers as header}
-                <div class="td">{header}</div>
+            <div class="td">{header}</div>
             {/each}
         </div>
         {#each data_set as data_arr,i}
-            <div class="row">
-                {#each data_arr as data}
-                    <div class="td">
-                        {data}
-                    </div>            
-                {/each}
+        <div class="row">
+            {#each data_arr as data}
+            <div class="td">
+                {data}
             </div>
+            {/each}
+        </div>
         {/each}
     </div>
 </div>

@@ -68,18 +68,25 @@
     }
 
 
-    @media (max-width: 520px) {
-
-        .topics {
-            width: 100%;
-        }
-    }
-
     @supports (backdrop-filter: blur()) or (-webkit-backdrop-filter: blur()) {
 
         .topics {
             -webkit-backdrop-filter: blur(2.5px);
             backdrop-filter: blur(2.5px);
+        }
+
+
+    }
+
+
+
+    @media (max-width: 520px) {
+
+        .topics {
+            width: 100%;
+
+            -webkit-backdrop-filter: blur(0.5px);
+            backdrop-filter: blur(0.5px);
         }
 
 
