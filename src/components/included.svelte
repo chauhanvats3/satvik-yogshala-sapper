@@ -4,7 +4,6 @@
     let curImg = dataSet[0].src;
     let changeImage = (i) => {
         curImg = dataSet[i].src;
-        console.log(curImg);
     }
 </script>
 

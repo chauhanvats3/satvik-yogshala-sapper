@@ -11,7 +11,6 @@
 
         setTimeout(() => {
             heroHeight = hero.offsetHeight;
-            console.log(heroHeight);
             if (heroHeight == 0) {
                 setTimeout(setHeroHeight(), 1000);
             }

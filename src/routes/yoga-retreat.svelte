@@ -83,10 +83,6 @@
     .time_table {
         width: 100%;
     }
-
-    .contact-form {
-        width: 50%;
-    }
 </style>
 <svelte:head>
     <title>Yoga Retreat - Satvik Yogshala</title>
@@ -193,7 +189,7 @@
         </div>
 
         <div class="contact-form">
-            <Contact_Form />
+            <Contact_Form classToGive="half" />
         </div>
     </div>
 </div>

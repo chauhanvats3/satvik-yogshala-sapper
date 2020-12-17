@@ -1,6 +1,8 @@
 <script>
     import { onMount } from 'svelte';
 
+    export let classToGive = "";
+
     const satvikEmail = 'satvikyogshala@gmail.com'
     let firstName;
     let lastName;
@@ -20,7 +22,6 @@
             requiredPlaceholders[item.id] = item.placeholder;
         });
 
-        console.log(requiredPlaceholders);
     });
     function handleSubmit() {
 
@@ -72,6 +73,10 @@
         padding: 10px;
     }
 
+    .half {
+        width: 50%;
+    }
+
     .contact_form * {
         width: 100%;
     }
@@ -103,9 +108,15 @@
         /* Microsoft Edge */
         color: white;
     }
+
+    @media (max-width: 750px) {
+        .half {
+            width: 100%;
+        }
+    }
 </style>
 <!-- abj -->
-<div class="contact_form">
+<div class="contact_form" class:half={classToGive!="" }>
     <div class="heading">
         <h1 class="indie-flower">Contact Us</h1>
         <hr />
