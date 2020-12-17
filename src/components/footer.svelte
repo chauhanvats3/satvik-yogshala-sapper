@@ -6,6 +6,7 @@
 
 <style>
     footer {
+        width: 100vw !important;
         flex-flow: column wrap;
         background-color: #849fdb5b;
         padding-top: 10vh;
@@ -31,6 +32,8 @@
 
     .content {
         flex-flow: column wrap;
+        align-items: flex-start;
+        margin-left: 10px;
     }
 
 

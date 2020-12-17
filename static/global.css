@@ -9,6 +9,9 @@
     --color-4:#f0e6ef;
     --color-5:#b8bedd;
     --black:#5e6472;
+    --thumbBG:#383a3aa9;
+    --scrollbarBG:rgba(255, 255, 255, 0.308);
+
 }
 
 html,
@@ -32,6 +35,27 @@ body {
     font-family: 'Quicksand',sans-serif;
     font-weight: 500;
 }
+
+
+body::-webkit-scrollbar {
+    width: 7px;
+  }
+  body::-webkit-scrollbar:hover {
+    width: 10px;
+  }
+  body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 5px;
+    border: 1px solid var(--scrollbarBG);
+  }
+
 
 a {
     color: inherit;

@@ -32,7 +32,7 @@
     .header {
         position: fixed;
         top: 0;
-        width: 100%;
+        width: 100vw;
         z-index: 100;
     }
 
@@ -286,8 +286,14 @@
 
         .navbar {
             background: rgba(255, 255, 255, 0.13);
-            backdrop-filter: blur(2.5px);
             -webkit-backdrop-filter: blur(2.5px);
+            backdrop-filter: blur(2.5px);
+        }
+
+        .dropdown>.list {
+
+            -webkit-backdrop-filter: blur(2.5px);
+            backdrop-filter: blur(2.5px);
         }
 
 
