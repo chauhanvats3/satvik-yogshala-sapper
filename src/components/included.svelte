@@ -1,58 +1,103 @@
 <script>
     export let dataSet;
+
+    let curImg = dataSet[0].src;
+    let changeImage = (i) => {
+        curImg = dataSet[i].src;
+        console.log(curImg);
+    }
 </script>
 
 <style>
     .wrapper {
         flex-flow: column nowrap;
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 10px;
+        width: 80%;
     }
 
     .content {
         width: 100%;
+        flex-direction: column;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        z-index: -10;
+        object-fit: cover;
+    }
+
+    .topics {
+        position: absolute;
+        height: 100%;
+        width: 350px;
+        min-width: 250px;
+        top: 0;
+        left: 0;
+        border-radius: 10px;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        padding: 20px;
+        background: rgba(51, 51, 51, 0.534);
+        color: azure;
+        overflow-y: scroll;
+    }
+
+    .topic {
+        width: 100%;
+        cursor: pointer;
+        margin: 7px 2px;
+        text-align: justify;
 
     }
 
-    .included {
-        width: 50%;
-        justify-content: flex-start;
+    .topic:hover {
+        background-size: 100% auto;
+        background-color: rgb(255, 113, 113);
+        background-image: linear-gradient(45deg, #f7ef5a, #eb9db4);
+        background-repeat: repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
     }
 
-    .included>* {
-        margin: 5px;
-    }
 
-    p {
-        width: 80%;
-        justify-content: flex-start;
-    }
+    @media (max-width: 520px) {
 
-    i {
-        color: green;
-    }
-
-    @media (max-width: 700px) {
-        .included>* {
-            margin: 1px;
-        }
-
-        .included {
+        .topics {
             width: 100%;
-            margin: 5px;
         }
+    }
+
+    @supports (backdrop-filter: blur()) or (-webkit-backdrop-filter: blur()) {
+
+        .topics {
+            -webkit-backdrop-filter: blur(2.5px);
+            backdrop-filter: blur(2.5px);
+        }
+
+
     }
 </style>
 
 <div class="wrapper">
-    <div class="heading">
-        <h1 class="indie-flower">Included</h1>
-        <hr />
-    </div>
+
     <div class="content">
-        {#each dataSet as incl}
-        <div class="included">
-            <i class="far fa-check-circle"></i>            <p>{incl}</p>
+        <div class="image"><img src={curImg} alt=""></div>
+        <div class="topics">
+            {#each dataSet as data,i}
+            <div class="topic" on:click={()=>{changeImage(i);}}>
+                <p>{data.name}</p>
+            </div>
+            {/each}
         </div>
-        {/each}
-   </div>          
+    </div>
 
 </div>

@@ -1,40 +1,26 @@
 <script>
-    import CollapsibleGroup from '../../components/collapsibleGroup.svelte';
+    import Hero from '../../components/Hero.svelte';
     import Table from '../../components/table.svelte';
     import Contact_Form from '../../components/contact_form.svelte';
+    import CollapsibleGroup from '../../components/collapsibleGroup.svelte';
     import Breadcrumb from '../../components/breadcrumb.svelte';
     import Included from '../../components/included.svelte';
-    import Excluded from '../../components/excluded.svelte';
     import { onMount } from 'svelte';
 
-    let hero;
-    let heroWrapper;
-    let heroHeight = 0;
-    onMount(() => {
-        setTimeout(() => {
-            heroHeight = hero.offsetHeight;
-            console.log(heroHeight);
-            var subHeight = (20 / 100) * heroHeight;
-            var heroWrapperHeight = heroHeight - subHeight;
-            heroWrapper.style.height = heroWrapperHeight + "px";
-            heroWrapper.style.maxHeight = "100vh";
-        }, 100);
-    });
-
-    const breadcrumbPath = [
+    let breadcrumbPath = [
         { name: 'Teacher Training', href: '.' },
         { name: '200 Hours YTT', href: 'teacher-training/200-hour-ytt' }
     ];
 
     let curriculum = [
-        { name: "Asana", details: ["line 1 ", "line 2", "3rd line"] },
-        { name: "Pranayama (Science of Breath)", details: ["1", "2"] },
-        { name: "Mudras and Bandhas", details: ["3", "4"] },
-        { name: "Yoga Philosophy", details: ["5", "6"] },
-        { name: "Alignment and Adjustment", details: ["7", "8"] },
-        { name: "Yoga Anatomy", details: ["9", "0"] },
-        { name: "Mantra Chanting", details: ["11", "22"] },
-        { name: "Meditation", details: ["33", "44"] },
+        { name: "Asana", details: ["line 1 ", "line 2", "3rd line"], show: false },
+        { name: "Pranayama (Science of Breath)", details: ["1", "2"], show: false },
+        { name: "Mudras and Bandhas", details: ["3", "4"], show: false },
+        { name: "Yoga Philosophy", details: ["5", "6"], show: false },
+        { name: "Alignment and Adjustment", details: ["7", "8"], show: false },
+        { name: "Yoga Anatomy", details: ["9", "0"], show: false },
+        { name: "Mantra Chanting", details: ["11", "22"], show: false },
+        { name: "Meditation", details: ["33", "44"], show: false },
     ];
 
     let time_table_headers = ["Time", "Week 1", "Week 2", "Week 3"];
@@ -47,8 +33,24 @@
         ["11:15 AM - 12:45 PM", "Ayurveda Cooking / Anatomy", "Ayurveda Cooking / Anatomy", "Ayurveda Cooking / Anatomy"]
     ];
 
-    let included = ["Accommodation", "Trainer support", "Excursions ( Ganga Aarti, Temple/ Cave visit )", "Yoga material ( Yoga Mat, Notebook, pen, Neti pot)", "Satvik Food Facilities", "Wi-Fi Facilities", "Laundry Service", "Books Material ( Only for Reading )"];
-    let excluded = ["Life insurance", "Doctor Consultation", "Airport Pickup & Drop", "Personal Expenses"];
+    let included = [
+        { name: "Accommodation", src: "images/yoga1.jpg" },
+        { name: "Trainer support", src: "images/yoga2.jpg" },
+        { name: "Excursions ( Ganga Aarti, Temple/ Cave visit )", src: "images/yoga3.jpg" },
+        { name: "Yoga material ( Yoga Mat, Notebook, pen, Neti pot)", src: "images/yoga4.jpg" },
+        { name: "Satvik Food Facilities", src: "images/yoga5.jpg" },
+        { name: "Wi-Fi Facilities", src: "images/yoga6.jpg" },
+        { name: "Laundry Service", src: "images/yoga7.jpg" },
+        { name: "Books Material ( Only for Reading )", src: "images/yoga8.jpg" }
+    ];
+    let excluded = [
+        { name: "Life insurance", src: "images/yoga11.jpg" }
+        , { name: "Doctor Consultation", src: "images/yoga12.jpg" }
+        , { name: "Airport Pickup & Drop", src: "images/yoga13.jpg" }
+        , { name: "Personal Expenses", src: "images/yoga14.jpg" }
+    ];
+
+
 </script>
 
 <style>
@@ -58,245 +60,111 @@
         width: 100%;
     }
 
-    .hero-wrapper {
-        height: 89vh;
-        width: 100%;
-        position: relative;
-        overflow: hidden;
-    }
 
-    .hero {
-        position: absolute;
-        top: -10;
-        overflow: hidden;
-        width: 100%;
-    }
-
-    .content>div {
-        margin: 35px 0px;
-    }
-
-    .column_a {
-        margin: 10px;
-        flex-basis: 70%;
-    }
-
-    .column_b {
-        border-left: 1px solid black;
-        margin: 10px;
-        flex-basis: 25%;
-        flex-flow: column;
-        justify-content: flex-start;
-        align-self: stretch;
-    }
 
     .block {
-        margin: 20px auto;
-        width: 100%;
+        flex-flow: column wrap;
+        width: 85%;
+        margin: 20px 10px;
     }
 
-    p {
+    .detail {
+        width: 80%;
+        line-height: 2em;
+        word-spacing: 0.2em;
         text-align: justify;
     }
 
-    .group_1 {
-        width: 100%;
-    }
-
-    .group_2 {
-        align-items: stretch;
-    }
-
-    .column_c {
-        margin: 10px;
-        flex-basis: 50%;
-        overflow: hidden;
-    }
-
-    .column_d {
-        margin: 10px;
-        flex-basis: 40%;
-        align-items: flex-start;
-    }
-
-    .group_3,
-    .group_3>* {
-        width: 100%;
+    .curriculum {
+        width: 60%;
     }
 
     .time_table {
-        flex-flow: column wrap;
+        width: 100%;
     }
 
-    .column_e {
-        margin: 10px;
-        flex-basis: 60%;
-        flex-flow: column wrap;
-    }
-
-    .column_f {
-        margin: 10px;
-        flex-basis: 35%;
-        flex-flow: column wrap;
-
-    }
-
-    @media (max-width: 850px) {
-
-        .column_b,
-        .column_d,
-        .column_c,
-        .column_e,
-        .column_f,
-        .column_a,
-        .column_c {
-            flex-basis: 85%;
-        }
-
-        .column_b {
-            border-left: none;
-        }
-
-        .hero-wrapper {
-            margin-top: 50px;
-        }
+    .contact-form {
+        width: 50%;
     }
 </style>
-
 <svelte:head>
     <title>200 Hours YTT - Satvik Yogshala</title>
 </svelte:head>
-
 <div class="ytt">
-    <div class="hero-wrapper" bind:this={heroWrapper} style="--hero-height:{heroHeight + 'px'};">
-        <div class="hero" bind:this={hero}>
-            <img src="images/yoga14.jpg" alt="Someone doing yoga">
-        </div>
-    </div>
+    <Hero img="images/yoga14.jpg" />
     <Breadcrumb path={breadcrumbPath} />
     <div class="content">
-        <div class="group_1">
-            <div class="column_a">
-                <div class="block">
-                    <div class="heading">
-                        <h1>200 Hours Yoga Teacher Training in Rishikesh, India</h1>
-                        <hr />
-                    </div>
-                    <div class="detail">
-                        <p>Take your first step towards a magical journey of becoming an inspiring and professional Yoga
-                            Teacher
-                            with the program of 200 Hours Yoga Teacher Training Course in Rishikesh offered by Satvik
-                            Yogshala.
-                            More than helping you in becoming a registered yoga teacher (RYT – 200), the yoga course of
-                            200
-                            Hours will also be quite very crucial in building self-confidence. We aim to train you to
-                            become
-                            a
-                            fabulous yoga teacher with utmost knowledge and perfection. The comprehensive program of 200
-                            Hours
-                            Yoga TTC will train you in almost every aspect of yoga and will prepare you to become an
-                            independent
-                            yoga teacher.
-                            In this 200 hours during Yoga TTC, anybody can learn reliable yoga to become a confident
-                            Yoga
-                            teacher. Asana, Bandha, Mudra, Chakra, Mantra, and Pranayama; the well-crafted curriculum
-                            focuses on
-                            all aspects of yoga. Apart from this, it will help you understand the yogic lifestyle with
-                            health
-                            and nutrition.
-                            The program of 200 Hours Yoga TTC at Satvik Yogshala is internationally certified by Yoga
-                            Alliance
-                            USA and let you teach yoga throughout the world. Anatomy and Physiology of Yogic Practices,
-                            Yoga
-                            Philosophy and Yogic Lifestyle is the main part of Yoga which you will practice physically
-                            and
-                            spiritually in this yoga course
-                            Teaching and Practice Methodology in Satvik Yogshala is very different from all other
-                            schools
-                            because while we design the curriculum we keep every type of student in mind. Satvika
-                            Yogshala
-                            teaches you each and everything from the basics to advance. 200 Hours yoga TTC in Rishikesh
-                            at
-                            Satvika Yogshala guides you in every aspect of Yoga. During the course we make you expand
-                            mastery of
-                            the teaching principles and self-practice, and after its completion, you will feel
-                            adequately
-                            prepared to give instruction to a common class.
-                            We have experienced, skilled yoga teachers in our school who will give you more knowledge in
-                            less
-                            time. After successfully completing the Yoga Teacher Training program, you will be provided
-                            with
-                            a
-                            valid certificate so that you can start your own yoga school to teach students all over the
-                            world
-                            and our most courteous teachers will help you to achieve your goal.</p>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="heading">
-                        <h3 class="indie-flower">THE PURPOSE OF 200 HOURS YOGA TEACHER TRAINING COURSE.</h3>
-                        <hr />
-                    </div>
-                    <div class="detail">
-                        <p>The main purpose of this courses in Satvik Yogshala is to develop a self-practice;
-                            spiritually
-                            and
-                            physically in our students and make them skilled and confident Yoga teachers. Yoga is more
-                            spiritual
-                            than physical.As soon as you succeed in your spiritual and physical practice, you are ready
-                            to
-                            learn
-                            a much difficult part in a very easy way. This course offers a full study of the eight limbs
-                            of
-                            yoga
-                            based on yoga sutras.</p>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="heading">
-                        <h3 class="indie-flower">LEARN 200 HOUR YOGA TTC IN 25 DAYS!</h3>
-                        <hr />
-                    </div>
-                    <div class="detail">
-                        <p>Do not be surprised at all, of course, in a month you will become a skilled and
-                            self-confident
-                            Yoga
-                            Teacher because you will be engaged for at least eight hours in the learning process and
-                            that
-                            too in
-                            a very calm and comfortable way. Every student comes to learn Yoga with the same motive that
-                            is
-                            to
-                            serve. Through the teaching of yoga in 28 days with different people from different
-                            countries,
-                            different culture; live, learn and grow together and become part of the same energy.</p>
-                    </div>
-                </div>
-
-                <div class="block">
-
-                </div>
+        <div class="block">
+            <div class="heading">
+                <h1>200 Hours Yoga Teacher Training in Rishikesh, India </h1>
+                <hr />
             </div>
-            <div class="column_b">
-                <Contact_Form />
+            <div class="detail">
+                <p>Take your first step towards a magical journey of becoming an inspiring and professional Yoga Teacher
+                    with the program of 200 Hours Yoga Teacher Training Course in Rishikesh offered by Satvik Yogshala.
+                    More than helping you in becoming a registered yoga teacher (RYT – 200), the yoga course of 200
+                    Hours will also be quite very crucial in building self-confidence. We aim to train you to become a
+                    fabulous yoga teacher with utmost knowledge and perfection. The comprehensive program of 200 Hours
+                    Yoga TTC will train you in almost every aspect of yoga and will prepare you to become an independent
+                    yoga teacher. In this 200 hours during Yoga TTC, anybody can learn reliable yoga to become a
+                    confident Yoga teacher. Asana, Bandha, Mudra, Chakra, Mantra, and Pranayama; the well-crafted
+                    curriculum focuses on all aspects of yoga. Apart from this, it will help you understand the yogic
+                    lifestyle with health and nutrition. The program of 200 Hours Yoga TTC at Satvik Yogshala is
+                    internationally certified by Yoga Alliance USA and let you teach yoga throughout the world. Anatomy
+                    and Physiology of Yogic Practices, Yoga Philosophy and Yogic Lifestyle is the main part of Yoga
+                    which you will practice physically and spiritually in this yoga course Teaching and Practice
+                    Methodology in Satvik Yogshala is very different from all other schools because while we design the
+                    curriculum we keep every type of student in mind. Satvika Yogshala teaches you each and everything
+                    from the basics to advance. 200 Hours yoga TTC in Rishikesh at Satvika Yogshala guides you in every
+                    aspect of Yoga. During the course we make you expand mastery of the teaching principles and
+                    self-practice, and after its completion, you will feel adequately prepared to give instruction to a
+                    common class. We have experienced, skilled yoga teachers in our school who will give you more
+                    knowledge in less time. After successfully completing the Yoga Teacher Training program, you will be
+                    provided with a valid certificate so that you can start your own yoga school to teach students all
+                    over the world and our most courteous teachers will help you to achieve your goal.
+                </p>
             </div>
         </div>
-        <div class="group_2">
-            <div class="column_d">
-                <div class="block">
-                    <div class="heading">
-                        <h1 class="indie-flower">Curriculum</h1>
-                        <hr />
-                    </div>
-                    <CollapsibleGroup dataSet={curriculum} />
-
-                </div>
+        <div class="block">
+            <div class="heading">
+                <h3>THE PURPOSE OF 200 HOURS YOGA TEACHER TRAINING COURSE.
+                </h3>
+                <hr />
             </div>
-            <div class=" column_c">
-                <img src="images/yoga16.jpg" alt="">
+            <div class="detail">
+                <p>The main purpose of this courses in Satvik Yogshala is to develop a self-practice; spiritually and
+                    physically in our students and make them skilled and confident Yoga teachers. Yoga is more spiritual
+                    than physical.As soon as you succeed in your spiritual and physical practice, you are ready to learn
+                    a much difficult part in a very easy way. This course offers a full study of the eight limbs of yoga
+                    based on yoga sutras.
+
+                </p>
             </div>
         </div>
-        <div class="group_3">
+        <div class="block">
+            <div class="heading">
+                <h3>LEARN 200 HOUR YOGA TTC IN 25 DAYS!
+                </h3>
+                <hr />
+            </div>
+            <div class="detail">
+                <p>Do not be surprised at all, of course, in a month you will become a skilled and self-confident Yoga
+                    Teacher because you will be engaged for at least eight hours in the learning process and that too in
+                    a very calm and comfortable way. Every student comes to learn Yoga with the same motive that is to
+                    serve. Through the teaching of yoga in 28 days with different people from different countries,
+                    different culture; live, learn and grow together and become part of the same energy.
+
+                </p>
+            </div>
+        </div>
+        <div class="block curriculum">
+            <div class="heading">
+                <h1 class="indie-flower">Curriculum</h1>
+                <hr />
+            </div>
+            <CollapsibleGroup dataSet={curriculum} />
+        </div>
+        <div class="block">
             <div class="time_table">
                 <div class="heading">
                     <h1 class="indie-flower">Schedule</h1>
@@ -307,13 +175,18 @@
 
             </div>
         </div>
-        <div class="group_1">
-            <div class="column_e">
-                <Included dataSet={included} />
-            </div>
-            <div class="column_f">
-                <Excluded dataSet={excluded} />
-            </div>
+        <div class="block">
+            <h1 class="indie-flower">Included</h1>
+            <Included dataSet={included} />
         </div>
+        <div class="block">
+            <h1 class="indie-flower">Excluded</h1>
+            <Included dataSet={excluded} />
+
+        </div>
+        <div class="contact-form">
+            <Contact_Form />
+        </div>
+
     </div>
 </div>

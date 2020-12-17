@@ -84,16 +84,16 @@
 	}
 
 	.btn-overlay {
-		height: 100%;
+		height: 150%;
 		width: 100%;
 		position: absolute;
-		top: 100%;
+		top: 0;
 		background: rgba(0, 153, 153, 0.534);
 		transition: all 0.2s;
 	}
 
 	button:hover .btn-overlay {
-		top: 0;
+		top: 100%;
 		border-bottom: none;
 		border-radius: 5px;
 	}
@@ -148,7 +148,7 @@
 				</div>
 				<div class="btn-wrapper">
 					<button class="btn btn-glass"><a href="contact"
-							style="text-decoration: none; margin: 0 3px; z-index: 10;">Apply
+							style="text-decoration: none; margin: 0 3px; z-index: 10;">Enquire
 							Now</a>
 
 						<div class="btn-overlay">

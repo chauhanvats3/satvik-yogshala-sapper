@@ -52,7 +52,7 @@
 
 <div class="collapsible" class:show>
     <div class="topic" on:click={toggleHeading}>
-        <p>{heading}</p>
+        <h3 style="font-weight: 600;">{heading}</h3>
         <p>
             {#if show} <i class="far fa-minus-square"></i>
             {:else} <i class="far fa-plus-square"></i>

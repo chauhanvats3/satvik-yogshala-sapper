@@ -291,7 +291,6 @@
         }
 
         .dropdown>.list {
-
             -webkit-backdrop-filter: blur(2.5px);
             backdrop-filter: blur(2.5px);
         }

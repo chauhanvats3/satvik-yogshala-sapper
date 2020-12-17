@@ -25,15 +25,26 @@
 	let hero;
 	let heroWrapper;
 	let heroHeight = 0;
-	onMount(() => {
+
+	function setHeroHeight() {
+
 		setTimeout(() => {
 			heroHeight = hero.offsetHeight;
 			console.log(heroHeight);
-			var subHeight = (20 / 100) * heroHeight;
-			var heroWrapperHeight = heroHeight - subHeight;
-			heroWrapper.style.height = heroWrapperHeight + "px";
-			heroWrapper.style.maxHeight = "80vh";
+			if (heroHeight == 0) {
+				setTimeout(setHeroHeight(), 1000);
+			}
+			else {
+				var subHeight = (20 / 100) * heroHeight;
+				var heroWrapperHeight = heroHeight - subHeight;
+				heroWrapper.style.height = heroWrapperHeight + "px";
+				heroWrapper.style.maxHeight = "100vh";
+			}
 		}, 500);
+	}
+
+	onMount(() => {
+		setHeroHeight();
 	});
 
 	const path = [
@@ -111,6 +122,14 @@
 		margin: 10px 10px;
 		line-height: 2em;
 		font-size: large;
+	}
+
+	@media (max-width: 750px) {
+
+		.wrapper {
+			margin-top: 50px;
+		}
+
 	}
 
 	@media (max-width: 400px) {
