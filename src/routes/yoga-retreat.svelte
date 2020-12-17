@@ -84,7 +84,7 @@
         width: 100%;
     }
 
-    @media (max-width: 450px) {
+    @media (max-width: 650px) {
         .curriculum {
             width: 100%;
             font-size: small;
