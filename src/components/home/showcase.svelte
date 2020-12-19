@@ -72,14 +72,13 @@
 
     .showcase {
         width: 95vw;
-        min-height: 400px;
         justify-content: center;
+        flex-flow: column wrap;
     }
 
     .gallery,
     .blog {
-        width: 40vw;
-        min-height: 350px;
+        width: 90%;
         margin: 0 10px;
     }
 
@@ -116,7 +115,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        background: rgb(214, 84, 8);
+        background: rgba(8, 138, 214, 0.603);
         z-index: 10;
         border-right: 3px solid black;
     }
@@ -124,8 +123,6 @@
     @media (max-width: 695px) {
         .gallery {
             width: 90%;
-            min-height: 35vh;
-
         }
 
         .blog {
