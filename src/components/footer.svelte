@@ -99,13 +99,13 @@
         overflow: hidden;
         cursor: pointer;
         border-radius: 10px;
-        transition: all 0.2s;
+        transition: all 0.5s;
     }
 
     .gallery:hover,
     .gallery:active,
     .gallery:focus {
-        box-shadow: 0 0 30px 1px rgba(78, 78, 78, 0.616);
+        box-shadow: 0 0 20px 1px rgba(78, 78, 78, 0.616);
     }
 
     .gallery>div img {
