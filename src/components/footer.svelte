@@ -1,7 +1,62 @@
 <script>
+
+    import { onMount } from 'svelte';
+    import { fade, fly, slide } from 'svelte/transition';
+    import { quintInOut, quintOut, linear } from 'svelte/easing';
+    import { tweened } from 'svelte/motion';
+
     const date = new Date();
     const year = date.getFullYear();
 
+
+
+    var imageDuration = 5000;
+    var pBarDuration = (imageDuration / 120) * 10;
+    const pBarWidth = tweened(0, {
+        duration: pBarDuration,
+        easing: linear
+    });
+
+    let curIndex = 0;
+
+    var images = [
+        {
+            src: "images/yoga6.jpg"
+        },
+        {
+            src: "images/flower.jpg"
+        },
+        {
+            src: "images/food1.jpg"
+        },
+
+        {
+            src: "images/food2.jpg"
+        }
+    ];
+    var curImg = images[curIndex];
+
+    onMount(() => {
+        var numImg = images.length;
+        const changeImage = setInterval(() => {
+
+            curIndex = curIndex + 1 < numImg ? curIndex + 1 : 0;
+            curImg = images[curIndex];
+            pBarWidth.set(-10);
+        }, imageDuration);
+
+        const progressBar = setInterval(() => {
+
+            pBarWidth.update(n => n + 10);
+
+        }, pBarDuration);
+
+        return () => {
+            clearInterval(changeImage);
+            clearInterval(progressBar);
+
+        };
+    });
 </script>
 
 <style>
@@ -23,7 +78,7 @@
         flex-flow: column wrap;
         flex: 1 1 auto;
         justify-content: flex-start;
-        margin: 20px auto;
+        margin: 20px 5px;
     }
 
     .heading {
@@ -36,7 +91,41 @@
         margin-left: 10px;
     }
 
+    .gallery {
+        min-width: 40%;
+        min-height: 100px;
+        display: block;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: all 0.2s;
+    }
 
+    .gallery:hover,
+    .gallery:active,
+    .gallery:focus {
+        box-shadow: 0 0 30px 1px rgba(78, 78, 78, 0.616);
+    }
+
+    .gallery>div img {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .progress_bar {
+        width: var(--p-bar-width);
+        max-width: 100%;
+        height: 2px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(8, 138, 214, 0.603);
+        z-index: 10;
+        border-right: 3px solid black;
+    }
 
     .faq div {
         margin-bottom: 18px;
@@ -95,23 +184,21 @@
 
     }
 
-    @media(max-width: 695px) {}
+    @media(max-width: 912px) {
+        .gallery {
+            height: 300px;
+        }
+    }
 </style>
 <footer>
     <div class="categories">
         <div class="category">
             <div class="heading">Yoga Teachers Training</div>
             <div class="content">
+                <p><a href="yoga-retreat">Yoga Retreat</a></p>
                 <p><a href="teacher-training/100-hour-ytt">100 Hours YTT</a></p>
                 <p><a href="teacher-training/200-hour-ytt">200 Hours YTT</a></p>
                 <p><a href="teacher-training/200-hour-multistyle-ytt">200 Hours Multistyle YTT</a></p>
-            </div>
-        </div>
-        <div class="category">
-            <div class="heading">Activities</div>
-            <div class="content">
-                <p><a href="yoga-retreat">Yoga Retreat</a></p>
-
             </div>
         </div>
         <div class="category faq">
@@ -135,6 +222,18 @@
                     </a>
                 </div>
 
+            </div>
+        </div>
+
+        <div class="category gallery">
+
+            <div>
+                {#each [images[curIndex]] as photo (curIndex)}
+                <a href="about/gallery">
+                    <img transition:fade|local="{{ duration: 800,easing:quintInOut}}" src={photo.src} alt="" />
+                </a>
+                {/each}
+                <div class="progress_bar" style="--p-bar-width: {$pBarWidth}%"></div>
             </div>
         </div>
     </div>

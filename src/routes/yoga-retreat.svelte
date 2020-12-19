@@ -189,11 +189,6 @@
             <h1 class="indie-flower">Included</h1>
             <Included dataSet={included} />
         </div>
-        <div class="block">
-            <h1 class="indie-flower">Excluded</h1>
-            <Included dataSet={excluded} />
-
-        </div>
 
         <div class="contact-form">
             <Contact_Form classToGive="half" />

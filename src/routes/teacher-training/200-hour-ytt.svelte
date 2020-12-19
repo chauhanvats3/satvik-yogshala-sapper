@@ -43,12 +43,6 @@
         { name: "Laundry Service", src: "images/yoga7.jpg" },
         { name: "Books Material ( Only for Reading )", src: "images/yoga8.jpg" }
     ];
-    let excluded = [
-        { name: "Life insurance", src: "images/yoga11.jpg" }
-        , { name: "Doctor Consultation", src: "images/yoga12.jpg" }
-        , { name: "Airport Pickup & Drop", src: "images/yoga13.jpg" }
-        , { name: "Personal Expenses", src: "images/yoga14.jpg" }
-    ];
 
 
 </script>
@@ -181,11 +175,6 @@
         <div class="block">
             <h1 class="indie-flower">Included</h1>
             <Included dataSet={included} />
-        </div>
-        <div class="block">
-            <h1 class="indie-flower">Excluded</h1>
-            <Included dataSet={excluded} />
-
         </div>
         <div class="contact-form">
             <Contact_Form classToGive="half" />
