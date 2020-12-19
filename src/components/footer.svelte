@@ -92,7 +92,7 @@
     }
 
     .gallery {
-        min-width: 40%;
+        min-width: 30%;
         min-height: 100px;
         display: block;
         position: relative;
@@ -186,6 +186,7 @@
 
     @media(max-width: 912px) {
         .gallery {
+            min-width: 40%;
             height: 300px;
         }
     }
