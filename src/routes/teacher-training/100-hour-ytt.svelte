@@ -14,14 +14,75 @@
     ];
 
     let curriculum = [
-        { name: "Asana", details: ["line 1 ", "line 2", "3rd line"], show: false },
-        { name: "Pranayama (Science of Breath)", details: ["1", "2"], show: false },
-        { name: "Mudras and Bandhas", details: ["3", "4"], show: false },
-        { name: "Yoga Philosophy", details: ["5", "6"], show: false },
-        { name: "Alignment and Adjustment", details: ["7", "8"], show: false },
-        { name: "Yoga Anatomy", details: ["9", "0"], show: false },
-        { name: "Mantra Chanting", details: ["11", "22"], show: false },
-        { name: "Meditation", details: ["33", "44"], show: false },
+        {
+            name: "Asana", details: [
+                "Sun Sulation",
+                "Moon Saluation",
+                "Standing Pose",
+                "Sitting Pose",
+                "Balancing Pose",
+                "Forward bending Pose",
+                "Backward bending  Pose",
+                "Pose benefits and causes",
+                "Relaxation Pose"
+            ], show: false
+        },
+        {
+            name: "Pranayama (Science of Breath)", details: ["Nadishodhana Pranayama",
+                "Sheetali pranayama",
+                "Sheetkari Pranayama",
+                "Bramari Pranayama",
+                "Ujjayi Pranayama",
+                "Bhastrika Pranayama",
+                "Kapalbhati Pranayama",
+                "Surya Bheda pranayama"],
+            show: false
+        }, {
+            name: "Yoga Philosophy", details: [
+                "Indroduction of yoga",
+                "What is chitta ( vrittis)",
+                "What is chakra?",
+                "What is kundalini?",
+                "Traditional Hatha Yoga",
+                "Ashtanga yoga",
+                "Story’s of Yogis",
+                "Karma practical yoga"], show: false
+        },
+        {
+            name: "Shatkarma (Cleansing Technique)", details: [
+                "Introduction of Shatkarma",
+                "Jal Neti",
+                "Rubber Neti",
+                "Trataka (Eye Cleaning)",
+                "Kapalbhati",
+                "Vamandhauti"], show: false
+        },
+        {
+            name: "Yoga Anatomy", details: [
+                "Types of Bones",
+                "Spine and its importance",
+                "Joints Movement",
+                "Skeletal System",
+                "Digestive System"], show: false
+        },
+        {
+            name: "Mantra Chanting", details: [
+                "What is mantra and benefits of chanting mantra",
+                "Guru mantra (mantra for guru)",
+                "Gayatri mantra (universal prayer)",
+                "Hare rama, Hare Krishna (Maha mantra)",
+                "Shanti mantra (mantra of peace)"],
+            show: false
+        },
+        {
+            name: "Meditation", details: [
+                "Principal of Meditation & Concentration",
+                "Chakra meditation",
+                "Breathing awareness meditation",
+                "Gaze meditation",
+                "Inner Visualization",
+                "Yoga Nidra"], show: false
+        },
     ];
 
     let time_table_headers = ["Time", "Week 1", "Week 2", "Week 3"];
@@ -30,7 +91,7 @@
         ["06:00 AM - 07:30 AM", "Hatha Yoga", "Hatha Yoga", "Hatha Yoga"],
         ["07:45 AM - 09:00 AM", "Pranayama", "Pranayama", "Pranayama"],
         ["09:00 AM - 10:00 AM", "Breakfast", "Breakfast", "Breakfast"],
-        ["10:15 AM - 11:00 AM", "Mantra / Alignment & Adjustment", "Mantra / Alignment & Adjustment", "Mantra / Alignment & Adjustment"],
+        ["10:15 AM - 11:00 AM", "Mantra Chanting", "Mantra Chanting", "Mantra Chanting"],
         ["11:15 AM - 12:45 PM", "Ayurveda Cooking / Anatomy", "Ayurveda Cooking / Anatomy", "Ayurveda Cooking / Anatomy"]
     ];
 

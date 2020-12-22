@@ -19,7 +19,8 @@
         height: 400px;
         position: relative;
         overflow: hidden;
-        border-radius: 10px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
     }
 
     img {
@@ -68,7 +69,10 @@
         justify-content: flex-start;
         padding: 10px;
         transform: translateY(300px);
+        background: rgba(255, 255, 255, 0.13);
 
+        border-top-right-radius: 11px;
+        border-top-left-radius: 11px;
         transition: all 1s;
 
     }
@@ -123,7 +127,7 @@
     @media (max-width:430px) {
         .card {
             width: 80%;
-            border-radius: 10px;
+
             height: 500px;
         }
 
@@ -136,7 +140,9 @@
     @supports (backdrop-filter: blur()) or (-webkit-backdrop-filter: blur()) {
 
         .overlay .content {
-            border-radius: 10px;
+
+            border-top-right-radius: 11px;
+            border-top-left-radius: 11px;
             background: rgba(255, 255, 255, 0.13);
             backdrop-filter: blur(2.5px);
             -webkit-backdrop-filter: blur(2.5px);

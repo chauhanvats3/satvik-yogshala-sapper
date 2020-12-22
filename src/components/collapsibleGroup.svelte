@@ -1,13 +1,19 @@
 <script>
     import Collapsible from '../components/collapsible.svelte';
     export let dataSet;
+    export let expand;
 
     let closeOthers = (name) => {
+
+
+
         dataSet.forEach((eachCurriculum) => {
             if (eachCurriculum.name !== "name") {
                 eachCurriculum.show = false;
             }
         });
+
+
     }
 </script>
 
@@ -24,8 +30,9 @@
 
 <div class="collapsible-group">
     {#each dataSet as single}
-           <div class="each-curriculum" on:click={() => {closeOthers(`${single.name}`);}}>
-                <Collapsible heading={single.name} details={single.details} bind:show={single.show}/>
-            </div>
-        {/each}
+    <div class="each-curriculum" on:click={()=> {closeOthers(`${single.name}`);}}>
+        <Collapsible heading={single.name} details={single.details} bind:show={single.show} desc={single.desc}
+            expand={expand} />
+    </div>
+    {/each}
 </div>

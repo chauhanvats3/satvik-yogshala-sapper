@@ -26,14 +26,20 @@
 
     }
 
+    img {
+        border-radius: 10px;
+        object-fit: initial;
+    }
+
     .content {
         position: absolute;
         top: 0;
         right: 0;
-        width: 45%;
+        width: 450px;
         height: 100%;
         padding: 10px 10px;
         background: rgba(255, 255, 255, 0.418);
+        border-radius: 10px;
     }
 
     h1 {
@@ -108,7 +114,7 @@
             <div class="heading">
                 <h1>{title}</h1>
             </div>
-            <div class="info">Date : {date}</div>
+            <div class="info">Posted On : {date}</div>
             <div class="desc">{desc}</div>
         </div>
     </a>

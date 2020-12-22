@@ -11,14 +11,14 @@
     ];
 
     let curriculum = [
-        { name: "Asana", details: ["line 1 ", "line 2", "3rd line"], show: false },
-        { name: "Pranayama (Science of Breath)", details: ["1", "2"], show: false },
-        { name: "Mudras and Bandhas", details: ["3", "4"], show: false },
-        { name: "Yoga Philosophy", details: ["5", "6"], show: false },
-        { name: "Alignment and Adjustment", details: ["7", "8"], show: false },
-        { name: "Yoga Anatomy", details: ["9", "0"], show: false },
-        { name: "Mantra Chanting", details: ["11", "22"], show: false },
-        { name: "Meditation", details: ["33", "44"], show: false },
+        { name: "Asana", show: false },
+        { name: "Pranayama (Science of Breath)", show: false },
+        { name: "Mudras and Bandhas", show: false },
+        { name: "Yoga Philosophy", show: false },
+        { name: "Alignment and Adjustment", show: false },
+        { name: "Yoga Anatomy", show: false },
+        { name: "Mantra Chanting", show: false },
+        { name: "Meditation", show: false },
     ];
 
     let time_table_headers = ["Time", "Week 1", "Week 2", "Week 3"];
@@ -172,7 +172,7 @@
                 <h1 class="indie-flower">Curriculum</h1>
                 <hr />
             </div>
-            <CollapsibleGroup dataSet={curriculum} />
+            <CollapsibleGroup dataSet={curriculum} expand=false />
         </div>
         <div class="block">
             <div class="time_table">

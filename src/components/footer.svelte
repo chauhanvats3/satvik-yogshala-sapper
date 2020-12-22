@@ -91,6 +91,13 @@
         margin-left: 10px;
     }
 
+    .content>p,
+    .content>div {
+        margin: 5px 0;
+    }
+
+
+
     .gallery {
         min-width: 30%;
         min-height: 100px;
@@ -150,6 +157,10 @@
         margin: 0 15px;
     }
 
+    .social>a {
+        text-decoration: none;
+    }
+
     .fa-heart {
         color: rgb(255, 98, 98);
         font-size: 16px;
@@ -188,6 +199,13 @@
         .gallery {
             min-width: 40%;
             height: 300px;
+        }
+    }
+
+    @media(max-width: 545px) {
+        .gallery {
+            min-width: 60%;
+            height: 190px;
         }
     }
 </style>
@@ -240,11 +258,12 @@
     </div>
     <div class="social">
 
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-youtube"></i>
-        <i class="fab fa-linkedin-in"></i>
+        <a href="https://twitter.com/satvikyogshala" target="_blank"> <i class="fab fa-twitter"></i></a>
+        <a href="https://www.facebook.com/satvikyogshala/" target="_blank"><i class="fab fa-facebook-f"> </i></a>
+        <a href="https://www.instagram.com/satvikyogshala/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="."><i class="fab fa-youtube"></i></a>
+        <a href="https://www.youtube.com/watch?v=ub82Xb1C8os&feature=youtu.be" target="_blank"><i
+                class="fab fa-linkedin-in"> </i></a>
     </div>
     <div class="banner">
         <div>Copyright © {year} <a href="." class="link"> Satvik Yogshala. </a>

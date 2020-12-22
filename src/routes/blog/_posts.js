@@ -9,7 +9,7 @@
 
 const posts = [
 	{
-		date: "11-11-11 at 11:17 AM",
+		date: "11-11-2020",
 		title: 'YOGA TEACHER TRAINING COURSE (YTTC) IN RISHIKESH, INDIA: A LIFE-CHANGING EXPERIENCE',
 		slug: 'yttc-in-rishikesh-a-life-changing-experience',
 		image: 'images/yoga15.jpg',

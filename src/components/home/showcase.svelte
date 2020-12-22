@@ -3,7 +3,7 @@
 
 
     var blogPost = {
-        date: "11-11-11 at 11:17 AM",
+        date: "11-11-2020",
         title: 'YOGA TEACHER TRAINING COURSE (YTTC) IN RISHIKESH, INDIA: A LIFE-CHANGING EXPERIENCE',
         slug: 'yttc-in-rishikesh-a-life-changing-experience',
         image: 'images/yoga15.jpg',
@@ -29,9 +29,6 @@
         margin: 0 10px;
     }
 
-    .blog :global(.content *) {
-        font-size: small;
-    }
 
     .blog>:global(.blog_card) {
         width: 95%;
@@ -50,7 +47,7 @@
         <div class="blog">
             <h1 class="indie-flower">BLOG</h1>
             <BlogCard title={blogPost.title} desc={blogPost.desc} img={blogPost.image} link="blog" date={blogPost.date}
-                height="47vh" wrapperClass="smallCard" />
+                height="47vh" />
 
         </div>
 

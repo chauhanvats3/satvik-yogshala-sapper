@@ -10,7 +10,7 @@
     --color-5:#b8bedd;
     --black:#5e6472;
     --thumbBG:#383a3aa9;
-    --scrollbarBG:rgba(255, 255, 255, 0);
+    --scrollbarBG:rgba(255, 255, 255, 0.055);
 
 }
 
@@ -39,10 +39,9 @@ body {
 
 *::-webkit-scrollbar {
     width: 7px;
+    height: 7px;
   }
-  *::-webkit-scrollbar:hover {
-    width: 10px;
-  }
+ 
   * {
     scrollbar-width: thin;
     scrollbar-color: var(--thumbBG) var(--scrollbarBG);

@@ -15,14 +15,130 @@
         "Learning & Understanding the basics of Yoga Asana", "Studying Yoga Anatomy and Physiology for better alignment of Yogic postures", "Enhancing class conducting techniques and confidence", "    Strengthening the path of becoming true Yogi", "    Knowledge of Yoga Anatomy and Physiology", "    Performing Meditation, Mantras, and Pranayama in the lap of nature"]
 
     let curriculum = [
-        { name: "Asana", details: ["line 1 ", "line 2", "3rd line"], show: false },
-        { name: "Pranayama (Science of Breath)", details: ["1", "2"], show: false },
-        { name: "Mudras and Bandhas", details: ["3", "4"], show: false },
-        { name: "Yoga Philosophy", details: ["5", "6"], show: false },
-        { name: "Alignment and Adjustment", details: ["7", "8"], show: false },
-        { name: "Yoga Anatomy", details: ["9", "0"], show: false },
-        { name: "Mantra Chanting", details: ["11", "22"], show: false },
-        { name: "Meditation", details: ["33", "44"], show: false },
+        {
+            name: "Hatha Yoga",
+            details: [
+                "Joint Movement",
+                "Sun Sulation",
+                "Moon Saluation",
+                "Standing Pose",
+                "Sitting Pose",
+                "Spinal twisting Pose",
+                "Advanced Pose",
+                "Balancing Pose",
+                "Forward bending Pose",
+                "Backward bending  Pose",
+                "Pose benefits and causes",
+                "Relaxation Pose"],
+            show: false
+        },
+        {
+            name: "Ashtanga Yoga",
+            desc: "Asthanga yoga has become a famous yoga technique where we learn how we can move in different Asana.This is a dynamic yoga series where you learn all the benefits and causes.During the asthanga series of your 200 Hour Yoga Teacher Training,you will learn:",
+            details: [
+                "Primary series & Pose",
+                "Sanskrit names of poses",
+                "Standing Pose",
+                "Primary Pose",
+                "Intermediate Pose",
+                "Correction Alignment",
+                "Body Gestures(Mudras&Bandhas)"
+            ],
+            show: false
+        },
+        {
+            name: "Pranyama",
+            desc: "During the Pranayama classes of your 200 Hour Teacher Training,you will be learned this Breath-Control:-",
+            details: [
+                "Introduction of Pranayama",
+                "Benefits of Pranayama",
+                "Brahmari pranayama",
+                "Movement of Prana",
+                "Practical",
+                "Ujjai pranayama",
+                "Sheetali pranayama",
+                "Nadi shodhana",
+                "Kapalbhati pranayama",
+                "Bhastrika pranayama",
+                "Surya Bheda pranayama",
+                "5 Retention",
+                "Natural Breath"],
+            show: false
+        },
+        {
+            name: "Yoga Philosophy",
+            details: [
+                "Indroduction of yoga",
+                "Satvik lifestyle",
+                "Three Dosha",
+                "Five basic element",
+                "Pantanjali Yoga sutra",
+                "Eight Limbs of Yoga",
+                "What is chitta ( vrittis)",
+                "What is chakra?",
+                "What is kundalini?",
+                "Yoga therapy?",
+                "What is Raja Yoga?",
+                "Story’s of Yogis",
+                "Karma practical & theory"],
+            show: false
+        },
+        {
+            name: "Meditation",
+            details: [
+                "Principles of Meditation & Concentration",
+                "Bhajan/Kirtan",
+                "Chakra meditation",
+                "Breathing awareness meditation",
+                "Gaze meditation",
+                "Inner Visualization",
+                "Yoga Nidra"],
+            show: false
+        },
+        {
+            name: "Shatkarma (Cleansing Technique)",
+            details: [
+                "Introduction of Shatkarma",
+                "Jal Neti",
+                "Rubber Neti",
+                "Trataka[Eye Cleaning]",
+                "Kapalbhati",
+                "Vamandhauti"],
+            show: false
+        },
+        {
+            name: "Mantra Chanting",
+            details: [
+                "What is mantra and benefits of chanting mantra",
+                "Om mantra",
+                "MahaMrityunjaya Mantra",
+                "Guru mantra (mantra for guru)",
+                "Gayatri mantra (universal prayer)",
+                "Hare rama, Hare Krishna (Maha mantra)",
+                "Shanti mantra (mantra of peace)"],
+            show: false
+        },
+        {
+            name: "Yoga Anatomy",
+            details: [
+                "Spine and its importance",
+                "Respiratory System",
+                "Joints movement",
+                "Skeletal System",
+                "Digestive System",
+                "About Dhosha"],
+            show: false
+        },
+        {
+            name: "Alignment & Adjustment",
+            details: [
+                "Hip opening",
+                "Back bending",
+                "Forward bending",
+                "Twisting",
+                "Standing"],
+            show: false
+        }
     ];
 
     let time_table_headers = ["Time", "Week 1", "Week 2", "Week 3"];
