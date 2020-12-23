@@ -17,26 +17,26 @@
 
     .image {
         float: right;
-        shape-outside: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
-        -webkit-clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
-        clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
+        shape-outside: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+        -webkit-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
         shape-margin: 10px;
         width: 50%;
 
     }
 
     img {
-        shape-outside: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
-        -webkit-clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
-        clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
+        shape-outside: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+        -webkit-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
         object-fit: cover;
     }
 
     p {
         display: block;
-        margin: 5% 30px;
         overflow-wrap: break-word;
-
+        width: 80%;
+        margin: 5% auto;
 
     }
 
@@ -63,7 +63,7 @@
         <hr />
     </div>
     <div class="content">
-        <div class="image"> <img src="images/yoga3.jpg" alt=""></div>
+        <div class="image"> <img src="images/nik_asana_2.jpg" alt=""></div>
         <p>{desc}</p>
 
     </div>

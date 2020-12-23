@@ -20,19 +20,11 @@
     let curIndex = 0;
 
     var images = [
-        {
-            src: "images/yoga6.jpg"
-        },
-        {
-            src: "images/flower.jpg"
-        },
-        {
-            src: "images/food1.jpg"
-        },
 
-        {
-            src: "images/food2.jpg"
-        }
+        { src: "images/nik_asana_1.jpg" },
+        { src: "images/ganga_arti.jpg" },
+        { src: "images/nik_with_students.jpg" },
+        { src: "images/nik_garden.jpg" }
     ];
     var curImg = images[curIndex];
 

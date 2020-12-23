@@ -47,13 +47,6 @@
         flex-flow: column wrap;
         justify-content: flex-end;
 
-        background: #606c8896;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to bottom, #3f4c6b96, #606c8896);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to bottom, #3f4c6b96, #606c8896);
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
     }
 
     .overlay:hover .content,
@@ -69,7 +62,7 @@
         justify-content: flex-start;
         padding: 10px;
         transform: translateY(300px);
-        background: rgba(255, 255, 255, 0.13);
+        background: rgba(68, 68, 68, 0.329);
 
         border-top-right-radius: 11px;
         border-top-left-radius: 11px;
@@ -143,7 +136,7 @@
 
             border-top-right-radius: 11px;
             border-top-left-radius: 11px;
-            background: rgba(255, 255, 255, 0.13);
+            background: rgba(68, 68, 68, 0.329);
             backdrop-filter: blur(2.5px);
             -webkit-backdrop-filter: blur(2.5px);
 

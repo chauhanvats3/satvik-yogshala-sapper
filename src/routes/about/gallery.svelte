@@ -1,73 +1,16 @@
 <script>
     import Breadcrumb from '../../components/breadcrumb.svelte';
+
     var path = [
         { name: "About", href: "." },
         { name: "Gallery", href: "about/gallery" }
     ]
+
+
     var images = [
-        { src: "images/yoga8.jpg" },
-
-        { src: "images/yoga9.jpg" },
-        { src: "images/yoga10.jpg" },
-        { src: "images/yoga7.jpg" },
-
-        { src: "images/yoga11.jpg" },
-        { src: "images/yoga12.jpg" },
-        { src: "images/yoga13.jpg" },
-        { src: "images/yoga14.jpg" },
-        { src: "images/yoga15.jpg" },
-        { src: "images/yoga16.jpg" },
-        { src: "images/yoga17.jpg" },
-
-        {
-            src: "images/flower.jpg"
-        },
-        {
-            src: "images/food1.jpg"
-        },
-        {
-            src: "images/team/pritam-singh-rawat.jpg"
-        },
-        {
-            src: "images/food2.jpg"
-        },
-        {
-            src: "images/pritam_namaskar.jpg"
-        },
-        {
-            src: "images/spa.jpg"
-        },
-        {
-            src: "images/travel1.jpg"
-        },
-        {
-            src: "images/travel2.jpg"
-        },
-        {
-            src: "images/team/yogi-vipulraj.jpg"
-        },
-        {
-            src: "images/yoga1.jpg"
-        },
-        {
-            src: "images/yoga2.jpg"
-        },
-        {
-            src: "images/yoga3.jpg"
-        },
-        {
-            src: "images/yoga4.jpg"
-        },
-        {
-            src: "images/yoga5.jpg"
-        },
-        {
-            src: "images/team/yogi-pankaj-paswan.jpg"
-        },
-        {
-            src: "images/yoga6.jpg"
-        },
-    ];
+        { src: "images/indian_food.jpg" },
+        { src: "images/accomodation.jpg" },
+        { src: "images/ganga_arti.jpg" }, { src: "images/yoga_mat.jpg" }, { src: "images/laundry.jpg" }, { src: "images/book_stack.jpg" }, { src: "images/nik_taching_1.jpg" }, { src: "images/nik_garden.jpg" }, { src: "images/nik_aeroplane.jpg" }, { src: "images/nik_bhujang.jpg" }, { src: "images/nik_asana_1.jpg" }, { src: "images/nik_teaching_2.jpg" }, { src: "images/nik_with_students.jpg" }, { src: "images/nik_asana_2.jpg" }, { src: "images/nik_alignment.jpg" }, { src: "images/nik_chair.jpg" }];
 
 
     var col1 = [];
@@ -174,21 +117,21 @@
         <div class="row">
             <div class="column">
                 {#each col1 as img}
-                <div class="image_wrap"><img src="{img.src}" alt=""></div>            {/each}
+                <div class="image_wrap"><img src="{img.src}" alt=""></div> {/each}
             </div>
-            <div class="column"> 
+            <div class="column">
                 {#each col2 as img}
                 <div class="image_wrap"><img src="{img.src}" alt=""></div>
-            {/each}
-        </div>
-            <div class="column"> 
+                {/each}
+            </div>
+            <div class="column">
                 {#each col3 as img}
-                <div class="image_wrap"><img src="{img.src}" alt=""></div>        {/each}
-        </div>
-            <div class="column"> 
+                <div class="image_wrap"><img src="{img.src}" alt=""></div> {/each}
+            </div>
+            <div class="column">
                 {#each col4 as img}
-                <div class="image_wrap"><img src="{img.src}" alt=""></div>        {/each}
-        </div>
+                <div class="image_wrap"><img src="{img.src}" alt=""></div> {/each}
+            </div>
         </div>
     </div>
 </div>
