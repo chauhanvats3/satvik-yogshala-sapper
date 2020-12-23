@@ -63,7 +63,7 @@
         <hr />
     </div>
     <div class="content">
-        <div class="image"> <img src="images/nik_asana_2.jpg" alt=""></div>
+        <div class="image"> <img src="images/nike_asana_2.jpg" alt=""></div>
         <p>{desc}</p>
 
     </div>
