@@ -46,24 +46,35 @@
 
 	.hero {
 		position: absolute;
-		top: -20%;
+		top: auto;
 		overflow: hidden;
 		width: 100%;
 	}
 
+	img {
+		width: 100%;
+	}
+
 	.hero-content {
-		position: absolute;
-		left: auto;
-		right: 5%;
-		bottom: auto;
+
 		flex-direction: column;
-		width: 40%;
+		width: 100%;
+		position: absolute;
+		top: 60%;
+	}
+
+	.content {
+		width: 100%;
 	}
 
 	.hero-content h1 {
+		width: 100%;
 		font-size: 2.5rem;
 		text-align: center;
 		margin: 5px;
+		color: rgba(0, 0, 0, 0.74);
+		background: rgba(255, 255, 255, 0.342);
+		text-shadow: 0 0 1px rgba(0, 0, 0, 0.432);
 	}
 
 	.btn-wrapper {
@@ -139,7 +150,7 @@
 <div class="index">
 	<div class="hero-wrapper" bind:this={heroWrapper} style="--hero-height:{heroHeight + 'px'};">
 		<div class="hero" bind:this={hero}>
-			<img src="images/yoga11.jpg" alt="Someone doing yoga">
+			<img src="images/nik_teaching_1.jpg" alt="Someone doing yoga">
 			<div class="hero-content">
 				<div class="content">
 					<h1>

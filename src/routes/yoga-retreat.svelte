@@ -95,7 +95,7 @@
     <title>Yoga Retreat - Satvik Yogshala</title>
 </svelte:head>
 <div class="ytt">
-    <Hero img="images/yoga17.jpg" />
+    <Hero img="images/nik_garden.jpg" top="-20%" />
     <Breadcrumb path={breadcrumbPath} />
     <div class="content">
         <div class="block">

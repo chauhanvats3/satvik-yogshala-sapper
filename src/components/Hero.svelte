@@ -2,6 +2,7 @@
     import { onMount } from 'svelte';
 
     export let img;
+    export let top = "0%";
 
     let hero;
     let heroWrapper;
@@ -19,6 +20,8 @@
                 var heroWrapperHeight = heroHeight - subHeight;
                 heroWrapper.style.height = heroWrapperHeight + "px";
                 heroWrapper.style.maxHeight = "100vh";
+                hero.style.setProperty("top", top);
+                console.log(hero.style.top)
             }
         }, 500);
     }
@@ -37,8 +40,11 @@
 
     .hero {
         position: absolute;
-        top: 00;
         overflow: hidden;
+        width: 100%;
+    }
+
+    img {
         width: 100%;
     }
 

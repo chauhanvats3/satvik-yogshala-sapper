@@ -161,13 +161,6 @@
         text-decoration: none;
     }
 
-    .fa-heart {
-        color: rgb(255, 98, 98);
-        font-size: 16px;
-        margin: 0 4px;
-        text-decoration: none;
-    }
-
     .fab {
         cursor: pointer;
         font-size: 32px;
@@ -262,18 +255,18 @@
         <a href="https://www.facebook.com/satvikyogshala/" target="_blank"><i class="fab fa-facebook-f"> </i></a>
         <a href="https://www.instagram.com/satvikyogshala/" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="."><i class="fab fa-youtube"></i></a>
-        <a href="https://www.youtube.com/watch?v=ub82Xb1C8os&feature=youtu.be" target="_blank"><i
-                class="fab fa-linkedin-in"> </i></a>
+        <a href="." target="_blank"><i class="fab fa-linkedin-in"> </i></a>
     </div>
     <div class="banner">
         <div>Copyright © {year} <a href="." class="link"> Satvik Yogshala. </a>
-            All Rights
-            Reserved</div>
+            <a href="https://youtu.be/ub82Xb1C8os" class="link" target="_blank">
+                All Rights Reserved
+            </a>
+        </div>
 
         <div>Terms and Conditions</div>
         <div>Privacy Policy</div>
-        <div><a class="link" href="https://github.com/chauhanvats3" target="_blank" rel="noopener">Made with <i
-                    class="far fa-heart"></i> by
-                Vatsal</a></div>
+        <div><a class="link" href="https://github.com/chauhanvats3" target="_blank" rel="noopener">Made By Vatsal</a>
+        </div>
     </div>
 </footer>

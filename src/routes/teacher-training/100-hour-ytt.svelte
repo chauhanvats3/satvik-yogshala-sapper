@@ -122,6 +122,8 @@
         width: 100%;
     }
 
+
+
     .block {
         flex-flow: column wrap;
         width: 85%;
@@ -154,7 +156,7 @@
     <title>100 Hours YTT - Satvik Yogshala</title>
 </svelte:head>
 <div class="ytt">
-    <Hero img="images/yoga8.jpg" />
+    <Hero img="images/nik_bhujang.jpg" top="-20%" />
     <Breadcrumb path={breadcrumbPath} />
     <div class="content">
         <div class="block">

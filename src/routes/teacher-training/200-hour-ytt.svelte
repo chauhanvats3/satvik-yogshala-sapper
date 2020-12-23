@@ -206,7 +206,7 @@
     <title>200 Hours YTT - Satvik Yogshala</title>
 </svelte:head>
 <div class="ytt">
-    <Hero img="images/yoga14.jpg" />
+    <Hero img="images/nik_aeroplane.jpg" />
     <Breadcrumb path={breadcrumbPath} />
     <div class="content">
         <div class="block">

@@ -233,7 +233,7 @@
     <title>200 Hours Multistyle YTT - Satvik Yogshala</title>
 </svelte:head>
 <div class="ytt">
-    <Hero img="images/yoga12.jpg" />
+    <Hero img="images/nik_asana_1.jpg" top="-20%" />
     <Breadcrumb path={breadcrumbPath} />
     <div class="content">
         <div class="block">
