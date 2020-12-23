@@ -21,7 +21,6 @@
                 heroWrapper.style.height = heroWrapperHeight + "px";
                 heroWrapper.style.maxHeight = "100vh";
                 hero.style.setProperty("top", top);
-                console.log(hero.style.top)
             }
         }, 500);
     }

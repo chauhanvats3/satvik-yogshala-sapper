@@ -251,15 +251,26 @@
     </div>
     <div class="social">
 
-        <a href="https://twitter.com/satvikyogshala" target="_blank"> <i class="fab fa-twitter"></i></a>
-        <a href="https://www.facebook.com/satvikyogshala/" target="_blank"><i class="fab fa-facebook-f"> </i></a>
-        <a href="https://www.instagram.com/satvikyogshala/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="."><i class="fab fa-youtube"></i></a>
-        <a href="." target="_blank"><i class="fab fa-linkedin-in"> </i></a>
+        <a rel="noopener" href="https://twitter.com/satvikyogshala" target="_blank">
+            <p class="invisible">Twitter</p> <i class="fab fa-twitter"></i>
+        </a>
+        <a rel="noopener" href="https://www.facebook.com/satvikyogshala/" target="_blank">
+            <p class="invisible">Facebook</p> <i class="fab fa-facebook-f">
+            </i>
+        </a>
+        <a rel="noopener" href="https://www.instagram.com/satvikyogshala/" target="_blank">
+            <p class="invisible">Instagram</p> <i class="fab fa-instagram"></i>
+        </a>
+        <a rel="noopener" href=".">
+            <p class="invisible">YouTube</p> <i class="fab fa-youtube"></i>
+        </a>
+        <a rel="noopener" href="." target="_blank">
+            <p class="invisible">LinkedIn</p> <i class="fab fa-linkedin-in"> </i>
+        </a>
     </div>
     <div class="banner">
         <div>Copyright © {year} <a href="." class="link"> Satvik Yogshala. </a>
-            <a href="https://youtu.be/ub82Xb1C8os" class="link" target="_blank">
+            <a rel="noopener" href="https://youtu.be/ub82Xb1C8os" class="link" target="_blank">
                 All Rights Reserved
             </a>
         </div>

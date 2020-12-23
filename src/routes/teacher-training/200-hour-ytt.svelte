@@ -152,14 +152,14 @@
     ];
 
     let included = [
-        { name: "Accommodation", src: "images/yoga1.jpg" },
-        { name: "Trainer support", src: "images/yoga2.jpg" },
-        { name: "Excursions ( Ganga Aarti, Temple/ Cave visit )", src: "images/yoga3.jpg" },
-        { name: "Yoga material ( Yoga Mat, Notebook, pen, Neti pot)", src: "images/yoga4.jpg" },
-        { name: "Satvik Food Facilities", src: "images/yoga5.jpg" },
-        { name: "Wi-Fi Facilities", src: "images/yoga6.jpg" },
-        { name: "Laundry Service", src: "images/yoga7.jpg" },
-        { name: "Books Material ( Only for Reading )", src: "images/yoga8.jpg" }
+        { name: "Accommodation", src: "images/accomodation.jpg" },
+        { name: "Trainer support", src: "images/nik_alignment.jpg" },
+        { name: "Excursions ( Ganga Aarti, Temple/ Cave visit )", src: "images/ganga_arti.jpg" },
+        { name: "Yoga material ( Yoga Mat, Notebook, pen, Neti pot)", src: "images/yoga_mat.jpg" },
+        { name: "Satvik Food Facilities", src: "images/indian_food.jpg" },
+        { name: "Wi-Fi Facilities", src: "images/wifi.jpg" },
+        { name: "Laundry Service", src: "images/laundry.jpg" },
+        { name: "Books Material ( Only for Reading )", src: "images/book_stack.jpg" }
     ];
 
 
