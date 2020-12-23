@@ -21,7 +21,7 @@
 
     var images = [
 
-        { src: "images/nik_asana_1.jpg" },
+        { src: "images/nik_asana_2.jpg" },
         { src: "images/ganga_arti.jpg" },
         { src: "images/nik_with_students.jpg" },
         { src: "images/nik_garden.jpg" }
