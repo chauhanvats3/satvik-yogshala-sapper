@@ -10,7 +10,7 @@
     var images = [
         { src: "images/indian_food.jpg" },
         { src: "images/accomodation.jpg" },
-        { src: "images/ganga_arti.jpg" }, { src: "images/yoga_mat.jpg" }, { src: "images/laundry.jpg" }, { src: "images/book_stack.jpg" }, { src: "images/nik_taching_1.jpg" }, { src: "images/nik_garden.jpg" }, { src: "images/nik_aeroplane.jpg" }, { src: "images/nik_bhujang.jpg" }, { src: "images/nik_asana_1.jpg" }, { src: "images/nik_teaching_2.jpg" }, { src: "images/nik_with_students.jpg" }, { src: "images/nik_asana_2.jpg" }, { src: "images/nik_alignment.jpg" }, { src: "images/nik_chair.jpg" }];
+        { src: "images/ganga_arti.jpg" }, { src: "images/yoga_mat.jpg" }, { src: "images/laundry.jpg" }, { src: "images/book_stack.jpg" }, { src: "images/nik_teaching_1.jpg" }, { src: "images/nik_garden.jpg" }, { src: "images/nik_aeroplane.jpg" }, { src: "images/nik_bhujang.jpg" }, { src: "images/nik_asana_1.jpg" }, { src: "images/nik_teaching_2.jpg" }, { src: "images/nik_with_students.jpg" }, { src: "images/nik_asana_2.jpg" }, { src: "images/nik_alignment.jpg" }, { src: "images/nik_chair.jpg" }];
 
 
     var col1 = [];
