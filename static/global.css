@@ -180,3 +180,7 @@ hr {
     visibility: hidden;
     width: 0;
 }
+
+script{
+    visibility: hidden;
+}
