@@ -21,10 +21,10 @@
 
     var images = [
 
-        { src: "images/nike_asana_2.jpg" },
+        { src: "images/nik_asana_2.jpg" },
         { src: "images/ganga_arti.jpg" },
-        { src: "images/nike_with_students.jpg" },
-        { src: "images/nike_garden.jpg" }
+        { src: "images/nik_with_students.jpg" },
+        { src: "images/nik_garden.jpg" }
     ];
     var curImg = images[curIndex];
 
