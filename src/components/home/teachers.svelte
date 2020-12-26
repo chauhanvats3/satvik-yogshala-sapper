@@ -102,7 +102,7 @@
             <div class="teacher">
                 <a href="about/yoga-gurus#pritam">
                     <img src="images/team/pritam-singh-rawat.jpg" alt="">
-                    <p>Pritam Pyare</p>
+                    <p>Pritam Rawat</p>
                 </a>
             </div>
             <div class="teacher">
