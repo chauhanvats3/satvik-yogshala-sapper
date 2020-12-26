@@ -16,7 +16,7 @@
             link: "teacher-training/200-hour-ytt"
         },
         {
-            image: "images/nik_chair.jpg",
+            image: "images/nik_garden.jpg",
             title: "Yoga Retreat in Rishikesh",
             description: "Spend some quality time for self, from the daily busy and hectic schedule and relax, refresh and rejuvenate yourself with “Yoga Retreat”",
             link: "yoga-retreat"

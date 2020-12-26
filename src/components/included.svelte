@@ -56,16 +56,7 @@
 
     }
 
-    .topic:hover {
-        background-size: 100% auto;
-        background-color: rgb(255, 113, 113);
-        background-image: linear-gradient(45deg, #f7ef5a, #eb9db4);
-        background-repeat: repeat;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -moz-background-clip: text;
-        -moz-text-fill-color: transparent;
-    }
+
 
 
     @supports (backdrop-filter: blur()) or (-webkit-backdrop-filter: blur()) {
@@ -100,7 +91,7 @@
         <div class="topics">
             {#each dataSet as data,i}
             <div class="topic" on:click={()=>{changeImage(i);}}>
-                <p>{data.name}</p>
+                <p class="grad-text">{data.name}</p>
             </div>
             {/each}
         </div>

@@ -21,7 +21,7 @@
 
     var images = [
 
-        { src: "images/nik_asana_2.jpg" },
+        { src: "images/nik_aeroplane.jpg" },
         { src: "images/ganga_arti.jpg" },
         { src: "images/nik_with_students.jpg" },
         { src: "images/nik_garden.jpg" }
@@ -109,7 +109,7 @@
 
     .gallery>div img {
         position: absolute;
-        top: 0;
+        top: -10%;
         width: 100%;
         border-radius: 10px;
     }

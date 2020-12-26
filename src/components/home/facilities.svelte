@@ -93,7 +93,6 @@
 
     .selected_option {
         border-bottom: 2px solid rgb(223, 134, 134);
-
     }
 
 

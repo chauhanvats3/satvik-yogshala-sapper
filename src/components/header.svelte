@@ -169,32 +169,7 @@
         align-items: center;
     }
 
-    .item>div>a:hover,
-    .item>a:hover,
-    .noselect:hover,
-    .item>div>a:focus,
-    .item>a:focus,
-    .noselect:focus,
-    .item>div>a:active,
-    .item>a:active,
-    .noselect:active {
-        background-size: 100% auto;
-        /* Fallback: Set a background color. */
-        background-color: rgb(255, 113, 113);
 
-        /* Create the gradient. */
-        background-image: linear-gradient(45deg, #f7ef5a, #f77ea2);
-
-        /* Set the background size and repeat properties. */
-        background-repeat: repeat;
-
-        /* Use the text as a mask for the background. */
-        /* This will show the gradient as a text color rather than element bg. */
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -moz-background-clip: text;
-        -moz-text-fill-color: transparent;
-    }
 
     @media (max-width: 850px) {
         .banner {
@@ -335,50 +310,55 @@
                 <div class="item dropdown" class:selected={segment==="teacher-training" || segment==="teacher-training"
                     || segment==="teacher-training" }>
                     <div>
-                        <p style="cursor: pointer;" class="noselect">Teacher Training </p><i
+                        <p style="cursor: pointer;" class="noselect grad-text">Teacher Training </p><i
                             class="fas fa-chevron-down"></i>
                     </div>
                     <div class="list">
                         <div class="item"><a href="teacher-training/100-hour-ytt" on:click={hamburgerClicked}
-                                class="noselect">100 Hours
+                                class="noselect grad-text">100 Hours
                                 YTT</a></div>
                         <div class="item"><a href="teacher-training/200-hour-ytt" on:click={hamburgerClicked}
-                                class="noselect">200 Hours
+                                class="noselect grad-text">200 Hours
                                 YTT</a></div>
 
                         <div class="item"><a href="teacher-training/200-hour-multistyle-ytt" on:click={hamburgerClicked}
-                                class="noselect">200 Hours Multistyle
+                                class="noselect grad-text">200 Hours Multistyle
                                 YTT</a>
                         </div>
                     </div>
                 </div>
                 <div class="item" class:selected={segment==="yoga-retreat" }>
-                    <div> <a href="yoga-retreat" on:click={hamburgerClicked} class="noselect"> Yoga Retreat</a></div>
+                    <div> <a href="yoga-retreat" on:click={hamburgerClicked} class="noselect grad-text"> Yoga
+                            Retreat</a></div>
                 </div>
 
                 <div class="item dropdown" class:selected={segment==="about" || segment==="about" || segment==="about"
                     }>
                     <div>
-                        <p style="cursor: pointer;" class="noselect">About</p> <i class="fas fa-chevron-down"></i>
+                        <p style="cursor: pointer;" class="noselect grad-text">About</p> <i
+                            class="fas fa-chevron-down"></i>
                     </div>
                     <div class="list">
-                        <div class="item"><a href="about/about-us" on:click={hamburgerClicked} class="noselect">About
+                        <div class="item"><a href="about/about-us" on:click={hamburgerClicked}
+                                class="noselect grad-text">About
                                 Satvik Yogshala</a>
                         </div>
-                        <div class="item"><a href="about/yoga-gurus" on:click={hamburgerClicked} class="noselect">Yoga
+                        <div class="item"><a href="about/yoga-gurus" on:click={hamburgerClicked}
+                                class="noselect grad-text">Yoga
                                 Teachers</a></div>
                         <div class="item"><a href="about/gallery" on:click={hamburgerClicked}
-                                class="noselect">Gallery</a>
+                                class="noselect grad-text">Gallery</a>
                         </div>
-                        <div class="item"><a href="about/faq" on:click={hamburgerClicked} class="noselect">FAQ</a></div>
+                        <div class="item"><a href="about/faq" on:click={hamburgerClicked}
+                                class="noselect grad-text">FAQ</a></div>
 
                     </div>
                 </div>
                 <div class="item" class:selected={segment==="blog" }>
-                    <div><a href="blog" on:click={hamburgerClicked} class="noselect">Blog</a></div>
+                    <div><a href="blog" on:click={hamburgerClicked} class="noselect grad-text">Blog</a></div>
                 </div>
                 <div class="item" class:selected={segment==="contact" }>
-                    <div><a href="contact" on:click={hamburgerClicked} class="noselect">Contact Us</a></div>
+                    <div><a href="contact" on:click={hamburgerClicked} class="noselect grad-text">Contact Us</a></div>
                 </div>
             </div>
         </div>

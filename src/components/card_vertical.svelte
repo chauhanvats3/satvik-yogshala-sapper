@@ -84,38 +84,11 @@
         cursor: pointer;
         border: none;
         border-radius: 10px;
+        background: rgba(56, 56, 56, 0.301);
     }
 
 
-    .gradient-text {
-        font-weight: 900;
-        text-shadow: none;
-        transition: 0.5s;
-        background-size: 150% auto;
-        /* Fallback: Set a background color. */
-        background-color: red;
 
-        /* Create the gradient. */
-        background-image: linear-gradient(45deg, #f3ec78, #af4261);
-
-        /* Set the background size and repeat properties. */
-        background-repeat: repeat;
-
-        /* Use the text as a mask for the background. */
-        /* This will show the gradient as a text color rather than element bg. */
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -moz-background-clip: text;
-        -moz-text-fill-color: transparent;
-    }
-
-    .gradient-text:hover {
-        background-position: right center;
-        /* change the direction of the change here */
-        color: #fff;
-        text-decoration: none;
-
-    }
 
     @media (max-width:430px) {
         .card {
@@ -132,7 +105,8 @@
 
     @supports (backdrop-filter: blur()) or (-webkit-backdrop-filter: blur()) {
 
-        .overlay .content {
+        .overlay .content,
+        .btn {
 
             border-top-right-radius: 11px;
             border-top-left-radius: 11px;
@@ -154,7 +128,7 @@
             <h1>{title}</h1>
             <p>{description}</p>
             <div class="btn">
-                <a href="{link}" class="gradient-text">
+                <a href="{link}" class="grad-text-moving">
                     Know More
                 </a>
             </div>
