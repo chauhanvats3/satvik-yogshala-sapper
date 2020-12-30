@@ -6,6 +6,13 @@
 	import Teachers from '../components/home/teachers.svelte';
 	import { onMount } from 'svelte';
 
+	const metadata = {
+		title: "Home - Satvik Yogshala",
+		description: "Satvik Yogshala is the best beginner friendly yoga school in Rishikesh where we keep students minimum so we can teach them all thoroughly",
+		keywords: "yoga.rishikesh,beginner,ttc,teacher,ashtanga",
+		thumb: ""
+	};
+
 	let hero;
 	let heroWrapper;
 	let heroHeight = 0;
@@ -145,8 +152,29 @@
 </style>
 
 <svelte:head>
-	<title>Home - Satvik Yogshalaa</title>
+	<title>{metadata.title}</title>
+	<meta name="description" content="{metadata.description}" />
+	<meta name="keywords" content="{metadata.keywords}" />
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://satvikyogshala.com/">
+	<meta property="og:title" content="{metadata.title}">
+	<meta property="og:description" content="{metadata.description}">
+	{#if metadata.thumb}
+	<meta property="og:image" content="{metadata.thumb}">
+	{/if}
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://satvikyogshala.com/">
+	<meta property="twitter:title" content="{metadata.title}">
+	<meta property="twitter:description" content="{metadata.description}">
+	{#if metadata.thumb}
+	<meta property="twitter:image" content="{metadata.thumb}">
+	{/if}
 </svelte:head>
+
 <div class="index">
 	<div class="hero-wrapper" bind:this={heroWrapper} style="--hero-height:{heroHeight + 'px'};">
 		<div class="hero" bind:this={hero}>
