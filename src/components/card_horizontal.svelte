@@ -10,7 +10,7 @@
         margin: 20px;
         max-width: 75vw;
         padding: 20px;
-        border: 2px solid rgb(248, 174, 174);
+        border: 2px solid var(--darkyellow);
         border-radius: 20px;
         flex-direction: column;
 

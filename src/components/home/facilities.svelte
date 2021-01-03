@@ -63,13 +63,12 @@
     .overlay {
         width: 100%;
         height: 100%;
-        color: aliceblue;
+        color: var(--offwhite);
         z-index: 1;
         position: absolute;
         top: 0;
         left: 0;
         display: flex;
-        color: #FFF;
         flex-flow: column nowrap;
         justify-content: flex-start;
         background: #606c8862;
@@ -89,10 +88,12 @@
     .options>div {
         margin: 5px 25px;
         cursor: pointer;
+        color: aliceblue;
     }
 
     .selected_option {
-        border-bottom: 2px solid rgb(223, 134, 134);
+        border-bottom: 2px solid var(--lightyellow);
+        color: var(--offwhite);
     }
 
 
@@ -113,6 +114,7 @@
         width: 100%;
         position: absolute;
         padding: 5px 10px;
+        color: aliceblue
     }
 
     @media (max-width:695px) {

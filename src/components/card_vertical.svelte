@@ -37,7 +37,6 @@
     .overlay {
         width: 100%;
         height: 100%;
-        color: aliceblue;
         z-index: 1;
         position: absolute;
         top: 0;

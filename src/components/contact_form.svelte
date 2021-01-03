@@ -88,25 +88,25 @@
     }
 
     :global(.errorField) {
-        background-color: rgba(255, 0, 0, 0.596);
-        color: aliceblue;
+        background-color: #ffe24a;
+        color: var(--darkgray);
     }
 
     :global(.errorField::placeholder) {
         /* Chrome, Firefox, Opera, Safari 10.1+ */
-        color: white;
+        color: var(--darkgray);
         opacity: 1;
         /* Firefox */
     }
 
     :global(.errorField:-ms-input-placeholder) {
         /* Internet Explorer 10-11 */
-        color: white;
+        color: var(--darkgray);
     }
 
     :global(.errorField::-ms-input-placeholder) {
         /* Microsoft Edge */
-        color: white;
+        color: var(--darkgray);
     }
 
     @media (max-width: 750px) {

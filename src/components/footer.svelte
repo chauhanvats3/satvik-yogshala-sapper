@@ -55,7 +55,7 @@
     footer {
         width: 100vw !important;
         flex-flow: column wrap;
-        background-color: #849fdb5b;
+        background-color: #ffd900be;
         padding-top: 10vh;
         -webkit-clip-path: polygon(0 10vh, 100% 0%, 100% 100%, 0 100%);
         clip-path: polygon(0 10vh, 100% 0%, 100% 100%, 0 100%);
@@ -104,7 +104,7 @@
     .gallery:hover,
     .gallery:active,
     .gallery:focus {
-        box-shadow: 0 0 20px 1px rgba(78, 78, 78, 0.616);
+        box-shadow: 0 0 20px 1px #202020;
     }
 
     .gallery>div img {
@@ -121,9 +121,9 @@
         position: absolute;
         top: 0;
         left: 0;
-        background: rgba(8, 138, 214, 0.603);
+        background: #c0a301be;
         z-index: 10;
-        border-right: 3px solid black;
+        border-right: 3px solid var(--darkgray);
     }
 
     .faq div {

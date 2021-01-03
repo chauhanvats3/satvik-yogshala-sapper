@@ -44,13 +44,11 @@
 
         align-items: stretch;
 
-
-        background: #00B4DB;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to left, #0083B0, #00B4DB);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to left, #0083B0, #00B4DB);
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: rgb(32, 32, 32);
+        background: -moz-linear-gradient(142deg, rgba(32, 32, 32, 0.9783263647255778) 0%, rgba(68, 60, 27, 0.9587185215883228) 16%, rgba(108, 92, 21, 0.9082983535210959) 34%, rgba(150, 126, 15, 0.8914916308320203) 53%, rgba(204, 168, 7, 0.8914916308320203) 77%, rgba(255, 209, 0, 0.7178221630449055) 100%);
+        background: -webkit-linear-gradient(142deg, rgba(32, 32, 32, 0.9783263647255778) 0%, rgba(68, 60, 27, 0.9587185215883228) 16%, rgba(108, 92, 21, 0.9082983535210959) 34%, rgba(150, 126, 15, 0.8914916308320203) 53%, rgba(204, 168, 7, 0.8914916308320203) 77%, rgba(255, 209, 0, 0.7178221630449055) 100%);
+        background: linear-gradient(142deg, rgba(32, 32, 32, 0.9783263647255778) 0%, rgba(68, 60, 27, 0.9587185215883228) 16%, rgba(108, 92, 21, 0.9082983535210959) 34%, rgba(150, 126, 15, 0.8914916308320203) 53%, rgba(204, 168, 7, 0.8914916308320203) 77%, rgba(255, 209, 0, 0.7178221630449055) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#202020", endColorstr="#ffd100", GradientType=1);
 
     }
 
@@ -76,8 +74,6 @@
         min-height: 50px;
 
         background: rgba(255, 255, 255, 0.87);
-        backdrop-filter: blur(4.5px);
-        -webkit-backdrop-filter: blur(4.5px);
     }
 
     .logo_menu {
@@ -203,7 +199,7 @@
 
         .hamburger {
             display: flex;
-            color: black;
+            color: var(--darkgray);
             visibility: visible;
             cursor: pointer;
             font-size: 24px;
@@ -235,7 +231,7 @@
         .dropdown>.list {
             position: relative;
             display: none;
-            color: black;
+            color: var(--darkgray);
         }
 
         .dropdown:hover>.list,

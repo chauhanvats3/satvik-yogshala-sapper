@@ -98,7 +98,7 @@
 		overflow: hidden;
 		border-radius: 5px;
 		border: none;
-		border-bottom: 2px solid rgb(0, 153, 153);
+		border-bottom: 2px solid #ffd000;
 	}
 
 	.btn-overlay {
@@ -106,7 +106,7 @@
 		width: 100%;
 		position: absolute;
 		top: 0;
-		background: rgba(0, 153, 153, 0.534);
+		background: #ffd0009c;
 		transition: all 0.2s;
 	}
 

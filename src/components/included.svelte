@@ -44,7 +44,6 @@
         align-items: flex-start;
         padding: 20px;
         background: rgba(51, 51, 51, 0.534);
-        color: azure;
         overflow-y: scroll;
     }
 
@@ -53,7 +52,10 @@
         cursor: pointer;
         margin: 7px 2px;
         text-align: justify;
+    }
 
+    .topic>p {
+        color: #e0d12ac7;
     }
 
 

@@ -20,19 +20,19 @@
     .collapsible {
         width: 100%;
         border-radius: 5px;
-        border-bottom: 1px solid rgba(51, 160, 145, 0.651);
+        border-bottom: 1px solid var(--darkyellow);
         transition: all 0.3s;
     }
 
     .show {
-        border: 1px solid rgba(51, 160, 145, 0.651);
+        border: 1px solid var(--darkyellow);
     }
 
     .collapsible:hover,
     .collapsible:active,
     .collapsible:focus,
     .show {
-        background: rgba(123, 204, 193, 0.185);
+        background: #ffd9005e;
     }
 
 
@@ -52,7 +52,7 @@
     .dots {
         font-size: 8px;
         margin: 1px 5px;
-        color: teal;
+        color: var(--darkgray);
     }
 
     .details {

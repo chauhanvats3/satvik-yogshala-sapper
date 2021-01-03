@@ -1,17 +1,12 @@
 
 :root{
-    --bg1:#fefae0;
-    --bg2:#f0e6ef;
-    --bg3:#e5e5e5;
-    --color-1:#9c89b8;
-    --color-2:#f0a6ca;
-    --color-3:#efc3e6;
-    --color-4:#f0e6ef;
-    --color-5:#b8bedd;
-    --black:#5e6472;
     --thumbBG:#383a3aa9;
     --scrollbarBG:rgba(255, 255, 255, 0.055);
-
+    --offwhite:#d6d6d6;
+    --lightyellow:#ffee32;
+    --darkyellow:#ffd700;
+    --lightgray:#333533;
+    --darkgray:#202020;
 }
 
 html,
@@ -26,14 +21,16 @@ body * {
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
+    color: var(--darkgray);
 }
 
 body {
-    color: black;
+    color: var(--darkgray);
     margin: 0;
     box-sizing: border-box;
     font-family: 'Quicksand','Helvetica', 'Arial', sans-serif;
     font-weight: 500;
+    font-display: swap;
 }
 
 
@@ -75,12 +72,12 @@ textarea {
     padding: 0.4em;
     margin: 0 0 0.5em 0;
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    border: 1px solid var(--offwhite);
     border-radius: 2px;
 }
 
 input:disabled {
-    color: #ccc;
+    color: var(--offwhite);
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -97,14 +94,10 @@ p{
 }
 
 hr {
-    /* margin: 0 0 25px 0;
-    height: 1px; */
     height: 0px;
     margin: 5px;
     border: 0;
     background: transparent;
-/*     background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black));
- */
      background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, transparent));
 
 }
@@ -154,7 +147,7 @@ hr {
 
 
 .btn{
-    border: 1px solid black;
+    border: 1px solid var(--darkgray);
     cursor: pointer;
 /*     text-shadow:  1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
  */}
@@ -192,7 +185,7 @@ script{
 .grad-text:hover,
     .grad-text:focus,
     .grad-text:active,.grad-text-moving {
-        color: #8edff8;
+        color: var(--lightyellow);
     }
 
 
@@ -229,7 +222,7 @@ script{
     .grad-text-moving:hover {
         background-position: right center;
         /* change the direction of the change here */
-        color: #fff;
+        color: var(--offwhite);
         text-decoration: none;
 
     }

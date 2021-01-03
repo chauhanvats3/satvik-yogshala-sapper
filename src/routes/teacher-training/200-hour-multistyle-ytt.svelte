@@ -213,7 +213,7 @@
     .fa-circle-notch {
         margin: 0 5px;
         font-size: 10px;
-        color: blueviolet;
+        color: var(--darkyellow);
     }
 
     .curriculum {
