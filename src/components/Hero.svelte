@@ -50,7 +50,7 @@
     @media (max-width: 850px) {
 
         .hero-wrapper {
-            margin-top: 70px;
+            margin-top: 57px;
         }
     }
 </style>

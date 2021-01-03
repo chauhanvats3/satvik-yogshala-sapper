@@ -91,10 +91,10 @@
     .logo {
         height: 100%;
         background: rgba(41, 41, 41, 0.719);
-        clip-path: circle(50%);
     }
 
     .logo>a>img {
+        margin: 5px;
         height: 64px;
         width: 64px;
     }
@@ -197,6 +197,11 @@
             width: 100%;
             justify-content: space-between;
             flex-basis: 100%;
+        }
+
+        .logo>a>img {
+            height: 48px;
+            width: 48px;
         }
 
         .hamburger {
@@ -307,7 +312,7 @@
     <div id="navbar" class="navbar">
 
         <div class="logo_menu">
-            <div class="logo"> <a href=".#body"> <img src="logo/logo.svg" alt="Logo"> </a></div>
+            <div class="logo"> <a href=".#body"> <img src="logo/logo_name.svg" alt="Logo"> </a></div>
             {#if showHamburger}
             <i class="fas fa-bars hamburger" on:click={hamburgerClicked}></i>
             {:else if showMenuClose}
