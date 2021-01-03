@@ -81,10 +81,22 @@
     }
 
     .logo_menu {
+        min-height: 50px;
         height: 100%;
         flex-basis: 30%;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: stretch;
+    }
+
+    .logo {
+        height: 100%;
+        background: rgba(41, 41, 41, 0.719);
+        clip-path: circle(50%);
+    }
+
+    .logo>a>img {
+        height: 64px;
+        width: 64px;
     }
 
     .hamburger {
@@ -296,7 +308,7 @@
     <div id="navbar" class="navbar">
 
         <div class="logo_menu">
-            <div class="logo"> <a href="."> Satvik Yogshala</a></div>
+            <div class="logo"> <a href="."> <img src="logo/logo.svg" alt="Logo"> </a></div>
             {#if showHamburger}
             <i class="fas fa-bars hamburger" on:click={hamburgerClicked}></i>
             {:else if showMenuClose}
