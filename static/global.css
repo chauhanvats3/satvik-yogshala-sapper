@@ -21,11 +21,11 @@ body * {
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    color: var(--darkgray);
+    color: black;
 }
 
 body {
-    color: var(--darkgray);
+    color: black;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Quicksand','Helvetica', 'Arial', sans-serif;

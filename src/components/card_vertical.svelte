@@ -62,17 +62,21 @@
         padding: 10px;
         transform: translateY(300px);
         background: rgba(68, 68, 68, 0.329);
-
+        color: #FFF;
         border-top-right-radius: 11px;
         border-top-left-radius: 11px;
         transition: all 1s;
 
     }
 
+    h1 {
+        color: aliceblue
+    }
 
     p {
         margin: 10px;
         font-weight: 200;
+        color: aliceblue;
     }
 
     .btn {
