@@ -55,7 +55,7 @@
     footer {
         width: 100vw !important;
         flex-flow: column wrap;
-        background-color: #ffd900be;
+        background-color: #ffd90079;
         padding-top: 10vh;
         -webkit-clip-path: polygon(0 10vh, 100% 0%, 100% 100%, 0 100%);
         clip-path: polygon(0 10vh, 100% 0%, 100% 100%, 0 100%);
