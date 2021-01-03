@@ -307,7 +307,7 @@
     <div id="navbar" class="navbar">
 
         <div class="logo_menu">
-            <div class="logo"> <a href=".#hero"> <img src="logo/logo.svg" alt="Logo"> </a></div>
+            <div class="logo"> <a href=".#body"> <img src="logo/logo.svg" alt="Logo"> </a></div>
             {#if showHamburger}
             <i class="fas fa-bars hamburger" on:click={hamburgerClicked}></i>
             {:else if showMenuClose}
@@ -325,21 +325,21 @@
                             class="fas fa-chevron-down"></i>
                     </div>
                     <div class="list">
-                        <div class="item"><a href="teacher-training/100-hour-ytt#hero" on:click={hamburgerClicked}
+                        <div class="item"><a href="teacher-training/100-hour-ytt#body" on:click={hamburgerClicked}
                                 class="noselect grad-text">100 Hours
                                 YTT</a></div>
-                        <div class="item"><a href="teacher-training/200-hour-ytt#hero" on:click={hamburgerClicked}
+                        <div class="item"><a href="teacher-training/200-hour-ytt#body" on:click={hamburgerClicked}
                                 class="noselect grad-text">200 Hours
                                 YTT</a></div>
 
-                        <div class="item"><a href="teacher-training/200-hour-multistyle-ytt#hero"
+                        <div class="item"><a href="teacher-training/200-hour-multistyle-ytt#body"
                                 on:click={hamburgerClicked} class="noselect grad-text">200 Hours Multistyle
                                 YTT</a>
                         </div>
                     </div>
                 </div>
                 <div class="item" class:selected={segment==="yoga-retreat" }>
-                    <div> <a href="yoga-retreat#hero" on:click={hamburgerClicked} class="noselect grad-text"> Yoga
+                    <div> <a href="yoga-retreat#body" on:click={hamburgerClicked} class="noselect grad-text"> Yoga
                             Retreat</a></div>
                 </div>
 
@@ -350,26 +350,26 @@
                             class="fas fa-chevron-down"></i>
                     </div>
                     <div class="list">
-                        <div class="item"><a href="about/about-us#hero" on:click={hamburgerClicked}
+                        <div class="item"><a href="about/about-us#body" on:click={hamburgerClicked}
                                 class="noselect grad-text">About
                                 Satvik Yogshala</a>
                         </div>
-                        <div class="item"><a href="about/yoga-gurus#hero" on:click={hamburgerClicked}
+                        <div class="item"><a href="about/yoga-gurus#body" on:click={hamburgerClicked}
                                 class="noselect grad-text">Yoga
                                 Teachers</a></div>
-                        <div class="item"><a href="about/gallery#hero" on:click={hamburgerClicked}
+                        <div class="item"><a href="about/gallery#body" on:click={hamburgerClicked}
                                 class="noselect grad-text">Gallery</a>
                         </div>
-                        <div class="item"><a href="about/faq#hero" on:click={hamburgerClicked}
+                        <div class="item"><a href="about/faq#body" on:click={hamburgerClicked}
                                 class="noselect grad-text">FAQ</a></div>
 
                     </div>
                 </div>
                 <div class="item" class:selected={segment==="blog" }>
-                    <div><a href="blog#hero" on:click={hamburgerClicked} class="noselect grad-text">Blog</a></div>
+                    <div><a href="blog#body" on:click={hamburgerClicked} class="noselect grad-text">Blog</a></div>
                 </div>
                 <div class="item" class:selected={segment==="contact" }>
-                    <div><a href="contact#hero" on:click={hamburgerClicked} class="noselect grad-text">Contact Us</a>
+                    <div><a href="contact#body" on:click={hamburgerClicked} class="noselect grad-text">Contact Us</a>
                     </div>
                 </div>
             </div>
