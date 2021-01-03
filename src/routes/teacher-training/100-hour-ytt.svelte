@@ -5,6 +5,7 @@
     import CollapsibleGroup from '../../components/collapsibleGroup.svelte';
     import Breadcrumb from '../../components/breadcrumb.svelte';
     import Included from '../../components/included.svelte';
+    import Programs from '../../components/home/our_programs.svelte';
     import { onMount } from 'svelte';
 
 
@@ -253,6 +254,10 @@
         <div class="block">
             <h1 class="indie-flower">Included</h1>
             <Included dataSet={included} />
+        </div>
+
+        <div class="block">
+            <Programs excludeCard="100-hours" />
         </div>
 
         <div class="contact-form">

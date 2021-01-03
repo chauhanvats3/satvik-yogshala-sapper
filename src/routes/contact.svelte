@@ -1,5 +1,7 @@
 <script>
     import Contact_Form from '../components/contact_form.svelte';
+    import Programs from '../components/home/our_programs.svelte';
+
 </script>
 
 <style>
@@ -69,10 +71,12 @@
                 </p>
                 <p><a href="mailto:satvikyogshala@gmail.com">satvikyogshala@gmail.com</a></p>
                 <p><a href="tel:+918126726747">+91 8126726747</a>,
-                    <a href="tel:+918433404492">+91 8433404492</a></p>
+                    <a href="tel:+918433404492">+91 8433404492</a>
+                </p>
             </div>
         </div>
     </div>
+    <Programs />
     <div>
         <div class="map_embed">
             <iframe

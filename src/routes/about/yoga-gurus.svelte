@@ -1,6 +1,7 @@
 <script>
     import Card_Horizontal from '../../components/card_horizontal.svelte';
     import Breadcrumb from '../../components/breadcrumb.svelte';
+    import Programs from '../../components/home/our_programs.svelte';
 
     var path = [
         { name: "About", href: "." },
@@ -61,4 +62,5 @@ He teaches with a style of scientific approach to ensure a proper alignment in e
     <Card_Horizontal image={teacher.image} desc={teacher.desc} title={teacher.title} id={teacher.id} />
     {/each}
 
+    <Programs />
 </div>

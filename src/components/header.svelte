@@ -82,7 +82,6 @@
 
     .logo_menu {
         min-height: 50px;
-        height: 100%;
         flex-basis: 30%;
         justify-content: center;
         align-items: stretch;
@@ -96,7 +95,6 @@
     .logo>a>img {
         margin: 5px;
         height: 64px;
-        width: 64px;
     }
 
     .hamburger {
@@ -201,7 +199,6 @@
 
         .logo>a>img {
             height: 48px;
-            width: 48px;
         }
 
         .hamburger {
@@ -312,7 +309,7 @@
     <div id="navbar" class="navbar">
 
         <div class="logo_menu">
-            <div class="logo"> <a href=".#body"> <img src="logo/logo_name.svg" alt="Logo"> </a></div>
+            <div class="logo"> <a href=".#body"> <img src="logo/logo_name_hori.svg" alt="Logo"> </a></div>
             {#if showHamburger}
             <i class="fas fa-bars hamburger" on:click={hamburgerClicked}></i>
             {:else if showMenuClose}

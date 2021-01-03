@@ -80,7 +80,7 @@
         position: absolute;
         bottom: 0;
         margin: 10px auto;
-        padding: 5px;
+        padding: 5px 15px;
         cursor: pointer;
         border: none;
         border-radius: 10px;

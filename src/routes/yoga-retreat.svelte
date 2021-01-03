@@ -5,6 +5,8 @@
     import Breadcrumb from '../components/breadcrumb.svelte';
     import Included from '../components/included.svelte';
     import Hero from '../components/Hero.svelte';
+    import Programs from '../components/home/our_programs.svelte';
+
 
     let breadcrumbPath = [
         { name: 'Yoga Retreat', href: 'yoga-retreat' }
@@ -189,6 +191,8 @@
             <h1 class="indie-flower">Included</h1>
             <Included dataSet={included} />
         </div>
+
+        <Programs excludeCard="yoga-retreat" />
 
         <div class="contact-form">
             <Contact_Form classToGive="half" />

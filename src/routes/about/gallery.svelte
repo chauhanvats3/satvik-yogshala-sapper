@@ -1,5 +1,6 @@
 <script>
     import Breadcrumb from '../../components/breadcrumb.svelte';
+    import Programs from '../../components/home/our_programs.svelte';
 
     var path = [
         { name: "About", href: "." },
@@ -134,4 +135,5 @@
             </div>
         </div>
     </div>
+    <Programs />
 </div>
