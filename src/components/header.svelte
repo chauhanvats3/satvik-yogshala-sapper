@@ -197,7 +197,6 @@
             width: 100%;
             justify-content: space-between;
             flex-basis: 100%;
-            margin-top: 16px;
         }
 
         .hamburger {
