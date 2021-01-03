@@ -176,7 +176,7 @@
 </svelte:head>
 
 <div class="index">
-	<div class="hero-wrapper" bind:this={heroWrapper} style="--hero-height:{heroHeight + 'px'};">
+	<div id="hero" class="hero-wrapper" bind:this={heroWrapper} style="--hero-height:{heroHeight + 'px'};">
 		<div class="hero" bind:this={hero}>
 			<img src="images/nik_teaching_1.jpg" alt="Someone doing yoga">
 			<div class="hero-content">

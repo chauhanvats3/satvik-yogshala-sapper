@@ -199,16 +199,16 @@
         <div class="category">
             <div class="heading">Yoga Teachers Training</div>
             <div class="content">
-                <p><a href="yoga-retreat">Yoga Retreat</a></p>
-                <p><a href="teacher-training/100-hour-ytt">100 Hours YTT</a></p>
-                <p><a href="teacher-training/200-hour-ytt">200 Hours YTT</a></p>
-                <p><a href="teacher-training/200-hour-multistyle-ytt">200 Hours Multistyle YTT</a></p>
+                <p><a href="yoga-retreat#hero">Yoga Retreat</a></p>
+                <p><a href="teacher-training/100-hour-ytt#hero">100 Hours YTT</a></p>
+                <p><a href="teacher-training/200-hour-ytt#hero">200 Hours YTT</a></p>
+                <p><a href="teacher-training/200-hour-multistyle-ytt#hero">200 Hours Multistyle YTT</a></p>
             </div>
         </div>
         <div class="category faq">
-            <div class="heading"><a href="about/faq">FAQ</a></div>
-            <div class="heading"><a href="about/gallery">GALLERY</a></div>
-            <div class="heading"><a href="blog">BLOG</a></div>
+            <div class="heading"><a href="about/faq#hero">FAQ</a></div>
+            <div class="heading"><a href="about/gallery#hero">GALLERY</a></div>
+            <div class="heading"><a href="blog#hero">BLOG</a></div>
         </div>
         <div class="category">
             <div class="heading">Contact Us</div>
@@ -233,7 +233,7 @@
 
             <div>
                 {#each [images[curIndex]] as photo (curIndex)}
-                <a href="about/gallery">
+                <a href="about/gallery#hero">
                     <img transition:fade|local="{{ duration: 800,easing:quintInOut}}" src={photo.src} alt="" />
                 </a>
                 {/each}
@@ -261,7 +261,7 @@
         </a>
     </div>
     <div class="banner">
-        <div>Copyright © {year} <a href="." class="link"> Satvik Yogshala. </a>
+        <div>Copyright © {year} <a href=".#hero" class="link"> Satvik Yogshala. </a>
             <a rel="noopener" href="https://youtu.be/ub82Xb1C8os" class="link" target="_blank">
                 All Rights Reserved
             </a>

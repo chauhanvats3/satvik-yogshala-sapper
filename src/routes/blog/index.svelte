@@ -26,7 +26,7 @@
 <svelte:head>
 	<title>Blog - Satvik Yogshala</title>
 </svelte:head>
-<div class="wrapper">
+<div class="wrapper" id="hero">
 	<Breadcrumb {path} />
 	<h1 class="indie-flower">Blog by Preetam</h1>
 

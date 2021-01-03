@@ -128,7 +128,7 @@
 	@media (max-width: 750px) {
 
 		.wrapper {
-			margin-top: 50px;
+			margin-top: 70px;
 		}
 
 	}
@@ -152,7 +152,7 @@
 
 </svelte:head>
 <div class="wrapper">
-	<div class="hero-wrapper" bind:this={heroWrapper} style="--hero-height:{heroHeight + 'px'};">
+	<div id="hero" class="hero-wrapper" bind:this={heroWrapper} style="--hero-height:{heroHeight + 'px'};">
 		<div class="hero" bind:this={hero}>
 			<img src="{post.image}" alt="Someone doing yoga">
 		</div>

@@ -55,7 +55,7 @@
     }
 </style>
 
-<div class="hero-wrapper" bind:this={heroWrapper} style="--hero-height:{heroHeight + 'px'};">
+<div id="hero" class="hero-wrapper" bind:this={heroWrapper} style="--hero-height:{heroHeight + 'px'};">
     <div class="hero" bind:this={hero}>
         <img src={img} alt="Someone doing yoga">
     </div>

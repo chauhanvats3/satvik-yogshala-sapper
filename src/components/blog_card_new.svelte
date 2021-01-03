@@ -7,6 +7,8 @@
 
     import { onMount } from 'svelte'
 
+
+    link = link + "#hero";
 </script>
 
 <style>

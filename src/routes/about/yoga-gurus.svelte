@@ -51,14 +51,14 @@ He teaches with a style of scientific approach to ensure a proper alignment in e
 <svelte:head>
     <title>Our Yoga Gurus - Satvik Yogshala</title>
 </svelte:head>
-<div class="yoga-gurus">
+<div class="yoga-gurus" id="hero">
     <div class="heading">
         <h1 class="indie-flower">Yoga Instructors</h1>
         <hr />
     </div>
     <Breadcrumb path={path} />
-    {#each teachers as teacher} 
-        <Card_Horizontal image={teacher.image} desc={teacher.desc} title={teacher.title} id={teacher.id}/>
-        {/each}
-    
+    {#each teachers as teacher}
+    <Card_Horizontal image={teacher.image} desc={teacher.desc} title={teacher.title} id={teacher.id} />
+    {/each}
+
 </div>

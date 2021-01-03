@@ -106,7 +106,7 @@
 <svelte:head>
     <title>Gallery - Satvik Yogshala</title>
 </svelte:head>
-<div class="wrapper">
+<div class="wrapper" id="hero">
     <div class="blankspace"></div>
     <div class="heading">
         <h1 class="indie-flower">GALLERY</h1>

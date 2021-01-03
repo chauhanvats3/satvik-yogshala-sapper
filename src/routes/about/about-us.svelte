@@ -21,7 +21,7 @@
 <svelte:head>
     <title>About Satvik Yogshala</title>
 </svelte:head>
-<div class="about">
+<div class="about" id="hero">
     ABOUT US
 
     <Breadcrumb {path} />
