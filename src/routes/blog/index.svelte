@@ -18,7 +18,7 @@
 <style>
 	.wrapper {
 		width: 100%;
-		margin-top: 80px;
+		margin-top: 100px;
 		flex-flow: column wrap;
 	}
 </style>

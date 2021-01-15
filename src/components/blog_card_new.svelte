@@ -14,7 +14,7 @@
 <style>
     .blog_card {
         width: 85%;
-        max-height: 400px;
+        max-height: 600px;
         margin: 20px 5px;
         border-radius: 10px;
         overflow: hidden;
