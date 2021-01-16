@@ -6,7 +6,13 @@
     import Breadcrumb from '../../components/breadcrumb.svelte';
     import Included from '../../components/included.svelte';
     import Programs from '../../components/home/our_programs.svelte';
-
+    import Metadata from '../../components/metadata.svelte';
+    const metadata = {
+        title: "200 Hours Multistyle Yoga Teacher Training - Satvik Yogshala",
+        description: " Yoga integrates the body, mind, and soul in a more profound way and helps in connecting yourself with spirituality. Due to its tranquil and inartificial environment along with the divine intervention of the pious river Ganga, Yoga in Rishikesh is always a mesmerizing experience for yoga lovers. The land of Rishikesh multi folds the benefits of Yoga to the utmost extent. Rishikesh is the most chosen hotspot for health and wellness by many Yogis, saints, and Rishis. Thus, Yoga Teacher Training in Rishikesh is the most chosen amongst the Yoga freaks from different parts of the world. One can quest for the best Yoga Teacher Training Courses in Rishikesh.",
+        keywords: "yoga ttc in rishikesh,200 hour yoga teacher training in india,best yoga ttc in rishikesh,200 hour course in rishikesh,yoga certificate course in india,yoga training course in rishikesh,200 satvik yoga course,yoga school in rishikesh,satvik yogshala,satvik food,ayurveda course training,200 hour hatha yoga training,yoga for physical body,yoga for depression,yoga for stress,200 hour meditation training course,",
+        thumb: "https://satvikyogshala.com/logo/logo_with_name.png"
+    };
 
     let breadcrumbPath = [
         { name: 'Teacher Training', href: '.' },
@@ -231,9 +237,8 @@
         }
     }
 </style>
-<svelte:head>
-    <title>200 Hours Multistyle YTT - Satvik Yogshala</title>
-</svelte:head>
+<Metadata {metadata} />
+
 <div class="ytt">
     <Hero img="images/nik_asana_1.jpg" top="-20%" />
     <Breadcrumb path={breadcrumbPath} />

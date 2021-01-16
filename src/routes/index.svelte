@@ -1,4 +1,5 @@
 <script>
+	import Metadata from '../components/metadata.svelte';
 	import Description from '../components/home/description.svelte';
 	import Programs from '../components/home/our_programs.svelte';
 	import Facilities from '../components/home/facilities.svelte';
@@ -8,9 +9,9 @@
 
 	const metadata = {
 		title: "Home - Satvik Yogshala",
-		description: "Satvik Yogshala is the best beginner friendly yoga school in Rishikesh where we keep students minimum so we can teach them all thoroughly",
-		keywords: "yoga.rishikesh,beginner,ttc,teacher,ashtanga",
-		thumb: ""
+		description: "Satvik yogshala in collaboration with Yoga Alliance USA is located at the Yoga Capital of the world, Rishikesh. Spirituality is key to your yoga practice. With our clear vision we have uniquely designed our courses and provide you exceptional guidance so you attain your goals.",
+		keywords: "yoga teacher training india, yoga teacher training, yoga teacher training in india, yoga school in india, satvik yogashala, yoga teaching training india, yoga alliance teacher training india, yoga teachers training india, best yoga school in india, india yoga training, best yoga teacher training india, yoga teacher training course in india, yoga school in rishikesh, yoga training in india, yoga certification india, yoga courses india, best yoga training in rishikesh",
+		thumb: "https://satvikyogshala.com/logo/logo_with_name.png"
 	};
 
 	let hero;
@@ -151,29 +152,7 @@
 	}
 </style>
 
-<svelte:head>
-	<title>{metadata.title}</title>
-	<meta name="description" content="{metadata.description}" />
-	<meta name="keywords" content="{metadata.keywords}" />
-
-	<!-- Open Graph / Facebook -->
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://satvikyogshala.com/">
-	<meta property="og:title" content="{metadata.title}">
-	<meta property="og:description" content="{metadata.description}">
-	{#if metadata.thumb}
-	<meta property="og:image" content="{metadata.thumb}">
-	{/if}
-
-	<!-- Twitter -->
-	<meta property="twitter:card" content="summary_large_image">
-	<meta property="twitter:url" content="https://satvikyogshala.com/">
-	<meta property="twitter:title" content="{metadata.title}">
-	<meta property="twitter:description" content="{metadata.description}">
-	{#if metadata.thumb}
-	<meta property="twitter:image" content="{metadata.thumb}">
-	{/if}
-</svelte:head>
+<Metadata {metadata} />
 
 <div class="index">
 	<div id="hero" class="hero-wrapper" bind:this={heroWrapper} style="--hero-height:{heroHeight + 'px'};">

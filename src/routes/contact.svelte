@@ -1,7 +1,13 @@
 <script>
     import Contact_Form from '../components/contact_form.svelte';
     import Programs from '../components/home/our_programs.svelte';
-
+    import Metadata from '../components/metadata.svelte';
+    const metadata = {
+        title: "Contact Us - Satvik Yogshala",
+        description: "Satvik Yogshala is the best beginner friendly yoga school in Rishikesh where we keep students minimum so we can teach them all thoroughly",
+        keywords: "yoga,rishikesh,beginner,ttc,teacher,ashtanga",
+        thumb: "https://satvikyogshala.com/logo/logo_with_name.png"
+    };
 </script>
 
 <style>
@@ -49,9 +55,8 @@
         }
     }
 </style>
-<svelte:head>
-    <title>Contact Us - Satvik Yogshala</title>
-</svelte:head>
+<Metadata {metadata} />
+
 <div class="contact">
     <div>
         <div class="form_wrapper">

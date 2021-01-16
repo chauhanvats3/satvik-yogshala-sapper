@@ -9,6 +9,13 @@
 <script>
 	import BlogCard from '../../components/blog_card_new.svelte';
 	import Breadcrumb from '../../components/breadcrumb.svelte';
+	import Metadata from '../../components/metadata.svelte';
+	const metadata = {
+		title: "Blog - Satvik Yogshala",
+		description: "Satvik Yogshala is the best beginner friendly yoga school in Rishikesh where we keep students minimum so we can teach them all thoroughly",
+		keywords: "yoga,rishikesh,beginner,ttc,teacher,ashtanga",
+		thumb: "https://satvikyogshala.com/logo/logo_with_name.png"
+	};
 	export let posts;
 	const path = [
 		{ name: "Blog", href: "blog" }
@@ -23,9 +30,8 @@
 	}
 </style>
 
-<svelte:head>
-	<title>Blog - Satvik Yogshala</title>
-</svelte:head>
+<Metadata {metadata} />
+
 <div class="wrapper" id="hero">
 	<Breadcrumb {path} />
 	<h1 class="indie-flower">Blog by Preetam</h1>

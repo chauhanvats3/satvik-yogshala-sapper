@@ -8,7 +8,13 @@
     import Programs from '../../components/home/our_programs.svelte';
 
     import { onMount } from 'svelte';
-
+    import Metadata from '../../components/metadata.svelte';
+    const metadata = {
+        title: "200 Hours Yoga Teacher Training - Satvik Yogshala",
+        description: "The program of 200 Hours Yoga TTC at Satvik Yogshala is internationally certified by Yoga Alliance USA and let you teach yoga throughout the world. Anatomy and Physiology of Yogic Practices, Yoga Philosophy and Yogic Lifestyle is the main part of Yoga which you will practice physically and spiritually in this yoga course Teaching and Practice Methodology in Satvik Yogshala is very different from all other schools because while we design the curriculum we keep every type of student in mind. Satvika Yogshala teaches you each and everything from the basics to advance. 200 Hours yoga TTC in Rishikesh at Satvika Yogshala guides you in every aspect of Yoga.",
+        keywords: "multi-style 200 hour teacher training,200 hrs multi-style course,yoga with propes,yoga with block,yoga with boster,200 hour multi-style certificate,multi-style yoga,multi-style pranayama training,200 hour asthanga training,200 hrs ashtanga course,200 hour meditation program,",
+        thumb: "https://satvikyogshala.com/logo/logo_with_name.png"
+    };
     let breadcrumbPath = [
         { name: 'Teacher Training', href: '.' },
         { name: '200 Hours YTT', href: 'teacher-training/200-hour-ytt' }
@@ -204,9 +210,8 @@
         }
     }
 </style>
-<svelte:head>
-    <title>200 Hours YTT - Satvik Yogshala</title>
-</svelte:head>
+<Metadata {metadata} />
+
 <div class="ytt">
     <Hero img="images/nik_aeroplane.jpg" />
     <Breadcrumb path={breadcrumbPath} />

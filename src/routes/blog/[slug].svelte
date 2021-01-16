@@ -17,6 +17,7 @@
 	import { onMount } from 'svelte';
 	import { Email, Vk, WhatsApp, Xing, Facebook, Twitter } from 'svelte-share-buttons-component';
 	import Breadcrumb from '../../components/breadcrumb.svelte';
+	import Metadata from '../../components/metadata.svelte';
 
 	export let post;
 	const url = 'https://satvik-yogshala.netlify.app/blog/' + post.slug;
@@ -25,7 +26,12 @@
 	let hero;
 	let heroWrapper;
 	let heroHeight = 0;
-
+	const metadata = {
+		title: post.title + " - Satvik Yogshala",
+		description: post.desc,
+		keywords: "yoga.rishikesh,beginner,ttc,teacher,ashtanga",
+		thumb: "https://satvikyogshala.com/logo/logo_with_name.png"
+	};
 	function setHeroHeight() {
 
 		setTimeout(() => {
@@ -147,10 +153,8 @@
 	}
 </style>
 
-<svelte:head>
-	<title>{post.title} - Satvik Yogshala</title>
+<Metadata {metadata} />
 
-</svelte:head>
 <div class="wrapper">
 	<div id="hero" class="hero-wrapper" bind:this={heroWrapper} style="--hero-height:{heroHeight + 'px'};">
 		<div class="hero" bind:this={hero}>

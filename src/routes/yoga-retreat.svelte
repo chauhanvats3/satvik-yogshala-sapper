@@ -6,7 +6,13 @@
     import Included from '../components/included.svelte';
     import Hero from '../components/Hero.svelte';
     import Programs from '../components/home/our_programs.svelte';
-
+    import Metadata from '../components/metadata.svelte';
+    const metadata = {
+        title: "Yoga Retreat - Satvik Yogshala",
+        description: "Satvik Yogshala is organizing Yoga Retreat at Rishikesh. Every month we conduct several yoga retreat programs and yoga programs, so we have planned a Yoga Retreat which is under your budget and can be affordable. So pack your bags and start booking your Yoga at Satvik Yogshala in Rishikesh.",
+        keywords: "yoga retreat,season yoga retreat,weekly yoga retreat,sunrise retreat,sunset retreat,ayurveda retreat,detox retreat,mindfullness retreat,retreat for begennier,satvik retreat,himalayan retreat,retreat for kids,asana retreat,pranayam retreat,ashtanga retreat,retreat for women,streaching yoga-retreat,hip opening Retreat,hip mobility Retreat,spine yoga-retreat",
+        thumb: "https://satvikyogshala.com/logo/logo_with_name.png"
+    };
 
     let breadcrumbPath = [
         { name: 'Yoga Retreat', href: 'yoga-retreat' }
@@ -93,9 +99,8 @@
         }
     }
 </style>
-<svelte:head>
-    <title>Yoga Retreat - Satvik Yogshala</title>
-</svelte:head>
+<Metadata {metadata} />
+
 <div class="ytt">
     <Hero img="images/nik_garden.jpg" top="-20%" />
     <Breadcrumb path={breadcrumbPath} />

@@ -8,7 +8,13 @@
     import Programs from '../../components/home/our_programs.svelte';
     import { onMount } from 'svelte';
 
-
+    import Metadata from '../../components/metadata.svelte';
+    const metadata = {
+        title: "100 Hours Yoga Teacher Training - Satvik Yogshala",
+        description: "The primary purpose of 100-hour yoga teacher training is to create awareness about yoga and help you in finding your path in the right direction.This 100-hour Yoga program is structured for those looking for short-term courses as the course is of just 14 days.",
+        keywords: "yoga,yoga in rishikesh,beginner,ttc,sattvic yoga teacher training,100 hour yoga teacher course,100 hrs ttc,restorative yoga,yoga inspiration,yoga for consciousness,best 100hrs ttc,",
+        thumb: "https://satvikyogshala.com/logo/logo_with_name.png"
+    };
     let breadcrumbPath = [
         { name: 'Teacher Training', href: '.' },
         { name: '100 Hours YTT', href: 'teacher-training/100-hour-ytt' }
@@ -153,9 +159,8 @@
         }
     }
 </style>
-<svelte:head>
-    <title>100 Hours YTT - Satvik Yogshala</title>
-</svelte:head>
+<Metadata {metadata} />
+
 <div class="ytt">
     <Hero img="images/nik_bhujang.jpg" top="-20%" />
     <Breadcrumb path={breadcrumbPath} />
