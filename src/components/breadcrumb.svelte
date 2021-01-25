@@ -20,7 +20,6 @@
     a:last-child {
         max-width: 30ch;
         overflow: hidden;
-        max-height: 2ch;
         text-align: left;
         text-overflow: ellipsis;
     }
