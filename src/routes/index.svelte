@@ -9,7 +9,7 @@
 
 	const metadata = {
 		title: "Home - Satvik Yogshala",
-		description: "Satvik yogshala in collaboration with Yoga Alliance USA is located at the Yoga Capital of the world, Rishikesh. Spirituality is key to your yoga practice. With our clear vision we have uniquely designed our courses and provide you exceptional guidance so you attain your goals.",
+		description: "Satvik Yogshala, in collaboration with Yoga Alliance USA, is located at the Yoga Capital of the world, Rishikesh. Spirituality is key to your yoga practice. With our clear vision, we have uniquely designed our courses to provide you with exceptional guidance so you can attain your goals.",
 		keywords: "yoga teacher training india, yoga teacher training, yoga teacher training in india, yoga school in india, satvik yogashala, yoga teaching training india, yoga alliance teacher training india, yoga teachers training india, best yoga school in india, india yoga training, best yoga teacher training india, yoga teacher training course in india, yoga school in rishikesh, yoga training in india, yoga certification india, yoga courses india, best yoga training in rishikesh",
 		thumb: "https://satvikyogshala.com/logo/logo_with_name.png"
 	};
