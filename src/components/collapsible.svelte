@@ -10,8 +10,8 @@
     import { quintInOut, quintOut, linear } from 'svelte/easing';
 
     function toggleHeading() {
-
-        show = !show;
+        if (!expand)
+            show = !show;
     }
 
 </script>
