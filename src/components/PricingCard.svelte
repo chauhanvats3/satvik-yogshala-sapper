@@ -87,6 +87,7 @@
         .pricing-card {
             width: 250px;
             height: 450px;
+            margin: 30px 0;
         }
 
         p {
