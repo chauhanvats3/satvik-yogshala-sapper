@@ -22,6 +22,9 @@
         overflow: hidden;
         text-align: left;
         text-overflow: ellipsis;
+
+        max-height: 20px;
+
     }
 
     @media (max-width: 500px) {

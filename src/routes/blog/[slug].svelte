@@ -60,17 +60,9 @@
 </script>
 
 <style>
-	/*
-		By default, CSS is locally scoped to the component,
-		and any unused styles are dead-code-eliminated.
-		In this page, Svelte can't know which elements are
-		going to appear inside the {{{post.html}}} block,
-		so we have to use the :global(...) modifier to target
-		all elements inside .content
-	*/
-
 	.wrapper {
 		flex-flow: column wrap;
+		width: 100%;
 	}
 
 	.hero-wrapper {
@@ -123,12 +115,14 @@
 
 	.content {
 		width: 75%;
+		flex-flow: column nowrap;
 	}
 
 	.content :global(p) {
 		margin: 10px 10px;
 		line-height: 2em;
 		font-size: large;
+		max-width: 60ch;
 	}
 
 	@media (max-width: 750px) {
