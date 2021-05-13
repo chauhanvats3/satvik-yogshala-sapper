@@ -125,7 +125,7 @@
     <div><input type="text" name="l_name" id="l_name" placeholder="Last Name" bind:this={lastName}></div>
     <!--     <div><input type="email" name="email" id="email" placeholder="Email ID" bind:this={custEmail}></div>
  -->
-    <div><input type="tel" name="phone" id="phone" placeholder="Phone Number" bind:this={phoneNumber}></div>
+    <div><input type="number" name="phone" id="phone" placeholder="Phone Number" bind:this={phoneNumber}></div>
     <div><input type="text" name="subject" id="subject" placeholder="Subject" bind:this={subject}></div>
     <div><textarea id="message" name="message" rows="5" placeholder="Message" bind:this={message}></textarea>
     </div>
